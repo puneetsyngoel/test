@@ -1,0 +1,1672 @@
+[
+    {
+        "id": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+        "key": "App_Git_Sync",
+        "name": "App_Git_Sync",
+        "templateType": "PROCESS",
+        "isSystem": false,
+        "renderMode": "COLLAPSE",
+        "isExperimental": false,
+        "isEnabled": true,
+        "defaultVersionId": "93664482-2f32-470f-9277-aa356358ed26",
+        "iconKey": "UDP",
+        "createdById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+        "modifiedById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+        "createdAt": "2025-04-08T10:24:37.134Z",
+        "updatedAt": "2025-04-08T10:24:37.134Z",
+        "icon": {
+            "name": "udp.svg",
+            "fileType": null,
+            "isSystem": true,
+            "image": null
+        },
+        "iconDetails": {
+            "key": "UDP",
+            "name": "udp.svg",
+            "alias": null,
+            "image": null,
+            "fileType": null,
+            "isSystem": true,
+            "createdById": null,
+            "modifiedById": null,
+            "createdAt": "2019-11-18T04:38:27.651Z",
+            "updatedAt": "2019-11-18T04:38:27.651Z",
+            "objectType.key": null,
+            "objectType.name": null,
+            "objectType.objectCategoryKey": null,
+            "objectType.iconKey": null,
+            "processType.key": "UDP",
+            "processType.name": "User Defined Process",
+            "processType.iconKey": "UDP",
+            "processType.runtime": null,
+            "processType.schemaAware": false,
+            "processType.parameters": null
+        },
+        "templateVersions": [
+            {
+                "id": "93664482-2f32-470f-9277-aa356358ed26",
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "8.2.1_1.5",
+                "environment": "PRODUCTION",
+                "description": null,
+                "isExperimental": false,
+                "canvasGraph": {
+                    "edges": [
+                        {
+                            "data": {
+                                "id": "7891d04a-e081-409d-843b-e7755a01c945",
+                                "type": "default"
+                            },
+                            "source": "d86c76b6-7268-4bf2-93bd-15fb321d11f4.output",
+                            "target": "6741d4fd-ee53-4632-a796-ae03087446b3.input"
+                        },
+                        {
+                            "data": {},
+                            "source": "6741d4fd-ee53-4632-a796-ae03087446b3.output",
+                            "target": "13239c07-4ffe-43ae-842a-8561b6d85401.input"
+                        },
+                        {
+                            "data": {
+                                "id": "7aa3cb8c-3354-41af-8b1e-b406cbb83acf",
+                                "type": "default"
+                            },
+                            "source": "13239c07-4ffe-43ae-842a-8561b6d85401.output",
+                            "target": "563e8024-a8c9-4cfa-9c94-bf959a99505f.input"
+                        }
+                    ],
+                    "nodes": [
+                        {
+                            "id": "d86c76b6-7268-4bf2-93bd-15fb321d11f4",
+                            "top": -179,
+                            "left": -409,
+                            "type": "objectType",
+                            "label": "Process Input",
+                            "state": "CONFIGURED",
+                            "nodeType": "objectType",
+                            "objectTypeKey": "PROCESS_INPUT",
+                            "objectCategoryKey": "PROCESS_IO"
+                        },
+                        {
+                            "id": "6741d4fd-ee53-4632-a796-ae03087446b3",
+                            "top": -150,
+                            "left": -174,
+                            "label": "Spark Processor",
+                            "ports": [
+                                {
+                                    "id": "6741d4fd-ee53-4632-a796-ae03087446b3.input",
+                                    "type": "multiInput"
+                                },
+                                {
+                                    "id": "6741d4fd-ee53-4632-a796-ae03087446b3.output",
+                                    "type": "multiOutputLocked"
+                                }
+                            ],
+                            "state": "CONFIGURED",
+                            "nodeType": "process",
+                            "processTypeKey": "SPARK_PROCESSOR"
+                        },
+                        {
+                            "id": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                            "top": -150,
+                            "left": 24.5,
+                            "label": "Output",
+                            "ports": [
+                                {
+                                    "id": "13239c07-4ffe-43ae-842a-8561b6d85401.input",
+                                    "type": "singleInputLocked"
+                                },
+                                {
+                                    "id": "13239c07-4ffe-43ae-842a-8561b6d85401.output",
+                                    "type": "multiOutput"
+                                }
+                            ],
+                            "state": null,
+                            "nodeType": "objectType",
+                            "objectTypeKey": "TABLE",
+                            "objectCategoryKey": "DATASET"
+                        },
+                        {
+                            "id": "563e8024-a8c9-4cfa-9c94-bf959a99505f",
+                            "top": -143,
+                            "left": 239.5,
+                            "type": "objectType",
+                            "label": "Process Output",
+                            "state": "CONFIGURED",
+                            "nodeType": "objectType",
+                            "objectTypeKey": "PROCESS_OUTPUT",
+                            "objectCategoryKey": "PROCESS_IO"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "id": "d86c76b6-7268-4bf2-93bd-15fb321d11f4.input"
+                        },
+                        {
+                            "id": "d86c76b6-7268-4bf2-93bd-15fb321d11f4.output"
+                        },
+                        {
+                            "id": "6741d4fd-ee53-4632-a796-ae03087446b3.input"
+                        },
+                        {
+                            "id": "6741d4fd-ee53-4632-a796-ae03087446b3.output"
+                        },
+                        {
+                            "id": "13239c07-4ffe-43ae-842a-8561b6d85401.input"
+                        },
+                        {
+                            "id": "13239c07-4ffe-43ae-842a-8561b6d85401.output"
+                        },
+                        {
+                            "id": "563e8024-a8c9-4cfa-9c94-bf959a99505f.input"
+                        },
+                        {
+                            "id": "563e8024-a8c9-4cfa-9c94-bf959a99505f.output"
+                        }
+                    ],
+                    "groups": []
+                },
+                "parameters": {
+                    "variables": {
+                        "steps": [
+                            {
+                                "name": "Parameters",
+                                "enabled": true,
+                                "sections": [
+                                    {
+                                        "id": "edb865f1-6336-438d-a99b-e0ae233b2102",
+                                        "fields": [
+                                            {
+                                                "id": "5278a2a7-f6ba-4235-babd-b5c90d6f4138",
+                                                "required": true,
+                                                "fieldName": "Branch",
+                                                "formField": "input",
+                                                "validation": {
+                                                    "validationPattern": []
+                                                },
+                                                "defaultValue": null,
+                                                "parameterName": "@branch",
+                                                "formFieldStyles": {
+                                                    "hint": null,
+                                                    "width": null,
+                                                    "startNewRow": false
+                                                },
+                                                "formFieldParameters": {}
+                                            }
+                                        ],
+                                        "sectionName": "Git",
+                                        "showSection": true
+                                    },
+                                    {
+                                        "id": "7fa01c24-8f91-4594-94cd-e23b5a436b0f",
+                                        "fields": [
+                                            {
+                                                "id": "daeca7b1-d85e-4422-ad5d-fbf03b1d30ec",
+                                                "required": false,
+                                                "fieldName": "IncludeNotes",
+                                                "formField": "checkbox",
+                                                "validation": {},
+                                                "defaultValue": true,
+                                                "parameterName": "@includeNotes",
+                                                "formFieldStyles": {
+                                                    "hint": null,
+                                                    "width": null,
+                                                    "startNewRow": false
+                                                },
+                                                "formFieldParameters": {}
+                                            }
+                                        ],
+                                        "sectionName": "App Export",
+                                        "showSection": true
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Mapping",
+                                "enabled": false,
+                                "sections": []
+                            }
+                        ]
+                    }
+                },
+                "createdById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+                "modifiedById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+                "createdAt": "2025-04-09T11:43:18.484Z",
+                "updatedAt": "2025-04-09T11:43:18.484Z",
+                "graphNodes": [
+                    {
+                        "id": "a1f1f03f-1475-44aa-be06-77f951aed622",
+                        "appNodeId": "d86c76b6-7268-4bf2-93bd-15fb321d11f4",
+                        "name": "Process Input",
+                        "templateVersionId": "93664482-2f32-470f-9277-aa356358ed26",
+                        "objectTypeKey": "PROCESS_INPUT",
+                        "processTypeKey": null,
+                        "displayGroup": null,
+                        "state": "CONFIGURED",
+                        "parameters": {
+                            "system": {
+                                "isDeletable": true
+                            },
+                            "parameters": {
+                                "inputs": [
+                                    {
+                                        "objectCategoryKey": "CONNECTION",
+                                        "objectTypes": [
+                                            "MATOMO_API"
+                                        ],
+                                        "label": "Git Connection",
+                                        "hint": "",
+                                        "required": true,
+                                        "targetInputId": "97aa9fb5-c717-4c96-9661-afd0330035eb"
+                                    }
+                                ]
+                            }
+                        },
+                        "schemaId": null,
+                        "createdById": null,
+                        "modifiedById": null,
+                        "createdAt": "2025-04-09T11:43:18.491Z",
+                        "updatedAt": "2025-04-09T11:43:18.491Z",
+                        "templateGraphNodePorts": [
+                            {
+                                "id": "96e94e1e-4419-4afb-a55e-43e70f574c41",
+                                "templateGraphNodeId": "a1f1f03f-1475-44aa-be06-77f951aed622",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "92d02fb2-e3c0-4052-a3e8-de5965f81daf",
+                                        "fromPortId": "96e94e1e-4419-4afb-a55e-43e70f574c41",
+                                        "toPortId": "497b647e-da8e-4c95-99d0-0a0fa49c7f0d",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "280023d9-ba90-41b4-9d7b-98c541fbf471",
+                                "templateGraphNodeId": "a1f1f03f-1475-44aa-be06-77f951aed622",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": []
+                            }
+                        ],
+                        "processType": null,
+                        "objectType": {
+                            "key": "PROCESS_INPUT",
+                            "name": "Process Input",
+                            "objectCategoryKey": "PROCESS_IO",
+                            "iconKey": "PROCESS_INPUT",
+                            "icon": {
+                                "name": "process_input.svg"
+                            }
+                        },
+                        "graphNodePorts": [
+                            {
+                                "id": "96e94e1e-4419-4afb-a55e-43e70f574c41",
+                                "templateGraphNodeId": "a1f1f03f-1475-44aa-be06-77f951aed622",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "92d02fb2-e3c0-4052-a3e8-de5965f81daf",
+                                        "fromPortId": "96e94e1e-4419-4afb-a55e-43e70f574c41",
+                                        "toPortId": "497b647e-da8e-4c95-99d0-0a0fa49c7f0d",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "graphNodeId": "a1f1f03f-1475-44aa-be06-77f951aed622"
+                            },
+                            {
+                                "id": "280023d9-ba90-41b4-9d7b-98c541fbf471",
+                                "templateGraphNodeId": "a1f1f03f-1475-44aa-be06-77f951aed622",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": [],
+                                "graphNodeId": "a1f1f03f-1475-44aa-be06-77f951aed622"
+                            }
+                        ],
+                        "objectCategoryKey": "PROCESS_IO"
+                    },
+                    {
+                        "id": "deb93732-12b5-4dde-8331-f0a7e762d37d",
+                        "appNodeId": "6741d4fd-ee53-4632-a796-ae03087446b3",
+                        "name": "Spark Processor",
+                        "templateVersionId": "93664482-2f32-470f-9277-aa356358ed26",
+                        "objectTypeKey": null,
+                        "processTypeKey": "SPARK_PROCESSOR",
+                        "displayGroup": null,
+                        "state": "CONFIGURED",
+                        "parameters": {
+                            "system": {
+                                "isDeletable": true
+                            },
+                            "filters": {},
+                            "parameters": {
+                                "language": "PYTHON",
+                                "fileName": null,
+                                "sparkScript": "#pip3 install gitpython\n\nimport os\nimport requests\nimport git\nimport json\nimport shutil\nimport zipfile\nimport glob\n\ndef generate_auth_token(url, payload, host, headers=None):\n    if headers is None:\n        headers = {}\n    headers[\"Host\"] = host\n    headers[\"Content-Type\"] = \"application/json\"\n    response = requests.post(url, headers=headers, json=payload, timeout=10, verify=False)\n    response.raise_for_status()\n    response_data = response.json()\n    token = response_data.get(\"token\")\n    return token\n\ndef download_file(api_url, output_path, host, headers):\n    if headers is None:\n        headers = {}\n    headers[\"Host\"] = host\n    headers[\"Content-Type\"] = \"application/json\"\n    if os.path.exists(output_path):\n        os.remove(output_path)\n        print(f\"Existing file removed: {output_path}\")\n    response = requests.get(api_url, headers=headers, stream=True, verify=False)\n    if response.status_code == 200:\n        with open(output_path, \"wb\") as file:\n            for chunk in response.iter_content(chunk_size=8192):\n                file.write(chunk)\n        print(f\"File downloaded: {output_path}\")\n    else:\n        raise Exception(f\"Failed to download file. Status code: {response.status_code}\")\n\ndef clone_repo(repo_url, local_path, branch, oauth_token):\n    if os.path.exists(local_path):\n        print(f\"Repository already exists at {local_path}. Cleaning up...\")\n        shutil.rmtree(local_path)\n        print(f\"Existing repository removed from {local_path}\")\n    auth_url = repo_url.replace(\"https://\", f\"https://{oauth_token}@\")\n    repo = git.Repo.clone_from(auth_url, local_path, branch=branch)\n    print(f\"Repository cloned to {local_path}\")\n    return repo\n\ndef commit_and_push(repo, file_paths, commit_message):\n    repo.index.add(file_paths)\n    repo.index.commit(commit_message)\n    origin = repo.remote(name=\"origin\")\n    origin.push()\n    print(f\"Committed and pushed: {file_paths}\")\n\ndef extract_zip(zip_path, extract_to):\n    with zipfile.ZipFile(zip_path, 'r') as zip_ref:\n        zip_ref.extractall(extract_to)\n    print(f\"Extracted ZIP contents to {extract_to}\")\n\ndef convert_bool_to_yes_no(value):\n    if value.strip().lower() == 'true':\n        return 'yes'\n    else:\n        return 'no'\n\ndef pretty_print_json(directory):\n    json_files = glob.glob(os.path.join(directory, \"**\", \"*.json\"), recursive=True)\n    for json_file in json_files:\n        with open(json_file, \"r\", encoding=\"utf-8\") as file:\n            data = json.load(file)\n        with open(json_file, \"w\", encoding=\"utf-8\") as file:\n            json.dump(data, file, indent=4, ensure_ascii=False)\n        print(f\"Formatted JSON: {json_file}\")\n\n# API Details\ninternal_node_ip = sc._jvm.com.syntasa.utils.SystemUtils.messagingServer().split(\":\")[0]\nport = \"@port\".replace(\"'\",\"\").strip()\nbase_url = f\"https://{internal_node_ip}:{port}\"\ngenerate_token_url = f\"{base_url}/loginUser\"\nappid = str(synutils.object.getAction().getApp().getId())\nappkey = str(synutils.object.getAction().getApp().getKey())\nenvironment = str(synutils.object.getAction().getEnvironment())\nincludeNotes = convert_bool_to_yes_no(\"@includeNotes\")\nexport_url = f\"{base_url}/api/v1/export/app?appId={appid}&environment={environment}&includeNotes={includeNotes}\"\nusername = \"@username\".replace(\"'\",\"\").strip()\npassword = \"@password\".replace(\"'\",\"\").strip()\nhost = \"@hostname\".replace(\"'\",\"\").strip()\ncredentials = {\"authType\": \"LOCAL\",\"username\": username,\"password\": password}\nzip_file_path = \"/tmp/export.zip\"\n\n# Git Repo Details\noauth_token = str(synutils.object.getAction().getJobStep().getProcessDetails().getInputConnection().getParameters().getAuthToken())\nr_protocol = str(synutils.object.getAction().getJobStep().getProcessDetails().getInputConnection().getParameters().getProtocol()).lower()\nr_url = str(synutils.object.getAction().getJobStep().getProcessDetails().getInputConnection().getParameters().getUrl())\nrepo_url = f\"{r_protocol}://{r_url}\"\nbranch = \"@branch\".replace(\"'\",\"\").strip()\nlocal_repo_path = \"./repo\"\n\n# Start of process\ntoken = generate_auth_token(generate_token_url, credentials, host)\nbearer_token = { \"Authorization\": f\"Bearer {token}\" }\n\ndownload_file(export_url, zip_file_path, host, bearer_token)\nrepo = clone_repo(repo_url, local_repo_path, branch, oauth_token)\n\ndest_dir = os.path.join(local_repo_path, appkey, environment.lower())\nos.makedirs(dest_dir, exist_ok=True)\nextract_zip(zip_file_path, dest_dir)\npretty_print_json(dest_dir)\nextracted_files = [\n    os.path.relpath(f, local_repo_path)\n    for f in glob.glob(f\"{dest_dir}/**\", recursive=True) if os.path.isfile(f)\n]\n\ncommit_and_push(repo, extracted_files, \"commit from udp\")\n",
+                                "libraryConfigs": [
+                                    {
+                                        "name": "gitpython",
+                                        "version": ""
+                                    }
+                                ],
+                                "version": "3.9",
+                                "customCondaScript": null,
+                                "codeParams": [
+                                    {
+                                        "name": "@InputConnection1",
+                                        "value": "Git Connection",
+                                        "appNodeId": "97aa9fb5-c717-4c96-9661-afd0330035eb",
+                                        "type": "INPUT",
+                                        "subType": "CONNECTION"
+                                    },
+                                    {
+                                        "name": "@OutputTable1",
+                                        "value": "@database.output",
+                                        "appNodeId": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                                        "type": "OUTPUT",
+                                        "subType": "DATASET"
+                                    },
+                                    {
+                                        "name": "@username",
+                                        "value": "puneet",
+                                        "appNodeId": null,
+                                        "type": "USER_DEFINED",
+                                        "subType": ""
+                                    },
+                                    {
+                                        "name": "@password",
+                                        "value": "123456",
+                                        "appNodeId": null,
+                                        "type": "USER_DEFINED",
+                                        "subType": ""
+                                    },
+                                    {
+                                        "name": "@hostname",
+                                        "value": "syn-qa-kube-gcp.syntasa.net",
+                                        "appNodeId": null,
+                                        "type": "USER_DEFINED",
+                                        "subType": ""
+                                    },
+                                    {
+                                        "name": "@port",
+                                        "value": "31643",
+                                        "appNodeId": null,
+                                        "type": "USER_DEFINED",
+                                        "subType": ""
+                                    }
+                                ]
+                            },
+                            "outputParameters": {
+                                "datasets": [
+                                    {
+                                        "appNodeId": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                                        "displayName": "Output",
+                                        "objectTypeKey": "TABLE",
+                                        "loadToBigQuery": true,
+                                        "loadToRedshift": false,
+                                        "fileFormat": "PARQUET",
+                                        "tableName": "output"
+                                    }
+                                ]
+                            }
+                        },
+                        "schemaId": null,
+                        "createdById": null,
+                        "modifiedById": null,
+                        "createdAt": "2025-04-09T11:43:18.492Z",
+                        "updatedAt": "2025-04-09T11:43:18.492Z",
+                        "templateGraphNodePorts": [
+                            {
+                                "id": "0df20f2e-ddb4-4772-a200-0916460aca64",
+                                "templateGraphNodeId": "deb93732-12b5-4dde-8331-f0a7e762d37d",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "25c315bc-3134-497c-bc31-24ebea34db7d",
+                                        "fromPortId": "0df20f2e-ddb4-4772-a200-0916460aca64",
+                                        "toPortId": "cac09526-72a5-4ea7-9d5e-610f5b601bf9",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "497b647e-da8e-4c95-99d0-0a0fa49c7f0d",
+                                "templateGraphNodeId": "deb93732-12b5-4dde-8331-f0a7e762d37d",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "92d02fb2-e3c0-4052-a3e8-de5965f81daf",
+                                        "fromPortId": "96e94e1e-4419-4afb-a55e-43e70f574c41",
+                                        "toPortId": "497b647e-da8e-4c95-99d0-0a0fa49c7f0d",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "toLinks": []
+                            }
+                        ],
+                        "processType": {
+                            "key": "SPARK_PROCESSOR",
+                            "name": "Spark Processor",
+                            "iconKey": "SPARK_PROCESSOR",
+                            "runtime": "SPARK",
+                            "schemaAware": false,
+                            "parameters": null,
+                            "icon": {
+                                "key": "SPARK_PROCESSOR",
+                                "name": "code.svg",
+                                "isSystem": true
+                            }
+                        },
+                        "objectType": null,
+                        "templateIcon": {
+                            "key": "SPARK_PROCESSOR",
+                            "name": "code.svg",
+                            "isSystem": true
+                        },
+                        "graphNodePorts": [
+                            {
+                                "id": "0df20f2e-ddb4-4772-a200-0916460aca64",
+                                "templateGraphNodeId": "deb93732-12b5-4dde-8331-f0a7e762d37d",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "25c315bc-3134-497c-bc31-24ebea34db7d",
+                                        "fromPortId": "0df20f2e-ddb4-4772-a200-0916460aca64",
+                                        "toPortId": "cac09526-72a5-4ea7-9d5e-610f5b601bf9",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "graphNodeId": "deb93732-12b5-4dde-8331-f0a7e762d37d"
+                            },
+                            {
+                                "id": "497b647e-da8e-4c95-99d0-0a0fa49c7f0d",
+                                "templateGraphNodeId": "deb93732-12b5-4dde-8331-f0a7e762d37d",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "92d02fb2-e3c0-4052-a3e8-de5965f81daf",
+                                        "fromPortId": "96e94e1e-4419-4afb-a55e-43e70f574c41",
+                                        "toPortId": "497b647e-da8e-4c95-99d0-0a0fa49c7f0d",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "toLinks": [],
+                                "graphNodeId": "deb93732-12b5-4dde-8331-f0a7e762d37d"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "466d3beb-9c87-4deb-870d-0439f2b94dc7",
+                        "appNodeId": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                        "name": "Output",
+                        "templateVersionId": "93664482-2f32-470f-9277-aa356358ed26",
+                        "objectTypeKey": "TABLE",
+                        "processTypeKey": null,
+                        "displayGroup": null,
+                        "state": null,
+                        "parameters": {
+                            "system": {
+                                "isDeletable": true
+                            }
+                        },
+                        "schemaId": null,
+                        "createdById": null,
+                        "modifiedById": null,
+                        "createdAt": "2025-04-09T11:43:18.492Z",
+                        "updatedAt": "2025-04-09T11:43:18.492Z",
+                        "templateGraphNodePorts": [
+                            {
+                                "id": "c9ef4d4b-da50-4237-a94a-084108a2829d",
+                                "templateGraphNodeId": "466d3beb-9c87-4deb-870d-0439f2b94dc7",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "7d608e40-4031-4d73-b895-571ca4744aeb",
+                                        "fromPortId": "c9ef4d4b-da50-4237-a94a-084108a2829d",
+                                        "toPortId": "eb5dcc71-3c39-4690-b473-83e2cf8e469c",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "cac09526-72a5-4ea7-9d5e-610f5b601bf9",
+                                "templateGraphNodeId": "466d3beb-9c87-4deb-870d-0439f2b94dc7",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "25c315bc-3134-497c-bc31-24ebea34db7d",
+                                        "fromPortId": "0df20f2e-ddb4-4772-a200-0916460aca64",
+                                        "toPortId": "cac09526-72a5-4ea7-9d5e-610f5b601bf9",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "toLinks": []
+                            }
+                        ],
+                        "processType": null,
+                        "objectType": {
+                            "key": "TABLE",
+                            "name": "Table",
+                            "objectCategoryKey": "DATASET",
+                            "iconKey": "TABLE",
+                            "icon": {
+                                "name": "table.svg"
+                            }
+                        },
+                        "graphNodePorts": [
+                            {
+                                "id": "c9ef4d4b-da50-4237-a94a-084108a2829d",
+                                "templateGraphNodeId": "466d3beb-9c87-4deb-870d-0439f2b94dc7",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "7d608e40-4031-4d73-b895-571ca4744aeb",
+                                        "fromPortId": "c9ef4d4b-da50-4237-a94a-084108a2829d",
+                                        "toPortId": "eb5dcc71-3c39-4690-b473-83e2cf8e469c",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "graphNodeId": "466d3beb-9c87-4deb-870d-0439f2b94dc7"
+                            },
+                            {
+                                "id": "cac09526-72a5-4ea7-9d5e-610f5b601bf9",
+                                "templateGraphNodeId": "466d3beb-9c87-4deb-870d-0439f2b94dc7",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "25c315bc-3134-497c-bc31-24ebea34db7d",
+                                        "fromPortId": "0df20f2e-ddb4-4772-a200-0916460aca64",
+                                        "toPortId": "cac09526-72a5-4ea7-9d5e-610f5b601bf9",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "toLinks": [],
+                                "graphNodeId": "466d3beb-9c87-4deb-870d-0439f2b94dc7"
+                            }
+                        ],
+                        "objectCategoryKey": "DATASET"
+                    },
+                    {
+                        "id": "d20997be-ec70-4bef-a597-40b0c05d8689",
+                        "appNodeId": "563e8024-a8c9-4cfa-9c94-bf959a99505f",
+                        "name": "Process Output",
+                        "templateVersionId": "93664482-2f32-470f-9277-aa356358ed26",
+                        "objectTypeKey": "PROCESS_OUTPUT",
+                        "processTypeKey": null,
+                        "displayGroup": null,
+                        "state": "CONFIGURED",
+                        "parameters": {
+                            "system": {
+                                "isDeletable": true
+                            },
+                            "parameters": {
+                                "outputs": [
+                                    {
+                                        "targetOutputId": "663584cd-fb74-4978-bd8a-59fe6b7617a9",
+                                        "source": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                                        "hint": "Output",
+                                        "objectTypeKey": "TABLE"
+                                    }
+                                ]
+                            }
+                        },
+                        "schemaId": null,
+                        "createdById": null,
+                        "modifiedById": null,
+                        "createdAt": "2025-04-09T11:43:18.492Z",
+                        "updatedAt": "2025-04-09T11:43:18.492Z",
+                        "templateGraphNodePorts": [
+                            {
+                                "id": "eb5dcc71-3c39-4690-b473-83e2cf8e469c",
+                                "templateGraphNodeId": "d20997be-ec70-4bef-a597-40b0c05d8689",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.505Z",
+                                "updatedAt": "2025-04-09T11:43:18.505Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "7d608e40-4031-4d73-b895-571ca4744aeb",
+                                        "fromPortId": "c9ef4d4b-da50-4237-a94a-084108a2829d",
+                                        "toPortId": "eb5dcc71-3c39-4690-b473-83e2cf8e469c",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "toLinks": []
+                            },
+                            {
+                                "id": "fa72d5a8-fc00-4ac5-994e-f39c5896b9c1",
+                                "templateGraphNodeId": "d20997be-ec70-4bef-a597-40b0c05d8689",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": []
+                            }
+                        ],
+                        "processType": null,
+                        "objectType": {
+                            "key": "PROCESS_OUTPUT",
+                            "name": "Process Output",
+                            "objectCategoryKey": "PROCESS_IO",
+                            "iconKey": "PROCESS_OUTPUT",
+                            "icon": {
+                                "name": "process_output.svg"
+                            }
+                        },
+                        "graphNodePorts": [
+                            {
+                                "id": "eb5dcc71-3c39-4690-b473-83e2cf8e469c",
+                                "templateGraphNodeId": "d20997be-ec70-4bef-a597-40b0c05d8689",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.505Z",
+                                "updatedAt": "2025-04-09T11:43:18.505Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "7d608e40-4031-4d73-b895-571ca4744aeb",
+                                        "fromPortId": "c9ef4d4b-da50-4237-a94a-084108a2829d",
+                                        "toPortId": "eb5dcc71-3c39-4690-b473-83e2cf8e469c",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:18.523Z",
+                                        "updatedAt": "2025-04-09T11:43:18.523Z"
+                                    }
+                                ],
+                                "toLinks": [],
+                                "graphNodeId": "d20997be-ec70-4bef-a597-40b0c05d8689"
+                            },
+                            {
+                                "id": "fa72d5a8-fc00-4ac5-994e-f39c5896b9c1",
+                                "templateGraphNodeId": "d20997be-ec70-4bef-a597-40b0c05d8689",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:18.504Z",
+                                "updatedAt": "2025-04-09T11:43:18.504Z",
+                                "fromLinks": [],
+                                "toLinks": [],
+                                "graphNodeId": "d20997be-ec70-4bef-a597-40b0c05d8689"
+                            }
+                        ],
+                        "objectCategoryKey": "PROCESS_IO"
+                    }
+                ]
+            },
+            {
+                "id": "5316e165-a036-48d1-a00e-0517c8318c77",
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "1.0",
+                "environment": "DEVELOPMENT",
+                "description": null,
+                "isExperimental": false,
+                "canvasGraph": {
+                    "edges": [
+                        {
+                            "data": {
+                                "id": "7891d04a-e081-409d-843b-e7755a01c945",
+                                "type": "default"
+                            },
+                            "source": "d86c76b6-7268-4bf2-93bd-15fb321d11f4.output",
+                            "target": "6741d4fd-ee53-4632-a796-ae03087446b3.input"
+                        },
+                        {
+                            "data": {},
+                            "source": "6741d4fd-ee53-4632-a796-ae03087446b3.output",
+                            "target": "13239c07-4ffe-43ae-842a-8561b6d85401.input"
+                        },
+                        {
+                            "data": {
+                                "id": "7aa3cb8c-3354-41af-8b1e-b406cbb83acf",
+                                "type": "default"
+                            },
+                            "source": "13239c07-4ffe-43ae-842a-8561b6d85401.output",
+                            "target": "563e8024-a8c9-4cfa-9c94-bf959a99505f.input"
+                        }
+                    ],
+                    "nodes": [
+                        {
+                            "id": "d86c76b6-7268-4bf2-93bd-15fb321d11f4",
+                            "top": -179,
+                            "left": -409,
+                            "type": "objectType",
+                            "label": "Process Input",
+                            "state": "CONFIGURED",
+                            "nodeType": "objectType",
+                            "objectTypeKey": "PROCESS_INPUT",
+                            "objectCategoryKey": "PROCESS_IO"
+                        },
+                        {
+                            "id": "6741d4fd-ee53-4632-a796-ae03087446b3",
+                            "top": -150,
+                            "left": -174,
+                            "label": "Spark Processor",
+                            "ports": [
+                                {
+                                    "id": "6741d4fd-ee53-4632-a796-ae03087446b3.input",
+                                    "type": "multiInput"
+                                },
+                                {
+                                    "id": "6741d4fd-ee53-4632-a796-ae03087446b3.output",
+                                    "type": "multiOutputLocked"
+                                }
+                            ],
+                            "state": "CONFIGURED",
+                            "nodeType": "process",
+                            "processTypeKey": "SPARK_PROCESSOR"
+                        },
+                        {
+                            "id": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                            "top": -150,
+                            "left": 24.5,
+                            "label": "Output",
+                            "ports": [
+                                {
+                                    "id": "13239c07-4ffe-43ae-842a-8561b6d85401.input",
+                                    "type": "singleInputLocked"
+                                },
+                                {
+                                    "id": "13239c07-4ffe-43ae-842a-8561b6d85401.output",
+                                    "type": "multiOutput"
+                                }
+                            ],
+                            "state": null,
+                            "nodeType": "objectType",
+                            "objectTypeKey": "TABLE",
+                            "objectCategoryKey": "DATASET"
+                        },
+                        {
+                            "id": "563e8024-a8c9-4cfa-9c94-bf959a99505f",
+                            "top": -143,
+                            "left": 239.5,
+                            "type": "objectType",
+                            "label": "Process Output",
+                            "state": "CONFIGURED",
+                            "nodeType": "objectType",
+                            "objectTypeKey": "PROCESS_OUTPUT",
+                            "objectCategoryKey": "PROCESS_IO"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "id": "d86c76b6-7268-4bf2-93bd-15fb321d11f4.input"
+                        },
+                        {
+                            "id": "d86c76b6-7268-4bf2-93bd-15fb321d11f4.output"
+                        },
+                        {
+                            "id": "6741d4fd-ee53-4632-a796-ae03087446b3.input"
+                        },
+                        {
+                            "id": "6741d4fd-ee53-4632-a796-ae03087446b3.output"
+                        },
+                        {
+                            "id": "13239c07-4ffe-43ae-842a-8561b6d85401.input"
+                        },
+                        {
+                            "id": "13239c07-4ffe-43ae-842a-8561b6d85401.output"
+                        },
+                        {
+                            "id": "563e8024-a8c9-4cfa-9c94-bf959a99505f.input"
+                        },
+                        {
+                            "id": "563e8024-a8c9-4cfa-9c94-bf959a99505f.output"
+                        }
+                    ],
+                    "groups": []
+                },
+                "parameters": {
+                    "variables": {
+                        "steps": [
+                            {
+                                "name": "Parameters",
+                                "enabled": true,
+                                "sections": [
+                                    {
+                                        "id": "edb865f1-6336-438d-a99b-e0ae233b2102",
+                                        "fields": [
+                                            {
+                                                "id": "5278a2a7-f6ba-4235-babd-b5c90d6f4138",
+                                                "required": true,
+                                                "fieldName": "Branch",
+                                                "formField": "input",
+                                                "validation": {
+                                                    "validationPattern": []
+                                                },
+                                                "defaultValue": null,
+                                                "parameterName": "@branch",
+                                                "formFieldStyles": {
+                                                    "hint": null,
+                                                    "width": null,
+                                                    "startNewRow": false
+                                                },
+                                                "formFieldParameters": {}
+                                            }
+                                        ],
+                                        "sectionName": "Git",
+                                        "showSection": true
+                                    },
+                                    {
+                                        "id": "7fa01c24-8f91-4594-94cd-e23b5a436b0f",
+                                        "fields": [
+                                            {
+                                                "id": "daeca7b1-d85e-4422-ad5d-fbf03b1d30ec",
+                                                "required": false,
+                                                "fieldName": "IncludeNotes",
+                                                "formField": "checkbox",
+                                                "validation": {},
+                                                "defaultValue": true,
+                                                "parameterName": "@includeNotes",
+                                                "formFieldStyles": {
+                                                    "hint": null,
+                                                    "width": null,
+                                                    "startNewRow": false
+                                                },
+                                                "formFieldParameters": {}
+                                            }
+                                        ],
+                                        "sectionName": "App Export",
+                                        "showSection": true
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Mapping",
+                                "enabled": false,
+                                "sections": []
+                            }
+                        ]
+                    }
+                },
+                "createdById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+                "modifiedById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+                "createdAt": "2025-04-08T10:24:37.143Z",
+                "updatedAt": "2025-04-09T11:43:02.410Z",
+                "graphNodes": [
+                    {
+                        "id": "3c683911-c628-4372-b5fc-c3aa77dddd33",
+                        "appNodeId": "d86c76b6-7268-4bf2-93bd-15fb321d11f4",
+                        "name": "Process Input",
+                        "templateVersionId": "5316e165-a036-48d1-a00e-0517c8318c77",
+                        "objectTypeKey": "PROCESS_INPUT",
+                        "processTypeKey": null,
+                        "displayGroup": null,
+                        "state": "CONFIGURED",
+                        "parameters": {
+                            "system": {
+                                "isDeletable": true
+                            },
+                            "parameters": {
+                                "inputs": [
+                                    {
+                                        "objectCategoryKey": "CONNECTION",
+                                        "objectTypes": [
+                                            "MATOMO_API"
+                                        ],
+                                        "label": "Git Connection",
+                                        "hint": "",
+                                        "required": true,
+                                        "targetInputId": "97aa9fb5-c717-4c96-9661-afd0330035eb"
+                                    }
+                                ]
+                            }
+                        },
+                        "schemaId": null,
+                        "createdById": null,
+                        "modifiedById": null,
+                        "createdAt": "2025-04-09T11:43:02.422Z",
+                        "updatedAt": "2025-04-09T11:43:02.422Z",
+                        "templateGraphNodePorts": [
+                            {
+                                "id": "a3a00171-2e3d-4a76-a897-f3103a02b5f1",
+                                "templateGraphNodeId": "3c683911-c628-4372-b5fc-c3aa77dddd33",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "4bc08a5e-e8a8-4144-8545-e8038db45750",
+                                        "fromPortId": "a3a00171-2e3d-4a76-a897-f3103a02b5f1",
+                                        "toPortId": "a5a21c6a-361b-4f27-9149-193cb013f447",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "0d51a55d-1cdc-42cd-9e7e-1830ee71c2df",
+                                "templateGraphNodeId": "3c683911-c628-4372-b5fc-c3aa77dddd33",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": []
+                            }
+                        ],
+                        "processType": null,
+                        "objectType": {
+                            "key": "PROCESS_INPUT",
+                            "name": "Process Input",
+                            "objectCategoryKey": "PROCESS_IO",
+                            "iconKey": "PROCESS_INPUT",
+                            "icon": {
+                                "name": "process_input.svg"
+                            }
+                        },
+                        "graphNodePorts": [
+                            {
+                                "id": "a3a00171-2e3d-4a76-a897-f3103a02b5f1",
+                                "templateGraphNodeId": "3c683911-c628-4372-b5fc-c3aa77dddd33",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "4bc08a5e-e8a8-4144-8545-e8038db45750",
+                                        "fromPortId": "a3a00171-2e3d-4a76-a897-f3103a02b5f1",
+                                        "toPortId": "a5a21c6a-361b-4f27-9149-193cb013f447",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "graphNodeId": "3c683911-c628-4372-b5fc-c3aa77dddd33"
+                            },
+                            {
+                                "id": "0d51a55d-1cdc-42cd-9e7e-1830ee71c2df",
+                                "templateGraphNodeId": "3c683911-c628-4372-b5fc-c3aa77dddd33",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": [],
+                                "graphNodeId": "3c683911-c628-4372-b5fc-c3aa77dddd33"
+                            }
+                        ],
+                        "objectCategoryKey": "PROCESS_IO"
+                    },
+                    {
+                        "id": "0c8e9904-8a34-4ab7-a5f7-b191b5a60b4e",
+                        "appNodeId": "6741d4fd-ee53-4632-a796-ae03087446b3",
+                        "name": "Spark Processor",
+                        "templateVersionId": "5316e165-a036-48d1-a00e-0517c8318c77",
+                        "objectTypeKey": null,
+                        "processTypeKey": "SPARK_PROCESSOR",
+                        "displayGroup": null,
+                        "state": "CONFIGURED",
+                        "parameters": {
+                            "system": {
+                                "isDeletable": true
+                            },
+                            "filters": {},
+                            "parameters": {
+                                "language": "PYTHON",
+                                "fileName": null,
+                                "sparkScript": "#pip3 install gitpython\n\nimport os\nimport requests\nimport git\nimport json\nimport shutil\nimport zipfile\nimport glob\n\ndef generate_auth_token(url, payload, host, headers=None):\n    if headers is None:\n        headers = {}\n    headers[\"Host\"] = host\n    headers[\"Content-Type\"] = \"application/json\"\n    response = requests.post(url, headers=headers, json=payload, timeout=10, verify=False)\n    response.raise_for_status()\n    response_data = response.json()\n    token = response_data.get(\"token\")\n    return token\n\ndef download_file(api_url, output_path, host, headers):\n    if headers is None:\n        headers = {}\n    headers[\"Host\"] = host\n    headers[\"Content-Type\"] = \"application/json\"\n    if os.path.exists(output_path):\n        os.remove(output_path)\n        print(f\"Existing file removed: {output_path}\")\n    response = requests.get(api_url, headers=headers, stream=True, verify=False)\n    if response.status_code == 200:\n        with open(output_path, \"wb\") as file:\n            for chunk in response.iter_content(chunk_size=8192):\n                file.write(chunk)\n        print(f\"File downloaded: {output_path}\")\n    else:\n        raise Exception(f\"Failed to download file. Status code: {response.status_code}\")\n\ndef clone_repo(repo_url, local_path, branch, oauth_token):\n    if os.path.exists(local_path):\n        print(f\"Repository already exists at {local_path}. Cleaning up...\")\n        shutil.rmtree(local_path)\n        print(f\"Existing repository removed from {local_path}\")\n    auth_url = repo_url.replace(\"https://\", f\"https://{oauth_token}@\")\n    repo = git.Repo.clone_from(auth_url, local_path, branch=branch)\n    print(f\"Repository cloned to {local_path}\")\n    return repo\n\ndef commit_and_push(repo, file_paths, commit_message):\n    repo.index.add(file_paths)\n    repo.index.commit(commit_message)\n    origin = repo.remote(name=\"origin\")\n    origin.push()\n    print(f\"Committed and pushed: {file_paths}\")\n\ndef extract_zip(zip_path, extract_to):\n    with zipfile.ZipFile(zip_path, 'r') as zip_ref:\n        zip_ref.extractall(extract_to)\n    print(f\"Extracted ZIP contents to {extract_to}\")\n\ndef convert_bool_to_yes_no(value):\n    if value.strip().lower() == 'true':\n        return 'yes'\n    else:\n        return 'no'\n\ndef pretty_print_json(directory):\n    json_files = glob.glob(os.path.join(directory, \"**\", \"*.json\"), recursive=True)\n    for json_file in json_files:\n        with open(json_file, \"r\", encoding=\"utf-8\") as file:\n            data = json.load(file)\n        with open(json_file, \"w\", encoding=\"utf-8\") as file:\n            json.dump(data, file, indent=4, ensure_ascii=False)\n        print(f\"Formatted JSON: {json_file}\")\n\n# API Details\ninternal_node_ip = sc._jvm.com.syntasa.utils.SystemUtils.messagingServer().split(\":\")[0]\nport = \"@port\".replace(\"'\",\"\").strip()\nbase_url = f\"https://{internal_node_ip}:{port}\"\ngenerate_token_url = f\"{base_url}/loginUser\"\nappid = str(synutils.object.getAction().getApp().getId())\nappkey = str(synutils.object.getAction().getApp().getKey())\nenvironment = str(synutils.object.getAction().getEnvironment())\nincludeNotes = convert_bool_to_yes_no(\"@includeNotes\")\nexport_url = f\"{base_url}/api/v1/export/app?appId={appid}&environment={environment}&includeNotes={includeNotes}\"\nusername = \"@username\".replace(\"'\",\"\").strip()\npassword = \"@password\".replace(\"'\",\"\").strip()\nhost = \"@hostname\".replace(\"'\",\"\").strip()\ncredentials = {\"authType\": \"LOCAL\",\"username\": username,\"password\": password}\nzip_file_path = \"/tmp/export.zip\"\n\n# Git Repo Details\noauth_token = str(synutils.object.getAction().getJobStep().getProcessDetails().getInputConnection().getParameters().getAuthToken())\nr_protocol = str(synutils.object.getAction().getJobStep().getProcessDetails().getInputConnection().getParameters().getProtocol()).lower()\nr_url = str(synutils.object.getAction().getJobStep().getProcessDetails().getInputConnection().getParameters().getUrl())\nrepo_url = f\"{r_protocol}://{r_url}\"\nbranch = \"@branch\".replace(\"'\",\"\").strip()\nlocal_repo_path = \"./repo\"\n\n# Start of process\ntoken = generate_auth_token(generate_token_url, credentials, host)\nbearer_token = { \"Authorization\": f\"Bearer {token}\" }\n\ndownload_file(export_url, zip_file_path, host, bearer_token)\nrepo = clone_repo(repo_url, local_repo_path, branch, oauth_token)\n\ndest_dir = os.path.join(local_repo_path, appkey, environment.lower())\nos.makedirs(dest_dir, exist_ok=True)\nextract_zip(zip_file_path, dest_dir)\npretty_print_json(dest_dir)\nextracted_files = [\n    os.path.relpath(f, local_repo_path)\n    for f in glob.glob(f\"{dest_dir}/**\", recursive=True) if os.path.isfile(f)\n]\n\ncommit_and_push(repo, extracted_files, \"commit from udp\")\n",
+                                "libraryConfigs": [
+                                    {
+                                        "name": "gitpython",
+                                        "version": ""
+                                    }
+                                ],
+                                "version": "3.9",
+                                "customCondaScript": null,
+                                "codeParams": [
+                                    {
+                                        "name": "@InputConnection1",
+                                        "value": "Git Connection",
+                                        "appNodeId": "97aa9fb5-c717-4c96-9661-afd0330035eb",
+                                        "type": "INPUT",
+                                        "subType": "CONNECTION"
+                                    },
+                                    {
+                                        "name": "@OutputTable1",
+                                        "value": "@database.output",
+                                        "appNodeId": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                                        "type": "OUTPUT",
+                                        "subType": "DATASET"
+                                    },
+                                    {
+                                        "name": "@username",
+                                        "value": "puneet",
+                                        "appNodeId": null,
+                                        "type": "USER_DEFINED",
+                                        "subType": ""
+                                    },
+                                    {
+                                        "name": "@password",
+                                        "value": "123456",
+                                        "appNodeId": null,
+                                        "type": "USER_DEFINED",
+                                        "subType": ""
+                                    },
+                                    {
+                                        "name": "@hostname",
+                                        "value": "syn-qa-kube-gcp.syntasa.net",
+                                        "appNodeId": null,
+                                        "type": "USER_DEFINED",
+                                        "subType": ""
+                                    },
+                                    {
+                                        "name": "@port",
+                                        "value": "31643",
+                                        "appNodeId": null,
+                                        "type": "USER_DEFINED",
+                                        "subType": ""
+                                    }
+                                ]
+                            },
+                            "outputParameters": {
+                                "datasets": [
+                                    {
+                                        "appNodeId": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                                        "displayName": "Output",
+                                        "objectTypeKey": "TABLE",
+                                        "loadToBigQuery": true,
+                                        "loadToRedshift": false,
+                                        "fileFormat": "PARQUET",
+                                        "tableName": "output"
+                                    }
+                                ]
+                            }
+                        },
+                        "schemaId": null,
+                        "createdById": null,
+                        "modifiedById": null,
+                        "createdAt": "2025-04-09T11:43:02.422Z",
+                        "updatedAt": "2025-04-09T11:43:02.422Z",
+                        "templateGraphNodePorts": [
+                            {
+                                "id": "43442727-eb66-424a-9d68-573125cfcd1c",
+                                "templateGraphNodeId": "0c8e9904-8a34-4ab7-a5f7-b191b5a60b4e",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "ef008497-7f21-4283-816c-265b25af640a",
+                                        "fromPortId": "43442727-eb66-424a-9d68-573125cfcd1c",
+                                        "toPortId": "e8dd07a3-c1cb-4c3b-8c23-b975ec6c1ce6",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "a5a21c6a-361b-4f27-9149-193cb013f447",
+                                "templateGraphNodeId": "0c8e9904-8a34-4ab7-a5f7-b191b5a60b4e",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "4bc08a5e-e8a8-4144-8545-e8038db45750",
+                                        "fromPortId": "a3a00171-2e3d-4a76-a897-f3103a02b5f1",
+                                        "toPortId": "a5a21c6a-361b-4f27-9149-193cb013f447",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "toLinks": []
+                            }
+                        ],
+                        "processType": {
+                            "key": "SPARK_PROCESSOR",
+                            "name": "Spark Processor",
+                            "iconKey": "SPARK_PROCESSOR",
+                            "runtime": "SPARK",
+                            "schemaAware": false,
+                            "parameters": null,
+                            "icon": {
+                                "key": "SPARK_PROCESSOR",
+                                "name": "code.svg",
+                                "isSystem": true
+                            }
+                        },
+                        "objectType": null,
+                        "templateIcon": {
+                            "key": "SPARK_PROCESSOR",
+                            "name": "code.svg",
+                            "isSystem": true
+                        },
+                        "graphNodePorts": [
+                            {
+                                "id": "43442727-eb66-424a-9d68-573125cfcd1c",
+                                "templateGraphNodeId": "0c8e9904-8a34-4ab7-a5f7-b191b5a60b4e",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "ef008497-7f21-4283-816c-265b25af640a",
+                                        "fromPortId": "43442727-eb66-424a-9d68-573125cfcd1c",
+                                        "toPortId": "e8dd07a3-c1cb-4c3b-8c23-b975ec6c1ce6",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "graphNodeId": "0c8e9904-8a34-4ab7-a5f7-b191b5a60b4e"
+                            },
+                            {
+                                "id": "a5a21c6a-361b-4f27-9149-193cb013f447",
+                                "templateGraphNodeId": "0c8e9904-8a34-4ab7-a5f7-b191b5a60b4e",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "4bc08a5e-e8a8-4144-8545-e8038db45750",
+                                        "fromPortId": "a3a00171-2e3d-4a76-a897-f3103a02b5f1",
+                                        "toPortId": "a5a21c6a-361b-4f27-9149-193cb013f447",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "toLinks": [],
+                                "graphNodeId": "0c8e9904-8a34-4ab7-a5f7-b191b5a60b4e"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "83edd875-7eea-48ad-a999-c5e96bc1239d",
+                        "appNodeId": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                        "name": "Output",
+                        "templateVersionId": "5316e165-a036-48d1-a00e-0517c8318c77",
+                        "objectTypeKey": "TABLE",
+                        "processTypeKey": null,
+                        "displayGroup": null,
+                        "state": null,
+                        "parameters": {
+                            "system": {
+                                "isDeletable": true
+                            }
+                        },
+                        "schemaId": null,
+                        "createdById": null,
+                        "modifiedById": null,
+                        "createdAt": "2025-04-09T11:43:02.422Z",
+                        "updatedAt": "2025-04-09T11:43:02.422Z",
+                        "templateGraphNodePorts": [
+                            {
+                                "id": "cac748ff-9ed3-463e-95de-53b16b6866ac",
+                                "templateGraphNodeId": "83edd875-7eea-48ad-a999-c5e96bc1239d",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "94005fc5-a0a8-4c53-b9cf-dee348e81304",
+                                        "fromPortId": "cac748ff-9ed3-463e-95de-53b16b6866ac",
+                                        "toPortId": "6f94e0e2-32d2-4bc9-9d74-1adc23198cb4",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "e8dd07a3-c1cb-4c3b-8c23-b975ec6c1ce6",
+                                "templateGraphNodeId": "83edd875-7eea-48ad-a999-c5e96bc1239d",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "ef008497-7f21-4283-816c-265b25af640a",
+                                        "fromPortId": "43442727-eb66-424a-9d68-573125cfcd1c",
+                                        "toPortId": "e8dd07a3-c1cb-4c3b-8c23-b975ec6c1ce6",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "toLinks": []
+                            }
+                        ],
+                        "processType": null,
+                        "objectType": {
+                            "key": "TABLE",
+                            "name": "Table",
+                            "objectCategoryKey": "DATASET",
+                            "iconKey": "TABLE",
+                            "icon": {
+                                "name": "table.svg"
+                            }
+                        },
+                        "graphNodePorts": [
+                            {
+                                "id": "cac748ff-9ed3-463e-95de-53b16b6866ac",
+                                "templateGraphNodeId": "83edd875-7eea-48ad-a999-c5e96bc1239d",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": [
+                                    {
+                                        "id": "94005fc5-a0a8-4c53-b9cf-dee348e81304",
+                                        "fromPortId": "cac748ff-9ed3-463e-95de-53b16b6866ac",
+                                        "toPortId": "6f94e0e2-32d2-4bc9-9d74-1adc23198cb4",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "graphNodeId": "83edd875-7eea-48ad-a999-c5e96bc1239d"
+                            },
+                            {
+                                "id": "e8dd07a3-c1cb-4c3b-8c23-b975ec6c1ce6",
+                                "templateGraphNodeId": "83edd875-7eea-48ad-a999-c5e96bc1239d",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "ef008497-7f21-4283-816c-265b25af640a",
+                                        "fromPortId": "43442727-eb66-424a-9d68-573125cfcd1c",
+                                        "toPortId": "e8dd07a3-c1cb-4c3b-8c23-b975ec6c1ce6",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "toLinks": [],
+                                "graphNodeId": "83edd875-7eea-48ad-a999-c5e96bc1239d"
+                            }
+                        ],
+                        "objectCategoryKey": "DATASET"
+                    },
+                    {
+                        "id": "14fae1bd-cf49-4c35-a173-ac1a25e360c4",
+                        "appNodeId": "563e8024-a8c9-4cfa-9c94-bf959a99505f",
+                        "name": "Process Output",
+                        "templateVersionId": "5316e165-a036-48d1-a00e-0517c8318c77",
+                        "objectTypeKey": "PROCESS_OUTPUT",
+                        "processTypeKey": null,
+                        "displayGroup": null,
+                        "state": "CONFIGURED",
+                        "parameters": {
+                            "system": {
+                                "isDeletable": true
+                            },
+                            "parameters": {
+                                "outputs": [
+                                    {
+                                        "targetOutputId": "663584cd-fb74-4978-bd8a-59fe6b7617a9",
+                                        "source": "13239c07-4ffe-43ae-842a-8561b6d85401",
+                                        "hint": "Output",
+                                        "objectTypeKey": "TABLE"
+                                    }
+                                ]
+                            }
+                        },
+                        "schemaId": null,
+                        "createdById": null,
+                        "modifiedById": null,
+                        "createdAt": "2025-04-09T11:43:02.422Z",
+                        "updatedAt": "2025-04-09T11:43:02.422Z",
+                        "templateGraphNodePorts": [
+                            {
+                                "id": "da4d8627-0a00-422c-9cfd-8fcff938b13d",
+                                "templateGraphNodeId": "14fae1bd-cf49-4c35-a173-ac1a25e360c4",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": []
+                            },
+                            {
+                                "id": "6f94e0e2-32d2-4bc9-9d74-1adc23198cb4",
+                                "templateGraphNodeId": "14fae1bd-cf49-4c35-a173-ac1a25e360c4",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "94005fc5-a0a8-4c53-b9cf-dee348e81304",
+                                        "fromPortId": "cac748ff-9ed3-463e-95de-53b16b6866ac",
+                                        "toPortId": "6f94e0e2-32d2-4bc9-9d74-1adc23198cb4",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "toLinks": []
+                            }
+                        ],
+                        "processType": null,
+                        "objectType": {
+                            "key": "PROCESS_OUTPUT",
+                            "name": "Process Output",
+                            "objectCategoryKey": "PROCESS_IO",
+                            "iconKey": "PROCESS_OUTPUT",
+                            "icon": {
+                                "name": "process_output.svg"
+                            }
+                        },
+                        "graphNodePorts": [
+                            {
+                                "id": "da4d8627-0a00-422c-9cfd-8fcff938b13d",
+                                "templateGraphNodeId": "14fae1bd-cf49-4c35-a173-ac1a25e360c4",
+                                "direction": "OUTPUT",
+                                "location": [
+                                    "right"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [],
+                                "toLinks": [],
+                                "graphNodeId": "14fae1bd-cf49-4c35-a173-ac1a25e360c4"
+                            },
+                            {
+                                "id": "6f94e0e2-32d2-4bc9-9d74-1adc23198cb4",
+                                "templateGraphNodeId": "14fae1bd-cf49-4c35-a173-ac1a25e360c4",
+                                "direction": "INPUT",
+                                "location": [
+                                    "left"
+                                ],
+                                "createdById": null,
+                                "modifiedById": null,
+                                "createdAt": "2025-04-09T11:43:02.437Z",
+                                "updatedAt": "2025-04-09T11:43:02.437Z",
+                                "fromLinks": [
+                                    {
+                                        "id": "94005fc5-a0a8-4c53-b9cf-dee348e81304",
+                                        "fromPortId": "cac748ff-9ed3-463e-95de-53b16b6866ac",
+                                        "toPortId": "6f94e0e2-32d2-4bc9-9d74-1adc23198cb4",
+                                        "createdById": null,
+                                        "modifiedById": null,
+                                        "createdAt": "2025-04-09T11:43:02.457Z",
+                                        "updatedAt": "2025-04-09T11:43:02.457Z"
+                                    }
+                                ],
+                                "toLinks": [],
+                                "graphNodeId": "14fae1bd-cf49-4c35-a173-ac1a25e360c4"
+                            }
+                        ],
+                        "objectCategoryKey": "PROCESS_IO"
+                    }
+                ]
+            }
+        ],
+        "versionInfo": [
+            {
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "8.2.1_1.5",
+                "templateVersionId": "93664482-2f32-470f-9277-aa356358ed26",
+                "createdAt": "2025-04-09T11:43:18.484Z"
+            },
+            {
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "alpha1.6",
+                "templateVersionId": "878685e2-b772-4345-8b94-1c216c89f2a6",
+                "createdAt": "2025-04-09T06:51:45.394Z"
+            },
+            {
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "alpha1.5",
+                "templateVersionId": "9506f86b-ca30-4fed-afe7-1dce3e140e88",
+                "createdAt": "2025-04-09T06:47:28.128Z"
+            },
+            {
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "alpha1.4",
+                "templateVersionId": "0865e1de-6a1e-4463-82a4-c0327a821926",
+                "createdAt": "2025-04-09T06:08:58.279Z"
+            },
+            {
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "8.2.1_alpha1.3",
+                "templateVersionId": "0a1ee058-10bf-430b-9a03-6a6657501766",
+                "createdAt": "2025-04-09T06:04:51.156Z"
+            },
+            {
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "8.2.1.alpha.2.0",
+                "templateVersionId": "73614059-efa0-4ac9-b4e0-cf29208e1c9f",
+                "createdAt": "2025-04-09T05:26:16.167Z"
+            },
+            {
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "8.2.1-alpha1",
+                "templateVersionId": "7dfe0361-41af-47ff-81c7-b2b32149f1b8",
+                "createdAt": "2025-04-08T11:25:49.161Z"
+            },
+            {
+                "templateId": "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+                "version": "8.2.1",
+                "templateVersionId": "cadcc097-71f7-4bf7-b303-b31773fb28d1",
+                "createdAt": "2025-04-08T10:30:52.026Z"
+            }
+        ]
+    }
+]

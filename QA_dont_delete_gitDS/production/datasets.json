@@ -1,0 +1,118 @@
+[
+    {
+        "id": "0f59855e-d83d-46a2-8785-24ec65ae4f0d",
+        "name": "qa_dont_delete_spark_output",
+        "database": "QA_dont_delete_gitDS_prod",
+        "environment": "PRODUCTION",
+        "accessability": "PUBLIC",
+        "partitionScheme": "DAILY",
+        "partitionedDateColumnId": null,
+        "timeSource": null,
+        "timeFormat": null,
+        "localIdentitySource": null,
+        "inputSourceColumnId": null,
+        "parameters": {
+            "fileFormat": "PARQUET"
+        },
+        "deletedAt": null,
+        "columns": [],
+        "dataWarehouses": [
+            {
+                "id": "d4fa69f4-de76-493c-a61a-75d4103b44a8",
+                "datasetId": "0f59855e-d83d-46a2-8785-24ec65ae4f0d",
+                "warehouseType": "SYNTASA_EVENT_STORE",
+                "dataset_id": "0f59855e-d83d-46a2-8785-24ec65ae4f0d"
+            },
+            {
+                "id": "49660c9b-2147-435b-a6af-2d3ded574ea9",
+                "datasetId": "0f59855e-d83d-46a2-8785-24ec65ae4f0d",
+                "warehouseType": "BIG_QUERY",
+                "dataset_id": "0f59855e-d83d-46a2-8785-24ec65ae4f0d"
+            }
+        ],
+        "objectTypeKey": "TABLE",
+        "appNodeId": "09b094ff-430f-47de-891c-9d615be88536",
+        "eventStore": {
+            "id": "c9cd35b6-3141-4826-a9c0-837788aaad96",
+            "name": "QA_dont_delete_gitDS",
+            "type": "EVENTSTORE",
+            "key": "QA_dont_delete_gitDS",
+            "developmentPath": "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_dont_delete_gitDS_dev",
+            "productionPath": "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_dont_delete_gitDS_prod",
+            "snapshotPath": "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_dont_delete_gitDS_snap",
+            "snapshotDatabase": "QA_dont_delete_gitDS_snap",
+            "developmentDatabase": "QA_dont_delete_gitDS_dev",
+            "productionDatabase": "QA_dont_delete_gitDS_prod",
+            "developmentParameters": null,
+            "productionParameters": null,
+            "snapshotParameters": null,
+            "parameters": null,
+            "sharing": {
+                "shareType": "PUBLIC"
+            },
+            "ownerId": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+            "createdById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+            "modifiedById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+            "createdAt": "2025-04-08T10:32:17.826Z",
+            "updatedAt": "2025-04-08T10:32:17.826Z"
+        }
+    },
+    {
+        "id": "9b002b3e-d5f4-4c9a-89b8-f49e2782c809",
+        "name": "qa_dont_delete_gitds_output",
+        "database": "QA_dont_delete_gitDS_prod",
+        "environment": "PRODUCTION",
+        "accessability": "PUBLIC",
+        "partitionScheme": "DAILY",
+        "partitionedDateColumnId": null,
+        "timeSource": null,
+        "timeFormat": null,
+        "localIdentitySource": null,
+        "inputSourceColumnId": null,
+        "parameters": {
+            "fileFormat": "PARQUET"
+        },
+        "deletedAt": null,
+        "columns": [],
+        "dataWarehouses": [
+            {
+                "id": "86ec24e8-d526-412d-8ce0-00facda964ed",
+                "datasetId": "9b002b3e-d5f4-4c9a-89b8-f49e2782c809",
+                "warehouseType": "SYNTASA_EVENT_STORE",
+                "dataset_id": "9b002b3e-d5f4-4c9a-89b8-f49e2782c809"
+            },
+            {
+                "id": "7a776724-6b55-40de-b453-251e50c3ea38",
+                "datasetId": "9b002b3e-d5f4-4c9a-89b8-f49e2782c809",
+                "warehouseType": "BIG_QUERY",
+                "dataset_id": "9b002b3e-d5f4-4c9a-89b8-f49e2782c809"
+            }
+        ],
+        "objectTypeKey": "TABLE",
+        "appNodeId": "4109eb56-b729-4f1a-b733-6a4e1e84499b",
+        "eventStore": {
+            "id": "c9cd35b6-3141-4826-a9c0-837788aaad96",
+            "name": "QA_dont_delete_gitDS",
+            "type": "EVENTSTORE",
+            "key": "QA_dont_delete_gitDS",
+            "developmentPath": "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_dont_delete_gitDS_dev",
+            "productionPath": "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_dont_delete_gitDS_prod",
+            "snapshotPath": "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_dont_delete_gitDS_snap",
+            "snapshotDatabase": "QA_dont_delete_gitDS_snap",
+            "developmentDatabase": "QA_dont_delete_gitDS_dev",
+            "productionDatabase": "QA_dont_delete_gitDS_prod",
+            "developmentParameters": null,
+            "productionParameters": null,
+            "snapshotParameters": null,
+            "parameters": null,
+            "sharing": {
+                "shareType": "PUBLIC"
+            },
+            "ownerId": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+            "createdById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+            "modifiedById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+            "createdAt": "2025-04-08T10:32:17.826Z",
+            "updatedAt": "2025-04-08T10:32:17.826Z"
+        }
+    }
+]

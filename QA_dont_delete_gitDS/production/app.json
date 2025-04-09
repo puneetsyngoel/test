@@ -1,0 +1,34 @@
+{
+    "id": "7f46f19e-43b8-499e-aff0-9e9216cc3cd6",
+    "key": "QA_dont_delete_gitDS",
+    "appPrefix": "qa_dont_delete_gitds",
+    "name": "QA_dont_delete_gitDS",
+    "description": "",
+    "module": "SYNTHESIZER",
+    "partitionScheme": "DAILY",
+    "templateId": "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+    "eventStoreId": "c9cd35b6-3141-4826-a9c0-837788aaad96",
+    "iconKey": null,
+    "sharing": {
+        "shareType": "PUBLIC"
+    },
+    "ownerId": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById": "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "audienceVersion": null,
+    "createdAt": "2025-04-08T10:33:23.618Z",
+    "updatedAt": "2025-04-08T10:33:23.618Z",
+    "deletedAt": null,
+    "template": {
+        "name": "Synthesizer Free Form",
+        "key": "SYNTHESIZER_FREE_FORM",
+        "icon": {
+            "name": "unified_schema.png",
+            "isSystem": true,
+            "image": null
+        }
+    },
+    "icon": null,
+    "eventStoreType": "EVENTSTORE",
+    "eventStoreName": "QA_dont_delete_gitDS"
+}
