@@ -16,62 +16,13 @@
   "deletedAt" : null,
   "columns" : [ ],
   "dataWarehouses" : [ {
-    "id" : "9b33586a-922f-43f4-badb-a1988b508a06",
+    "id" : "2a33d9a9-6722-4183-a689-c358c1a08324",
     "datasetId" : "bb294789-aa27-4a5a-8fc0-32dcd5e43d43",
     "warehouseType" : "SYNTASA_EVENT_STORE",
     "dataset_id" : "bb294789-aa27-4a5a-8fc0-32dcd5e43d43"
   } ],
   "objectTypeKey" : "TABLE",
   "appNodeId" : "7963d8ab-c0f0-4115-bcbb-87cc7c1a93f1",
-  "eventStore" : {
-    "id" : "28a50c34-c489-46d8-8579-8353fb3ac16b",
-    "name" : "QA_DONT_DEL_ADHOC_8_3_0",
-    "type" : "EVENTSTORE",
-    "key" : "QA_DONT_DEL_ADHOC_8_3_0",
-    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_ADHOC_8_3_0_dev",
-    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DEL_ADHOC_8_3_0_prod",
-    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DEL_ADHOC_8_3_0_snap",
-    "snapshotDatabase" : "QA_DONT_DEL_ADHOC_8_3_0_snap",
-    "developmentDatabase" : "QA_DONT_DEL_ADHOC_8_3_0_dev",
-    "productionDatabase" : "QA_DONT_DEL_ADHOC_8_3_0_prod",
-    "developmentParameters" : null,
-    "productionParameters" : null,
-    "snapshotParameters" : null,
-    "parameters" : null,
-    "sharing" : {
-      "shareType" : "PUBLIC"
-    },
-    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
-    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
-    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
-    "createdAt" : "2025-05-22T12:56:08.216Z",
-    "updatedAt" : "2025-05-22T12:56:08.216Z"
-  }
-}, {
-  "id" : "a603c63a-2231-45ac-b617-316988876274",
-  "name" : "test_code_sma_9338_output",
-  "database" : "QA_DONT_DEL_ADHOC_8_3_0_dev",
-  "environment" : "DEVELOPMENT",
-  "accessability" : "PUBLIC",
-  "partitionScheme" : "DAILY",
-  "partitionedDateColumnId" : null,
-  "timeSource" : null,
-  "timeFormat" : null,
-  "localIdentitySource" : null,
-  "inputSourceColumnId" : null,
-  "parameters" : {
-    "fileFormat" : "PARQUET"
-  },
-  "deletedAt" : null,
-  "columns" : [ ],
-  "dataWarehouses" : [ {
-    "id" : "5712abb0-c06b-40b0-8daf-59c786b2d935",
-    "datasetId" : "a603c63a-2231-45ac-b617-316988876274",
-    "warehouseType" : "SYNTASA_EVENT_STORE",
-    "dataset_id" : "a603c63a-2231-45ac-b617-316988876274"
-  } ],
-  "objectTypeKey" : "TABLE",
-  "appNodeId" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00",
   "eventStore" : {
     "id" : "28a50c34-c489-46d8-8579-8353fb3ac16b",
     "name" : "QA_DONT_DEL_ADHOC_8_3_0",

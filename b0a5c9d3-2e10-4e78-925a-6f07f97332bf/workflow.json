@@ -1,5 +1,5 @@
 {
-  "lastUserSave" : "2025-07-22T10:11:33.000Z",
+  "lastUserSave" : "2025-07-22T10:30:13.000Z",
   "id" : "a2857531-f9ec-464e-b49f-79a728700003",
   "name" : "Development",
   "description" : null,
@@ -47,39 +47,6 @@
       "id" : "7963d8ab-c0f0-4115-bcbb-87cc7c1a93f1",
       "nodeType" : "objectType"
     }, {
-      "left" : -520,
-      "name" : "Container Code Processor",
-      "state" : "CONFIGURED",
-      "ports" : [ {
-        "id" : "88ced9de-eaf5-4c5a-be71-10e0419609a1.input",
-        "type" : "multiInput"
-      }, {
-        "id" : "88ced9de-eaf5-4c5a-be71-10e0419609a1.output",
-        "type" : "multiOutputLocked"
-      } ],
-      "label" : "Code Container Processor",
-      "top" : -241,
-      "processTypeKey" : "CONTAINER_CODE_PROCESSOR",
-      "id" : "88ced9de-eaf5-4c5a-be71-10e0419609a1",
-      "nodeType" : "process"
-    }, {
-      "objectCategoryKey" : "DATASET",
-      "objectTypeKey" : "TABLE",
-      "left" : -316,
-      "state" : null,
-      "ports" : [ {
-        "id" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00.input",
-        "type" : "singleInputLocked"
-      }, {
-        "id" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00.output",
-        "type" : "multiOutput"
-      } ],
-      "label" : "test_code_sma_9338_output",
-      "top" : -274,
-      "processTypeKey" : null,
-      "id" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00",
-      "nodeType" : "objectType"
-    }, {
       "id" : "a9ffa039-58bb-4de6-9a7a-d4ce281b76a3",
       "top" : -52.428028195140016,
       "left" : -501.33472454090145,
@@ -109,20 +76,14 @@
       "top" : -52.428028195140016,
       "processTypeKey" : null,
       "id" : "d5e81163-9abb-4d9c-9411-6544ea76a682",
-      "nodeType" : "objectType"
+      "nodeType" : "objectType",
+      "state" : null
     } ],
     "edges" : [ {
       "source" : "e88df056-280d-46e0-b4cc-2606f30dfc01.output",
       "target" : "6d4c5e84-a1fd-4f1a-af40-ea588834f3e7.input",
       "data" : {
         "id" : "ea110dae-d486-42a0-9d1d-56805d5dc08f",
-        "type" : "default"
-      }
-    }, {
-      "source" : "e88df056-280d-46e0-b4cc-2606f30dfc01.output",
-      "target" : "88ced9de-eaf5-4c5a-be71-10e0419609a1.input",
-      "data" : {
-        "id" : "d001b0fd-c2dc-4db2-b27d-34b6df8926f4",
         "type" : "default"
       }
     }, {
@@ -135,10 +96,6 @@
     }, {
       "source" : "6d4c5e84-a1fd-4f1a-af40-ea588834f3e7.output",
       "target" : "7963d8ab-c0f0-4115-bcbb-87cc7c1a93f1.input",
-      "data" : { }
-    }, {
-      "source" : "88ced9de-eaf5-4c5a-be71-10e0419609a1.output",
-      "target" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00.input",
       "data" : { }
     }, {
       "source" : "a9ffa039-58bb-4de6-9a7a-d4ce281b76a3.output",
@@ -158,14 +115,6 @@
       "id" : "7963d8ab-c0f0-4115-bcbb-87cc7c1a93f1.input"
     }, {
       "id" : "7963d8ab-c0f0-4115-bcbb-87cc7c1a93f1.output"
-    }, {
-      "id" : "88ced9de-eaf5-4c5a-be71-10e0419609a1.input"
-    }, {
-      "id" : "88ced9de-eaf5-4c5a-be71-10e0419609a1.output"
-    }, {
-      "id" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00.input"
-    }, {
-      "id" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00.output"
     }, {
       "id" : "a9ffa039-58bb-4de6-9a7a-d4ce281b76a3.input"
     }, {
@@ -188,12 +137,6 @@
       "defaultRuntimeId" : null,
       "templateIconKey" : "SPARK_PROCESSOR"
     }, {
-      "graphNodeId" : "f890b133-e311-4e6a-91d6-d5568baa74ec",
-      "name" : "Code Container Processor",
-      "processTypeKey" : "CONTAINER_CODE_PROCESSOR",
-      "defaultRuntimeId" : null,
-      "templateIconKey" : "CONTAINER_CODE_PROCESSOR"
-    }, {
       "graphNodeId" : "5128ea5c-58d2-40f9-bd2f-df9c00e7daa9",
       "name" : "Dash",
       "processTypeKey" : "DASH",
@@ -203,7 +146,7 @@
     "interactiveMode" : false
   },
   "createdAt" : "2025-07-14T08:44:39.619Z",
-  "updatedAt" : "2025-07-22T10:11:33.248Z",
+  "updatedAt" : "2025-07-22T10:30:13.397Z",
   "app" : {
     "id" : "b0a5c9d3-2e10-4e78-925a-6f07f97332bf",
     "key" : "Test_SMA_9338",
@@ -223,103 +166,10 @@
     "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
     "audienceVersion" : null,
     "createdAt" : "2025-07-14T08:44:39.550Z",
-    "updatedAt" : "2025-07-22T10:11:33.242Z",
+    "updatedAt" : "2025-07-22T10:30:13.392Z",
     "deletedAt" : null
   },
   "graphNodes" : [ {
-    "id" : "f890b133-e311-4e6a-91d6-d5568baa74ec",
-    "name" : "Code Container Processor",
-    "appNodeId" : "88ced9de-eaf5-4c5a-be71-10e0419609a1",
-    "workflowId" : "a2857531-f9ec-464e-b49f-79a728700003",
-    "objectTypeKey" : null,
-    "processTypeKey" : "CONTAINER_CODE_PROCESSOR",
-    "displayGroup" : null,
-    "connectionId" : null,
-    "externalDatasetId" : null,
-    "externalSchemaId" : null,
-    "datasetId" : null,
-    "streamId" : null,
-    "intelligenceHubId" : null,
-    "displayGroupKey" : null,
-    "state" : "CONFIGURED",
-    "parameters" : {
-      "system" : {
-        "isDeletable" : true
-      },
-      "parameters" : {
-        "language" : "SCALA",
-        "fileName" : null,
-        "sparkScript" : "print('hello')",
-        "codeParams" : [ {
-          "name" : "@InputConnection1",
-          "value" : "QA_AUTO_DONT_DEL_GCS",
-          "appNodeId" : "e88df056-280d-46e0-b4cc-2606f30dfc01",
-          "type" : "INPUT",
-          "subType" : "CONNECTION"
-        }, {
-          "name" : "@OutputTable1",
-          "value" : "@database.test_code_sma_9338_output",
-          "appNodeId" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00",
-          "type" : "OUTPUT",
-          "subType" : "DATASET"
-        } ]
-      },
-      "filters" : { },
-      "outputParameters" : {
-        "datasets" : [ {
-          "appNodeId" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00",
-          "displayName" : "test_code_sma_9338_output",
-          "objectTypeKey" : "TABLE",
-          "partitionScheme" : "DAILY",
-          "loadToBigQuery" : false,
-          "loadToRedshift" : false,
-          "fileFormat" : "PARQUET",
-          "tableName" : "test_code_sma_9338_output"
-        } ]
-      }
-    },
-    "templateVersionId" : "e2ecf8c3-ce62-4b9d-9701-47cd45edb35e",
-    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
-    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
-    "createdAt" : "2025-07-22T08:10:21.311Z",
-    "updatedAt" : "2025-07-22T08:10:21.311Z",
-    "objectType" : null,
-    "processType" : {
-      "name" : "Container Code Processor",
-      "schemaAware" : false,
-      "runtime" : "CONTAINER",
-      "icon" : {
-        "key" : "CONTAINER_CODE_PROCESSOR"
-      }
-    },
-    "processMapping" : [ ],
-    "graphNodePorts" : [ {
-      "id" : "c160daab-218b-48c3-903f-61c98f3311c7",
-      "graphNodeId" : "f890b133-e311-4e6a-91d6-d5568baa74ec",
-      "direction" : "INPUT",
-      "location" : [ "left" ],
-      "toLinks" : [ ],
-      "fromLinks" : [ {
-        "id" : "2562a126-1db1-4018-8a9d-c62c5b13d09b",
-        "fromPortId" : "250e993f-2cec-492a-95bd-efea1ff9ba3d",
-        "toPortId" : "c160daab-218b-48c3-903f-61c98f3311c7"
-      } ]
-    }, {
-      "id" : "b9148255-e0e8-4b83-88f7-cd1ed01d0311",
-      "graphNodeId" : "f890b133-e311-4e6a-91d6-d5568baa74ec",
-      "direction" : "OUTPUT",
-      "location" : [ "right" ],
-      "toLinks" : [ {
-        "id" : "d339d649-3b65-4c66-9106-cd4a8d2c147c",
-        "fromPortId" : "b9148255-e0e8-4b83-88f7-cd1ed01d0311",
-        "toPortId" : "e6061ec5-8c4b-437c-8a39-62ec64aec661"
-      } ],
-      "fromLinks" : [ ]
-    } ],
-    "templateIcon" : {
-      "key" : "CONTAINER_CODE_PROCESSOR"
-    }
-  }, {
     "id" : "5128ea5c-58d2-40f9-bd2f-df9c00e7daa9",
     "name" : "Dash",
     "appNodeId" : "a9ffa039-58bb-4de6-9a7a-d4ce281b76a3",
@@ -453,10 +303,6 @@
         "fromPortId" : "250e993f-2cec-492a-95bd-efea1ff9ba3d",
         "toPortId" : "d8a68efb-8775-4944-8a5e-d037a31ae2c8"
       }, {
-        "id" : "2562a126-1db1-4018-8a9d-c62c5b13d09b",
-        "fromPortId" : "250e993f-2cec-492a-95bd-efea1ff9ba3d",
-        "toPortId" : "c160daab-218b-48c3-903f-61c98f3311c7"
-      }, {
         "id" : "53cdda39-36bb-421a-9b20-2151de75c7d0",
         "fromPortId" : "250e993f-2cec-492a-95bd-efea1ff9ba3d",
         "toPortId" : "3f573911-eb6a-4bf1-95c9-c5c2eff644f0"
@@ -563,62 +409,6 @@
     "templateIcon" : {
       "key" : "SPARK_PROCESSOR"
     }
-  }, {
-    "id" : "bd4a61c5-d16d-4672-9e12-482bdeabd818",
-    "name" : "test_code_sma_9338_output",
-    "appNodeId" : "ba19dc98-a3ea-40af-a2d7-9040a65f8a00",
-    "workflowId" : "a2857531-f9ec-464e-b49f-79a728700003",
-    "objectTypeKey" : "TABLE",
-    "processTypeKey" : null,
-    "displayGroup" : null,
-    "connectionId" : null,
-    "externalDatasetId" : null,
-    "externalSchemaId" : null,
-    "datasetId" : "a603c63a-2231-45ac-b617-316988876274",
-    "streamId" : null,
-    "intelligenceHubId" : null,
-    "displayGroupKey" : null,
-    "state" : null,
-    "parameters" : {
-      "system" : {
-        "isDeletable" : true
-      }
-    },
-    "templateVersionId" : null,
-    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
-    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
-    "createdAt" : "2025-07-22T08:10:21.323Z",
-    "updatedAt" : "2025-07-22T08:10:21.323Z",
-    "objectType" : {
-      "name" : "Table",
-      "objectCategoryKey" : "DATASET",
-      "icon" : {
-        "name" : "table.svg",
-        "isSystem" : true
-      }
-    },
-    "processType" : null,
-    "processMapping" : [ ],
-    "graphNodePorts" : [ {
-      "id" : "e6061ec5-8c4b-437c-8a39-62ec64aec661",
-      "graphNodeId" : "bd4a61c5-d16d-4672-9e12-482bdeabd818",
-      "direction" : "INPUT",
-      "location" : [ "left" ],
-      "toLinks" : [ ],
-      "fromLinks" : [ {
-        "id" : "d339d649-3b65-4c66-9106-cd4a8d2c147c",
-        "fromPortId" : "b9148255-e0e8-4b83-88f7-cd1ed01d0311",
-        "toPortId" : "e6061ec5-8c4b-437c-8a39-62ec64aec661"
-      } ]
-    }, {
-      "id" : "b92b3296-d1ee-4a16-8a62-b00bf374062e",
-      "graphNodeId" : "bd4a61c5-d16d-4672-9e12-482bdeabd818",
-      "direction" : "OUTPUT",
-      "location" : [ "right" ],
-      "toLinks" : [ ],
-      "fromLinks" : [ ]
-    } ],
-    "objectCategoryKey" : "DATASET"
   }, {
     "id" : "bf87d91f-4e6a-4e76-b7bb-fd23dbdb02b4",
     "name" : "test_sma_9338_Output",
