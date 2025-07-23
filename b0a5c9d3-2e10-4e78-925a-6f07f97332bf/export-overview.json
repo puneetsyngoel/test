@@ -2,7 +2,7 @@
   "appName" : "Test_SMA_9338",
   "environment" : "DEVELOPMENT",
   "provider" : "AWS",
-  "exportDate" : "2025-07-23T07:04:54.838Z",
+  "exportDate" : "2025-07-23T07:08:22.665Z",
   "sourceVersion" : "8.3.0-beta1",
   "exportBy" : "syntasa_service_account"
 }
