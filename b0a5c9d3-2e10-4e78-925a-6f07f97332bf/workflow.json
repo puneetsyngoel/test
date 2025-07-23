@@ -1,5 +1,5 @@
 {
-  "lastUserSave" : "2025-07-22T10:30:13.000Z",
+  "lastUserSave" : "2025-07-23T05:18:05.000Z",
   "id" : "a2857531-f9ec-464e-b49f-79a728700003",
   "name" : "Development",
   "description" : null,
@@ -17,9 +17,9 @@
       "nodeType" : "objectType"
     }, {
       "id" : "6d4c5e84-a1fd-4f1a-af40-ea588834f3e7",
-      "top" : -150,
+      "top" : -165,
       "left" : -458,
-      "label" : "Spark Processor",
+      "label" : "puneet spark",
       "ports" : [ {
         "id" : "6d4c5e84-a1fd-4f1a-af40-ea588834f3e7.input",
         "type" : "multiInput"
@@ -29,11 +29,11 @@
       } ],
       "nodeType" : "process",
       "processTypeKey" : "SPARK_PROCESSOR",
-      "state" : "CONFIGURED"
+      "state" : "FAILED"
     }, {
       "objectCategoryKey" : "DATASET",
       "objectTypeKey" : "TABLE",
-      "left" : -269,
+      "left" : -275,
       "state" : null,
       "ports" : [ {
         "id" : "7963d8ab-c0f0-4115-bcbb-87cc7c1a93f1.input",
@@ -43,13 +43,13 @@
         "type" : "multiOutput"
       } ],
       "label" : "test_sma_9338_Output",
-      "top" : -136,
+      "top" : -182,
       "id" : "7963d8ab-c0f0-4115-bcbb-87cc7c1a93f1",
       "nodeType" : "objectType"
     }, {
       "id" : "a9ffa039-58bb-4de6-9a7a-d4ce281b76a3",
-      "top" : -52.428028195140016,
-      "left" : -501.33472454090145,
+      "top" : -33,
+      "left" : -455,
       "label" : "Dash",
       "ports" : [ {
         "id" : "a9ffa039-58bb-4de6-9a7a-d4ce281b76a3.input",
@@ -64,7 +64,8 @@
     }, {
       "objectCategoryKey" : "VISUALIZATION",
       "objectTypeKey" : "URL",
-      "left" : -301.33472454090145,
+      "left" : -265,
+      "state" : null,
       "ports" : [ {
         "id" : "d5e81163-9abb-4d9c-9411-6544ea76a682.input",
         "type" : "singleInputLocked"
@@ -73,11 +74,10 @@
         "type" : "multiOutput"
       } ],
       "label" : "viz_output",
-      "top" : -52.428028195140016,
+      "top" : -44,
       "processTypeKey" : null,
       "id" : "d5e81163-9abb-4d9c-9411-6544ea76a682",
-      "nodeType" : "objectType",
-      "state" : null
+      "nodeType" : "objectType"
     } ],
     "edges" : [ {
       "source" : "e88df056-280d-46e0-b4cc-2606f30dfc01.output",
@@ -146,7 +146,7 @@
     "interactiveMode" : false
   },
   "createdAt" : "2025-07-14T08:44:39.619Z",
-  "updatedAt" : "2025-07-22T10:30:13.397Z",
+  "updatedAt" : "2025-07-23T05:59:42.764Z",
   "app" : {
     "id" : "b0a5c9d3-2e10-4e78-925a-6f07f97332bf",
     "key" : "Test_SMA_9338",
@@ -166,7 +166,7 @@
     "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
     "audienceVersion" : null,
     "createdAt" : "2025-07-14T08:44:39.550Z",
-    "updatedAt" : "2025-07-22T10:30:13.392Z",
+    "updatedAt" : "2025-07-23T05:18:05.428Z",
     "deletedAt" : null
   },
   "graphNodes" : [ {
@@ -312,7 +312,7 @@
     "objectCategoryKey" : "CONNECTION"
   }, {
     "id" : "bfbecd0c-7355-4d60-979a-3104bb89c49a",
-    "name" : "Spark Processor",
+    "name" : "puneet spark",
     "appNodeId" : "6d4c5e84-a1fd-4f1a-af40-ea588834f3e7",
     "workflowId" : "a2857531-f9ec-464e-b49f-79a728700003",
     "objectTypeKey" : null,
@@ -325,7 +325,7 @@
     "streamId" : null,
     "intelligenceHubId" : null,
     "displayGroupKey" : null,
-    "state" : "CONFIGURED",
+    "state" : "FAILED",
     "parameters" : {
       "system" : {
         "isDeletable" : true
@@ -372,7 +372,7 @@
     "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
     "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
     "createdAt" : "2025-07-14T08:44:39.794Z",
-    "updatedAt" : "2025-07-16T09:49:12.500Z",
+    "updatedAt" : "2025-07-23T05:59:42.742Z",
     "objectType" : null,
     "processType" : {
       "name" : "Spark Processor",

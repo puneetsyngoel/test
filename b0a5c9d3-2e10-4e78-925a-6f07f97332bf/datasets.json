@@ -16,7 +16,7 @@
   "deletedAt" : null,
   "columns" : [ ],
   "dataWarehouses" : [ {
-    "id" : "2a33d9a9-6722-4183-a689-c358c1a08324",
+    "id" : "390ad15c-a8c3-4915-95a5-f49b931f78f4",
     "datasetId" : "bb294789-aa27-4a5a-8fc0-32dcd5e43d43",
     "warehouseType" : "SYNTASA_EVENT_STORE",
     "dataset_id" : "bb294789-aa27-4a5a-8fc0-32dcd5e43d43"
