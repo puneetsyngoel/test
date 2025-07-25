@@ -1,0 +1,326 @@
+{
+  "lastUserSave" : "2025-07-25T07:05:09.000Z",
+  "id" : "d8fdb54d-c569-4c71-8801-82916ab20754",
+  "name" : "Development",
+  "description" : null,
+  "appId" : "a92d7e0f-b864-4fab-b966-4ad7d513ad09",
+  "canvasGraph" : {
+    "nodes" : [ {
+      "id" : "56ae1399-a3d0-43b2-a76c-20ddd62626a2",
+      "top" : -48,
+      "left" : -205,
+      "label" : "Spark Processor",
+      "ports" : [ {
+        "id" : "56ae1399-a3d0-43b2-a76c-20ddd62626a2.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "56ae1399-a3d0-43b2-a76c-20ddd62626a2.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "state" : "CONFIGURED"
+    }, {
+      "objectCategoryKey" : "DATASET",
+      "objectTypeKey" : "TABLE",
+      "left" : -5,
+      "state" : null,
+      "ports" : [ {
+        "id" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f.output",
+        "type" : "multiOutput"
+      } ],
+      "label" : "spark_integration_Output",
+      "top" : -48,
+      "id" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f",
+      "nodeType" : "objectType"
+    }, {
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "AZURE_STORAGE",
+      "left" : -378.8887818454292,
+      "state" : "CONFIGURED",
+      "label" : "QA_DONT_DELETE_AZURE_CONN",
+      "top" : -23.52847356026547,
+      "type" : "objectType",
+      "id" : "fca285c0-b313-4e2f-a70b-0619f2de790b",
+      "nodeType" : "objectType"
+    } ],
+    "edges" : [ {
+      "source" : "56ae1399-a3d0-43b2-a76c-20ddd62626a2.output",
+      "target" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f.input",
+      "data" : { }
+    }, {
+      "source" : "fca285c0-b313-4e2f-a70b-0619f2de790b.output",
+      "target" : "56ae1399-a3d0-43b2-a76c-20ddd62626a2.input",
+      "data" : {
+        "id" : "6c22947e-ef09-41f1-b461-6015ed423793",
+        "type" : "default"
+      }
+    } ],
+    "groups" : [ ],
+    "ports" : [ {
+      "id" : "56ae1399-a3d0-43b2-a76c-20ddd62626a2.input"
+    }, {
+      "id" : "56ae1399-a3d0-43b2-a76c-20ddd62626a2.output"
+    }, {
+      "id" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f.input"
+    }, {
+      "id" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f.output"
+    }, {
+      "id" : "fca285c0-b313-4e2f-a70b-0619f2de790b.input"
+    }, {
+      "id" : "fca285c0-b313-4e2f-a70b-0619f2de790b.output"
+    } ]
+  },
+  "environment" : "DEVELOPMENT",
+  "parentWorkflowId" : null,
+  "createdById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+  "modifiedById" : "c5ba6c4e-ec87-4b66-91b3-51f5e34807b0",
+  "parameters" : {
+    "processConfiguration" : [ {
+      "graphNodeId" : "87430228-6b33-4592-8568-e86fb178c0d4",
+      "name" : "Spark Processor",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "defaultRuntimeId" : null,
+      "templateIconKey" : "SPARK_PROCESSOR"
+    } ]
+  },
+  "createdAt" : "2025-07-23T08:04:31.509Z",
+  "updatedAt" : "2025-07-25T07:05:08.929Z",
+  "app" : {
+    "id" : "a92d7e0f-b864-4fab-b966-4ad7d513ad09",
+    "key" : "spark_integration",
+    "appPrefix" : "spark_integration",
+    "name" : "spark_integration",
+    "description" : "",
+    "module" : "SYNTHESIZER",
+    "partitionScheme" : "DAILY",
+    "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+    "eventStoreId" : "15e2ff3f-b3f6-4aa4-aac9-970e079cadc9",
+    "iconKey" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "createdById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "modifiedById" : "c5ba6c4e-ec87-4b66-91b3-51f5e34807b0",
+    "audienceVersion" : null,
+    "createdAt" : "2025-07-23T08:04:27.705Z",
+    "updatedAt" : "2025-07-25T07:05:08.922Z",
+    "deletedAt" : null
+  },
+  "graphNodes" : [ {
+    "id" : "4b9b4fe2-da99-4f07-87a5-256591b7eb67",
+    "name" : "QA_DONT_DELETE_AZURE_CONN",
+    "appNodeId" : "fca285c0-b313-4e2f-a70b-0619f2de790b",
+    "workflowId" : "d8fdb54d-c569-4c71-8801-82916ab20754",
+    "objectTypeKey" : "AZURE_STORAGE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "4563be3d-6e5e-42fd-8222-4ecfc80bffc1",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "modifiedById" : "c8f1c393-d66c-46fa-b6be-49f2721e057e",
+    "createdAt" : "2025-07-23T10:53:45.654Z",
+    "updatedAt" : "2025-07-23T10:53:45.654Z",
+    "objectType" : {
+      "name" : "Azure Storage",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "azure_storage_connection.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "ac7d08ff-cd83-4f7c-93ea-800d6d7f5d42",
+      "graphNodeId" : "4b9b4fe2-da99-4f07-87a5-256591b7eb67",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "4a1e99e0-1a8b-4879-a5d3-bcdc9e2cd5c6",
+        "fromPortId" : "ac7d08ff-cd83-4f7c-93ea-800d6d7f5d42",
+        "toPortId" : "0bb05ed6-7a47-403e-8953-43e66271c0ff"
+      } ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "a8632887-25a4-49da-9281-8fb99110fde2",
+      "graphNodeId" : "4b9b4fe2-da99-4f07-87a5-256591b7eb67",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  }, {
+    "id" : "87430228-6b33-4592-8568-e86fb178c0d4",
+    "name" : "Spark Processor",
+    "appNodeId" : "56ae1399-a3d0-43b2-a76c-20ddd62626a2",
+    "workflowId" : "d8fdb54d-c569-4c71-8801-82916ab20754",
+    "objectTypeKey" : null,
+    "processTypeKey" : "SPARK_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "parameters" : {
+        "language" : "PYTHON",
+        "fileName" : null,
+        "sparkScript" : "import time\n\nimport requests\n\nnotebook_parameters = {\n#     variable test_key to be used in the notebook\n    \"test_key\": \"@test_value\",\n    \"environment\" : \"@environment\",\n    \"database\" : \"@database\",\n    \"fromDate\" : \"@fromDate\",\n    \"toDate\" : \"@toDate\",\n    \"fixedFromDate\" : \"@fixedFromDate\",\n    \"fixedToDate\" : \"@fixedToDate\",\n    \"datesToProcess\" : \"@datesToProcess\",\n    \"numPartitions\" : \"@numPartitions\",\n    \"treatmentLocation\" : \"@treatmentLocation\",\n    \"learningLocation\" : \"@learningLocation\"\n    \n}\n\n#notebook_path = \"@nb_path\"\n#gcptemplatepath notebook_path = \"syn400-qa-kubernetes/syn-workspace/users/pradeepm/notebooks/dev_pradeepm_1/dev_pradeepm_1.ipynb\"\n#notebook_path = \"syn400-qa-kubernetes/syn-workspace/users/parikshith.n/notebooks/spark/spark.ipynb\"\n#notebook_path = \"syn-workspace/users/parikshith.n/notebooks/spark/spark.ipynb\"\nnotebook_path = \"syn-workspace/users/parikshith.n/notebooks/h3/h3.ipynb\"\n#notebook_path = \"syn-workspace/users/<username>/notebooks/<notebookname>/<notebookname>.ipynb\"\n#notebook_path = \"syn-workspace/users/pradeepm/notebooks/dev_pradeepm_sparkprocessor/dev_pradeepm_sparkprocessor.ipynb\"\n#notebook_path = \"syn-workspace/users/parikshith.n/notebooks/ipy_widgets/ipy_widgets.ipynb\"\nexecution_id = sc._jvm.com.syntasa.utils.SystemUtils.executionId().toString()\nprocess_id = sc._jvm.com.syntasa.utils.SystemUtils.executeAction().getStepId().toString()\n\n#server = sc._jvm.com.syntasa.utils.SystemUtils.messagingServer().split(\":\")[0]\nserver = 10.0.1.11\n\nprint(\"#############################################\")\nprint(f\"Execution id = {execution_id}  type = {type(execution_id)}\")\nprint(f\"process id = {process_id} type = {type(process_id)}\")\nprint(f\"server = {server} type = {type(server)}\")\nprint(\"#############################################\")\nnotebook_service_url = f\"http://{server}:31500/services/notebook-service/v1/notebooks/jobs\"\nlogin_url = f\"http://{server}:32443/services/auth-service/login\"\n\n#using service account will be fixed as part of SMA-9541. For current testing, use your username/pwd\n#username = str(synutils.object.getAction().getServiceAccount().getUsername())\n#password = str(synutils.object.getAction().getServiceAccount().getPassword())\n#auth_type = \"SERVICE_ACCOUNT\"\n\nusername = \"parikshith.n\"\npassword = \"$ynt@$@\"\nauth_type = \"LOCAL\"\n\n\ndef login():\n    data = {\n        \"username\": username,\n        \"password\": password,\n        \"authType\": auth_type\n    }\n    print(f\"login details: {data}\")\n    print(f\"login_url: {login_url}\")\n    headers = {\n        'Content-Type': 'application/json',\n    }\n\n    response = requests.post(login_url, json=data, headers=headers)\n    print(response.json())\n    return response.json()\n\n\ndef execute(access_token: str,\n            refresh_token: str,\n            auth_type: str):\n    request_obj = {\n        \"execution_id\": execution_id,\n        \"process_id\": process_id,\n        \"path\": notebook_path,\n        \"parameters\": notebook_parameters\n    }\n\n    headers = {\n        'Content-Type': 'application/json',\n        \"Authorization\": f\"Bearer {access_token}\",\n        \"Refresh-Token\": f\"{refresh_token}\",\n        \"AuthType\": auth_type\n    }\n    \n    print(\"making execute call\")\n    response = requests.post(notebook_service_url, json=request_obj, headers=headers)\n    return response.json()\n\n\ndef wait_for_completion(id: str, access_token: str):\n    params = {\n        \"execution-id\": id\n    }\n\n    headers = {\n        'Content-Type': 'application/json',\n        \"Authorization\": f\"Bearer {access_token}\"\n    }\n\n    response = requests.get(notebook_service_url, params=params, headers=headers)\n    response_data = response.json()\n\n    while response_data[\"status\"] != \"COMPLETED\" and response_data[\"status\"] != \"FAILED\":\n        print(f\"Notebook Process is [{response_data['status']}]\")\n        time.sleep(10)\n        response = requests.get(notebook_service_url, params=params, headers=headers)\n        response_data = response.json()\n\n\ndef collect_logs(id: str,\n                 process_id: str,\n                 access_token: str):\n    params = {\n        \"execution-id\": id,\n        \"process-id\": process_id\n    }\n\n    headers = {\n        'Content-Type': 'application/json',\n        \"Authorization\": f\"Bearer {access_token}\"\n    }\n\n    response = requests.get(f\"{notebook_service_url}/logs\", params=params, headers=headers)\n    response_data = response.json()\n\n    print(\"\\n\".join(response_data[\"logs\"]))\n\n\n\nauth_response = login()\naccess_token = auth_response[\"accessToken\"]\nrefresh_token = auth_response[\"refreshToken\"]\nexecution_response = execute(access_token, refresh_token, auth_type)\nwait_for_completion(execution_response[\"execution_id\"], access_token)\ncollect_logs(execution_response[\"execution_id\"], execution_response[\"process_id\"], access_token)",
+        "libraryConfigs" : [ {
+          "name" : "",
+          "version" : ""
+        } ],
+        "version" : "3.9",
+        "customCondaScript" : null,
+        "codeParams" : [ {
+          "name" : "@OutputTable1",
+          "value" : "@database.spark_integration_output",
+          "appNodeId" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f",
+          "type" : "OUTPUT",
+          "subType" : "DATASET"
+        }, {
+          "name" : "@InputConnection1",
+          "value" : "QA_DONT_DELETE_AZURE_CONN",
+          "appNodeId" : "fca285c0-b313-4e2f-a70b-0619f2de790b",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        } ]
+      },
+      "filters" : { },
+      "outputParameters" : {
+        "datasets" : [ {
+          "appNodeId" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f",
+          "displayName" : "spark_integration_Output",
+          "objectTypeKey" : "TABLE",
+          "partitionScheme" : "DAILY",
+          "loadToBigQuery" : false,
+          "loadToRedshift" : false,
+          "fileFormat" : "DELTA",
+          "tableName" : "spark_integration_output"
+        } ]
+      }
+    },
+    "templateVersionId" : "45768e69-f4d7-45bb-8957-e3aa460ed3a1",
+    "createdById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "modifiedById" : "c5ba6c4e-ec87-4b66-91b3-51f5e34807b0",
+    "createdAt" : "2025-07-23T10:06:50.882Z",
+    "updatedAt" : "2025-07-24T14:35:37.474Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "Spark Processor",
+      "schemaAware" : false,
+      "runtime" : "SPARK",
+      "icon" : {
+        "key" : "SPARK_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "0bb05ed6-7a47-403e-8953-43e66271c0ff",
+      "graphNodeId" : "87430228-6b33-4592-8568-e86fb178c0d4",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "4a1e99e0-1a8b-4879-a5d3-bcdc9e2cd5c6",
+        "fromPortId" : "ac7d08ff-cd83-4f7c-93ea-800d6d7f5d42",
+        "toPortId" : "0bb05ed6-7a47-403e-8953-43e66271c0ff"
+      } ]
+    }, {
+      "id" : "347b70e0-2884-4771-8b78-8feac6d53fb5",
+      "graphNodeId" : "87430228-6b33-4592-8568-e86fb178c0d4",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "e84781ad-80f0-4460-8f5f-1709808a3e5a",
+        "fromPortId" : "347b70e0-2884-4771-8b78-8feac6d53fb5",
+        "toPortId" : "3e6daf0e-bfc5-4805-99f4-57e4e1215422"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "SPARK_PROCESSOR"
+    }
+  }, {
+    "id" : "738fef09-8472-4890-b11b-b53f652524ef",
+    "name" : "spark_integration_Output",
+    "appNodeId" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f",
+    "workflowId" : "d8fdb54d-c569-4c71-8801-82916ab20754",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "9838d19e-b146-472e-a016-a5840fc00952",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "modifiedById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "createdAt" : "2025-07-23T10:06:52.978Z",
+    "updatedAt" : "2025-07-23T10:06:52.978Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "3e6daf0e-bfc5-4805-99f4-57e4e1215422",
+      "graphNodeId" : "738fef09-8472-4890-b11b-b53f652524ef",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "e84781ad-80f0-4460-8f5f-1709808a3e5a",
+        "fromPortId" : "347b70e0-2884-4771-8b78-8feac6d53fb5",
+        "toPortId" : "3e6daf0e-bfc5-4805-99f4-57e4e1215422"
+      } ]
+    }, {
+      "id" : "cd437241-b19b-47a5-bf04-b63207c329ea",
+      "graphNodeId" : "738fef09-8472-4890-b11b-b53f652524ef",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  } ]
+}

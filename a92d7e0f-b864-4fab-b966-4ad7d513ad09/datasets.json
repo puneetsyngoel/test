@@ -1,0 +1,50 @@
+[ {
+  "id" : "9838d19e-b146-472e-a016-a5840fc00952",
+  "name" : "spark_integration_output",
+  "database" : "spark_integration_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "DELTA"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "91a0b2dd-eea2-44b0-9219-80e5a36b8240",
+    "datasetId" : "9838d19e-b146-472e-a016-a5840fc00952",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "9838d19e-b146-472e-a016-a5840fc00952"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "a0d9627f-05a9-4194-bb41-2fce8f80d06f",
+  "eventStore" : {
+    "id" : "15e2ff3f-b3f6-4aa4-aac9-970e079cadc9",
+    "name" : "spark_integration",
+    "type" : "EVENTSTORE",
+    "key" : "spark_integration",
+    "developmentPath" : "abfss://syn-bucket@syndevsa2.dfs.core.windows.net/syn-cluster-data/eventstores/dev/spark_integration_dev",
+    "productionPath" : "abfss://syn-bucket@syndevsa2.dfs.core.windows.net/syn-cluster-data/eventstores/prod/spark_integration_prod",
+    "snapshotPath" : "abfss://syn-bucket@syndevsa2.dfs.core.windows.net/syn-cluster-data/eventstores/snap/spark_integration_snap",
+    "snapshotDatabase" : "spark_integration_snap",
+    "developmentDatabase" : "spark_integration_dev",
+    "productionDatabase" : "spark_integration_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "createdById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "modifiedById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+    "createdAt" : "2025-07-23T08:03:11.289Z",
+    "updatedAt" : "2025-07-23T08:03:11.289Z"
+  }
+} ]

@@ -1,0 +1,34 @@
+{
+  "id" : "a92d7e0f-b864-4fab-b966-4ad7d513ad09",
+  "key" : "spark_integration",
+  "appPrefix" : "spark_integration",
+  "name" : "spark_integration",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "15e2ff3f-b3f6-4aa4-aac9-970e079cadc9",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+  "createdById" : "cc4ee55c-baad-4bd1-bb93-bd39f95feebc",
+  "modifiedById" : "c5ba6c4e-ec87-4b66-91b3-51f5e34807b0",
+  "audienceVersion" : null,
+  "createdAt" : "2025-07-23T08:04:27.705Z",
+  "updatedAt" : "2025-07-25T07:05:08.922Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "spark_integration"
+}
