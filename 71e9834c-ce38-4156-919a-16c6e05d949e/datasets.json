@@ -1,0 +1,50 @@
+[ {
+  "id" : "27089c4c-411e-4834-8c9f-222fa71cdc75",
+  "name" : "test_sma_9338_output",
+  "database" : "QA_DONT_DELETE_ADHOC_ESTORE_8_3_0_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "DELTA"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "09655721-428f-49e5-851a-20c9d2cadc7e",
+    "datasetId" : "27089c4c-411e-4834-8c9f-222fa71cdc75",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "27089c4c-411e-4834-8c9f-222fa71cdc75"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "2c4101cb-56d7-4994-8ee9-a207d3477f12",
+  "eventStore" : {
+    "id" : "f692c434-04ce-4fac-ad9e-68d4fb091928",
+    "name" : "QA_DONT_DELETE_ADHOC_ESTORE_8_3_0",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DELETE_ADHOC_ESTORE_8_3_0",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DELETE_ADHOC_ESTORE_8_3_0_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_DONT_DELETE_ADHOC_ESTORE_8_3_0_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_DONT_DELETE_ADHOC_ESTORE_8_3_0_snap",
+    "snapshotDatabase" : "QA_DONT_DELETE_ADHOC_ESTORE_8_3_0_snap",
+    "developmentDatabase" : "QA_DONT_DELETE_ADHOC_ESTORE_8_3_0_dev",
+    "productionDatabase" : "QA_DONT_DELETE_ADHOC_ESTORE_8_3_0_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-06-02T10:51:29.284Z",
+    "updatedAt" : "2025-06-02T10:51:29.284Z"
+  }
+} ]
