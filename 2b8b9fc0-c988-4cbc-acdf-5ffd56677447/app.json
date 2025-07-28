@@ -1,0 +1,34 @@
+{
+  "id" : "2b8b9fc0-c988-4cbc-acdf-5ffd56677447",
+  "key" : "Jatin_AudienceDataset_9thDec",
+  "appPrefix" : "jatin_audiencedataset_9thdec",
+  "name" : "From File Demo",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "6b1d5596-4056-4b2b-84ca-f73dc0caee17",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "b9ded02c-b9ba-464c-9289-619b46180b99",
+  "createdById" : "b9ded02c-b9ba-464c-9289-619b46180b99",
+  "modifiedById" : "b9ded02c-b9ba-464c-9289-619b46180b99",
+  "audienceVersion" : null,
+  "createdAt" : "2024-12-09T10:03:35.173Z",
+  "updatedAt" : "2025-07-21T11:01:39.875Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "Jatin_9thDec"
+}
