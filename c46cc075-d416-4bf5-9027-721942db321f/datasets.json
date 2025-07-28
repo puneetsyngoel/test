@@ -1,0 +1,755 @@
+[ {
+  "id" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+  "name" : "transform_output",
+  "database" : "Puneet_test_16th_oct_FromDB_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "bcfe83b2-55f2-4901-80c3-8a8fac95d15e",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET",
+    "isInMemory" : false
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "1cc28fd4-668b-4cb2-be57-4d4294b2a308",
+    "name" : "id",
+    "processMappingId" : "0e4f58d4-4255-4a67-a156-dba08c8785f9",
+    "datasetId" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+    "datatype" : "int",
+    "isPartitioned" : false,
+    "isIdentifier" : true,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "0a54b26f-7872-4191-a2c4-51639580e299",
+    "name" : "epoch_time",
+    "processMappingId" : "f99bfe0b-6d84-4771-8c02-af5bf4629278",
+    "datasetId" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+    "datatype" : "int",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "b1f71ddb-7545-4509-890b-92c4b4dfc04a",
+    "name" : "description",
+    "processMappingId" : "1567c15d-a8c8-4fb8-9b63-487563156858",
+    "datasetId" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "cc1f5d9a-4f1f-4999-9430-5a1ecbe12297",
+    "name" : "status",
+    "processMappingId" : "fe6ddc83-d7bd-49af-a135-0c1ba9402b03",
+    "datasetId" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "7cd2d226-07a6-43ea-a016-e478d40725b2",
+    "name" : "visitor_date",
+    "processMappingId" : "90d18623-e0a0-4835-a1c9-c4b86f69cc29",
+    "datasetId" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+    "datatype" : "date",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "bcfe83b2-55f2-4901-80c3-8a8fac95d15e",
+    "name" : "event_date",
+    "processMappingId" : "21701b22-0640-4f80-a78b-404242fc8300",
+    "datasetId" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : true,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "8e1d13c6-497b-4965-afa9-9e4d6b61dddb",
+    "datasetId" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "b7eb2768-f9df-4019-b3e4-0c916290ec18"
+  }, {
+    "id" : "ccc5f635-5df3-499d-a13e-c3603c0a0308",
+    "datasetId" : "b7eb2768-f9df-4019-b3e4-0c916290ec18",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "b7eb2768-f9df-4019-b3e4-0c916290ec18"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "236bd590-ba2b-4400-a658-439dbe5421e8",
+  "eventStore" : {
+    "id" : "99d7d436-df4f-4bad-9041-2ca6b607a181",
+    "name" : "Puneet_test_16th_oct_FromDB",
+    "type" : "EVENTSTORE",
+    "key" : "Puneet_test_16th_oct_FromDB",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/Puneet_test_16th_oct_FromDB_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/Puneet_test_16th_oct_FromDB_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/Puneet_test_16th_oct_FromDB_snap",
+    "snapshotDatabase" : "Puneet_test_16th_oct_FromDB_snap",
+    "developmentDatabase" : "Puneet_test_16th_oct_FromDB_dev",
+    "productionDatabase" : "Puneet_test_16th_oct_FromDB_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-10-16T06:08:36.021Z",
+    "updatedAt" : "2024-10-16T06:08:36.021Z"
+  }
+}, {
+  "id" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+  "name" : "db5_output",
+  "database" : "Puneet_test_16th_oct_FromDB_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "9c9f9f75-aced-4c38-9e1a-9a50f0cbe5cf",
+  "timeSource" : "visitor_date",
+  "timeFormat" : "yyyy-MM-dd",
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "dc4a1af8-30c1-45eb-8171-5f79a4e38319",
+    "name" : "id",
+    "processMappingId" : "21d35078-0ab4-4931-becc-8f3ee4f9ab53",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "a9bb5626-765f-4e2b-9461-fc4310f2d7dd",
+    "name" : "event_date",
+    "processMappingId" : "8145990d-a5fb-4ca0-b9a3-df4257cea520",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "datatype" : "DATE",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "f0f9de88-0b22-4828-8fa3-eb5e133a6314",
+    "name" : "epoch_time",
+    "processMappingId" : "c0d66dea-726e-4dfa-aa45-7137ea91a8d3",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "3a73bcd5-7305-4326-87cc-c97845665be8",
+    "name" : "description",
+    "processMappingId" : "e1595c50-de72-4cbf-bd76-3f71059a8085",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "b39464c0-3daa-4cce-839b-8a8a609662fa",
+    "name" : "status",
+    "processMappingId" : "6bc24f0d-6e63-4dc8-ae90-1689e5d71b66",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "52ccfb53-14c6-415b-8cfc-79586e40d5a1",
+    "name" : "visitor_date",
+    "processMappingId" : "dfce8d72-d31c-4304-b11b-01e5afcc9b3c",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "datatype" : "DATE",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  }, {
+    "id" : "9c9f9f75-aced-4c38-9e1a-9a50f0cbe5cf",
+    "name" : "my_part",
+    "processMappingId" : "717f6166-f338-41e9-9d76-93b6adc74b39",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 7
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "c8cb2168-9c6b-4138-b608-d8543d5be1ad",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "2704fda0-09d6-43ca-8303-b1e6f9601898"
+  }, {
+    "id" : "4d7ac282-01ec-4e6b-8f27-8683f255f34e",
+    "datasetId" : "2704fda0-09d6-43ca-8303-b1e6f9601898",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "2704fda0-09d6-43ca-8303-b1e6f9601898"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "b2bdff70-39b5-46e2-a7fd-b7f0f35ae3a3",
+  "eventStore" : {
+    "id" : "99d7d436-df4f-4bad-9041-2ca6b607a181",
+    "name" : "Puneet_test_16th_oct_FromDB",
+    "type" : "EVENTSTORE",
+    "key" : "Puneet_test_16th_oct_FromDB",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/Puneet_test_16th_oct_FromDB_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/Puneet_test_16th_oct_FromDB_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/Puneet_test_16th_oct_FromDB_snap",
+    "snapshotDatabase" : "Puneet_test_16th_oct_FromDB_snap",
+    "developmentDatabase" : "Puneet_test_16th_oct_FromDB_dev",
+    "productionDatabase" : "Puneet_test_16th_oct_FromDB_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-10-16T06:08:36.021Z",
+    "updatedAt" : "2024-10-16T06:08:36.021Z"
+  }
+}, {
+  "id" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+  "name" : "puneet_test_16th_oct_fromdb_output",
+  "database" : "Puneet_test_16th_oct_FromDB_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "NONE",
+  "partitionedDateColumnId" : null,
+  "timeSource" : "epoch_time",
+  "timeFormat" : "EPOCH",
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "1e34524c-5207-4f1d-b381-d39b7b1c10cb",
+    "name" : "id",
+    "processMappingId" : "cbf62505-c819-4fb3-8898-1d8c761b449a",
+    "datasetId" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "41253389-07a8-4112-b784-b7c6c7aa65b6",
+    "name" : "event_date",
+    "processMappingId" : "90ee1bc5-2000-44fb-a421-730f8c0b27d1",
+    "datasetId" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+    "datatype" : "DATE",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "7479d919-4827-4aeb-b0cf-59eab5caff1b",
+    "name" : "epoch_time",
+    "processMappingId" : "a1e1d2cb-4b76-49ce-9edc-bbe6eeaa1765",
+    "datasetId" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "0c5e973a-630c-486f-98f8-ca47bbebdf0d",
+    "name" : "description",
+    "processMappingId" : "3a420f11-4019-4198-9838-0eb4e94cfe77",
+    "datasetId" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "ae69b371-f4e2-44e3-b6e6-4f8392197bff",
+    "name" : "status",
+    "processMappingId" : "916d4ed9-ef1d-46b3-9857-3e7beb975583",
+    "datasetId" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "36a6577d-fee3-4929-9c53-2c590291a075",
+    "name" : "partition_date",
+    "processMappingId" : "cd87930a-1ea0-43db-9bc2-6804e7c63a09",
+    "datasetId" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "37a6b190-9a6b-42c6-8d44-fcfed63ef09c",
+    "datasetId" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7"
+  }, {
+    "id" : "1f43c3dd-9875-4e32-8ec3-d1163f931438",
+    "datasetId" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "f867fd3d-edf3-4411-9f89-aad2c7c019d7"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "a6d746c2-53a5-4061-8d3c-e873a0317789",
+  "eventStore" : {
+    "id" : "99d7d436-df4f-4bad-9041-2ca6b607a181",
+    "name" : "Puneet_test_16th_oct_FromDB",
+    "type" : "EVENTSTORE",
+    "key" : "Puneet_test_16th_oct_FromDB",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/Puneet_test_16th_oct_FromDB_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/Puneet_test_16th_oct_FromDB_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/Puneet_test_16th_oct_FromDB_snap",
+    "snapshotDatabase" : "Puneet_test_16th_oct_FromDB_snap",
+    "developmentDatabase" : "Puneet_test_16th_oct_FromDB_dev",
+    "productionDatabase" : "Puneet_test_16th_oct_FromDB_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-10-16T06:08:36.021Z",
+    "updatedAt" : "2024-10-16T06:08:36.021Z"
+  }
+}, {
+  "id" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+  "name" : "events_output_3",
+  "database" : "Puneet_test_16th_oct_FromDB_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "98569616-9240-4db8-88fe-90fe89c3e038",
+  "timeSource" : "visitor_date",
+  "timeFormat" : "DD-MM-YYYY",
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "49bf73b4-4171-4c64-a324-fa59f8fcb511",
+    "name" : "id",
+    "processMappingId" : "4518c13a-9f5d-4c28-a4d6-5dbe14c8da1a",
+    "datasetId" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "f1f45ae1-fd61-44d6-83a2-d374d809865c",
+    "name" : "event_date",
+    "processMappingId" : "bee79e34-7ef7-4dee-ab47-d87b03386d1d",
+    "datasetId" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+    "datatype" : "DATE",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "c1bbb505-ac71-45dd-9701-0172cdbae141",
+    "name" : "epoch_time",
+    "processMappingId" : "c22c5686-e783-4ed3-a22a-2d4097fdb742",
+    "datasetId" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "38e45cb7-6c7a-4519-b8d5-8e6760d83280",
+    "name" : "description",
+    "processMappingId" : "a4371507-a3b7-4db3-8514-fb286a9b6669",
+    "datasetId" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "12825d52-1e0b-4a2d-a477-680a2c43fd48",
+    "name" : "status",
+    "processMappingId" : "bd3f0962-19a1-49be-90a1-3e34d9e36ec1",
+    "datasetId" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "98569616-9240-4db8-88fe-90fe89c3e038",
+    "name" : "visitor_date",
+    "processMappingId" : "d773c175-922e-4580-937d-b49a093dbb4f",
+    "datasetId" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+    "datatype" : "DATE",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "03ec164a-bc0d-41ce-84cd-20db3b87a95c",
+    "datasetId" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d"
+  }, {
+    "id" : "d8cae35f-f3ef-4acf-8a91-0c5f47128da1",
+    "datasetId" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "7bf1d45b-2c21-49a6-9854-8b9760ec4b3d"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "5dec66d9-7ddd-4e5a-8844-5d4b6f59e785",
+  "eventStore" : {
+    "id" : "99d7d436-df4f-4bad-9041-2ca6b607a181",
+    "name" : "Puneet_test_16th_oct_FromDB",
+    "type" : "EVENTSTORE",
+    "key" : "Puneet_test_16th_oct_FromDB",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/Puneet_test_16th_oct_FromDB_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/Puneet_test_16th_oct_FromDB_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/Puneet_test_16th_oct_FromDB_snap",
+    "snapshotDatabase" : "Puneet_test_16th_oct_FromDB_snap",
+    "developmentDatabase" : "Puneet_test_16th_oct_FromDB_dev",
+    "productionDatabase" : "Puneet_test_16th_oct_FromDB_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-10-16T06:08:36.021Z",
+    "updatedAt" : "2024-10-16T06:08:36.021Z"
+  }
+}, {
+  "id" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+  "name" : "epoch",
+  "database" : "Puneet_test_16th_oct_FromDB_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "c07edd46-bafc-41c7-8160-fe9cbd80e56a",
+  "timeSource" : "event_date",
+  "timeFormat" : "DD-MM-YYYY",
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "fc7c48b4-62d2-4d0c-bca1-7186d879cce8",
+    "name" : "id",
+    "processMappingId" : "4ec489e4-f497-420e-8cf5-e13204c92472",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "13265fc2-3e08-4d16-98e6-84cb126ffd96",
+    "name" : "event_date",
+    "processMappingId" : "4b15fbb9-b31d-4a82-a9f1-22cbf71162da",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "datatype" : "DATE",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "e2e0bf6e-347b-4abf-823d-911d030954d0",
+    "name" : "epoch_time",
+    "processMappingId" : "d180bcdd-68c9-42e2-aa89-79592bfc8955",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "bd8e87b7-f4f5-4d90-84ec-94d2cf9e74c7",
+    "name" : "description",
+    "processMappingId" : "747c5bcc-6b98-4007-9cb2-9ad0579fbd12",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "c65054e0-3933-47e7-b720-4a4ce3472e12",
+    "name" : "status",
+    "processMappingId" : "f694b81d-b817-44ee-914e-44cec90166bb",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "47051b83-7411-47b1-83ba-8bfedebf5fbc",
+    "name" : "visitor_date",
+    "processMappingId" : "f0bb8008-22b2-4ea2-9236-708df5603244",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "datatype" : "DATE",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  }, {
+    "id" : "c07edd46-bafc-41c7-8160-fe9cbd80e56a",
+    "name" : "partition_date",
+    "processMappingId" : "5fe59f03-ecad-4f0c-8980-082e38015fe6",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 7
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "36b7170a-6767-4af7-9a3f-1915e68aaf4f",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6"
+  }, {
+    "id" : "a045f4be-d37b-42f0-9a81-3c42faaa0df4",
+    "datasetId" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "e6bc2a5c-fcbe-495f-a54c-a4ad0e8810b6"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "5e18b564-6a52-4df5-830a-89b6385f75ac",
+  "eventStore" : {
+    "id" : "99d7d436-df4f-4bad-9041-2ca6b607a181",
+    "name" : "Puneet_test_16th_oct_FromDB",
+    "type" : "EVENTSTORE",
+    "key" : "Puneet_test_16th_oct_FromDB",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/Puneet_test_16th_oct_FromDB_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/Puneet_test_16th_oct_FromDB_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/Puneet_test_16th_oct_FromDB_snap",
+    "snapshotDatabase" : "Puneet_test_16th_oct_FromDB_snap",
+    "developmentDatabase" : "Puneet_test_16th_oct_FromDB_dev",
+    "productionDatabase" : "Puneet_test_16th_oct_FromDB_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-10-16T06:08:36.021Z",
+    "updatedAt" : "2024-10-16T06:08:36.021Z"
+  }
+}, {
+  "id" : "ea75de37-921c-417f-ae26-2705727dfabf",
+  "name" : "events_output_4",
+  "database" : "Puneet_test_16th_oct_FromDB_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "83fa26fe-ee86-4ca0-b543-2d27ec846fb2",
+  "timeSource" : "event_date",
+  "timeFormat" : "yyyy-MM-dd",
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "fa45895a-127d-4118-9685-5fbac8ee7130",
+    "name" : "id",
+    "processMappingId" : "29b19361-262a-4f09-a356-65ebac2184c8",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "05a5a6ed-70d4-4672-91a7-2d2b3136be3e",
+    "name" : "event_date",
+    "processMappingId" : "06cd4c91-be21-4096-9301-e8da9c526b61",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "datatype" : "DATE",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "b615fbb4-089a-4180-b604-d2d9274055ee",
+    "name" : "epoch_time",
+    "processMappingId" : "c1cc3b7c-bfc9-4f6a-bb2b-6f5bcf4819f3",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "d69954b4-cb12-442b-ab8d-4629be52158a",
+    "name" : "description",
+    "processMappingId" : "ebf3f95e-4ab2-4d2c-8836-ed099f175480",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "2c7ac306-bb57-41a9-ad70-f4268ea93612",
+    "name" : "status",
+    "processMappingId" : "66984a95-afba-4db7-a201-c9827b4fd068",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "8b3f21ea-e53d-46fa-9bc8-7332c0e59a58",
+    "name" : "visitor_date",
+    "processMappingId" : "53bc92a4-0d20-4f39-8c3b-944885edf8e2",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "datatype" : "DATE",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  }, {
+    "id" : "83fa26fe-ee86-4ca0-b543-2d27ec846fb2",
+    "name" : "partition_date",
+    "processMappingId" : "1492c131-da8f-45d1-bff0-06fef14075f4",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 7
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "3bc5984c-ccce-460e-bd3f-2eaa13ec4d84",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "ea75de37-921c-417f-ae26-2705727dfabf"
+  }, {
+    "id" : "28ef8540-255b-4fe6-8ac5-6ae44fb5ecea",
+    "datasetId" : "ea75de37-921c-417f-ae26-2705727dfabf",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "ea75de37-921c-417f-ae26-2705727dfabf"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "1ea4f2aa-9984-43d8-8865-4752da55d9b4",
+  "eventStore" : {
+    "id" : "99d7d436-df4f-4bad-9041-2ca6b607a181",
+    "name" : "Puneet_test_16th_oct_FromDB",
+    "type" : "EVENTSTORE",
+    "key" : "Puneet_test_16th_oct_FromDB",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/Puneet_test_16th_oct_FromDB_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/Puneet_test_16th_oct_FromDB_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/Puneet_test_16th_oct_FromDB_snap",
+    "snapshotDatabase" : "Puneet_test_16th_oct_FromDB_snap",
+    "developmentDatabase" : "Puneet_test_16th_oct_FromDB_dev",
+    "productionDatabase" : "Puneet_test_16th_oct_FromDB_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-10-16T06:08:36.021Z",
+    "updatedAt" : "2024-10-16T06:08:36.021Z"
+  }
+} ]
