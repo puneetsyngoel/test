@@ -1,0 +1,116 @@
+[ {
+  "id" : "413ce465-c236-4901-932c-670f3ddd01b9",
+  "name" : "syntasa_from_db_demo_hourly__output",
+  "database" : "demo_output_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "HOURLY",
+  "partitionedDateColumnId" : "28ea7899-286b-45f4-9b90-ea2bae9230ef",
+  "timeSource" : "login_time",
+  "timeFormat" : "",
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "acf9b7e5-ee16-48da-9441-b5a9dbdc6cdd",
+    "name" : "visitor_id",
+    "processMappingId" : "5cfcf1d0-99e5-4ebe-8417-221761ea0355",
+    "datasetId" : "413ce465-c236-4901-932c-670f3ddd01b9",
+    "datatype" : "INT",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "ef670947-e919-40c0-97d4-8f0f13626ec9",
+    "name" : "visitor_name",
+    "processMappingId" : "2855598a-6191-45b6-9b4f-471547331548",
+    "datasetId" : "413ce465-c236-4901-932c-670f3ddd01b9",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "8f5cb324-a9f2-49eb-9782-4706a974612f",
+    "name" : "browser_name",
+    "processMappingId" : "daf67c39-299c-41e5-b9e9-44f7cb22c918",
+    "datasetId" : "413ce465-c236-4901-932c-670f3ddd01b9",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "b64cb60e-bf1b-429b-a60e-7b602427af1f",
+    "name" : "browser_os",
+    "processMappingId" : "f2aef23e-dd6f-444c-b3df-7a869eacf241",
+    "datasetId" : "413ce465-c236-4901-932c-670f3ddd01b9",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "2f87506a-46d7-42da-9685-2405cc8ea1c0",
+    "name" : "login_time",
+    "processMappingId" : "d4ec61f5-8779-4634-b828-ab0adfd4d6ef",
+    "datasetId" : "413ce465-c236-4901-932c-670f3ddd01b9",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "28ea7899-286b-45f4-9b90-ea2bae9230ef",
+    "name" : "partition_date",
+    "processMappingId" : "45a7b62a-3918-480d-a176-342d9522144d",
+    "datasetId" : "413ce465-c236-4901-932c-670f3ddd01b9",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "722e6f8f-4176-4ef3-8c2b-fd6cf605a3a5",
+    "datasetId" : "413ce465-c236-4901-932c-670f3ddd01b9",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "413ce465-c236-4901-932c-670f3ddd01b9"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "85d39fb8-eb63-4a69-8c2d-7351c6500d15",
+  "eventStore" : {
+    "id" : "a18da71f-5ee7-4293-b36c-56aa9179498b",
+    "name" : "demo_output",
+    "type" : "EVENTSTORE",
+    "key" : "demo_output",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/demo_output_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/demo_output_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/demo_output_snap",
+    "snapshotDatabase" : "demo_output_snap",
+    "developmentDatabase" : "demo_output_dev",
+    "productionDatabase" : "demo_output_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "649fab3d-760d-423d-8a84-492f88d32f0d",
+    "createdById" : "649fab3d-760d-423d-8a84-492f88d32f0d",
+    "modifiedById" : "649fab3d-760d-423d-8a84-492f88d32f0d",
+    "createdAt" : "2025-05-13T09:26:54.352Z",
+    "updatedAt" : "2025-05-13T09:26:54.352Z"
+  }
+} ]

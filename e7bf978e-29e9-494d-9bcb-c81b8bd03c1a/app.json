@@ -1,0 +1,34 @@
+{
+  "id" : "e7bf978e-29e9-494d-9bcb-c81b8bd03c1a",
+  "key" : "TODB_Demo",
+  "appPrefix" : "todb_demo",
+  "name" : "TO DB - Demo",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "a18da71f-5ee7-4293-b36c-56aa9179498b",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "649fab3d-760d-423d-8a84-492f88d32f0d",
+  "createdById" : "649fab3d-760d-423d-8a84-492f88d32f0d",
+  "modifiedById" : "649fab3d-760d-423d-8a84-492f88d32f0d",
+  "audienceVersion" : null,
+  "createdAt" : "2025-07-15T11:39:02.629Z",
+  "updatedAt" : "2025-07-15T11:49:05.481Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "demo_output"
+}
