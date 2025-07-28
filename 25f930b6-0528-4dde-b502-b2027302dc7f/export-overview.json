@@ -1,0 +1,8 @@
+{
+  "appName" : "12thAprilQA02_kuber",
+  "environment" : "DEVELOPMENT",
+  "provider" : "GOOGLE",
+  "exportDate" : "2025-07-28T08:40:50.115Z",
+  "sourceVersion" : "8.3.0-beta2",
+  "exportBy" : "syntasa_service_account"
+}

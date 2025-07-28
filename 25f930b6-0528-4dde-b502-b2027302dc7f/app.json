@@ -1,0 +1,34 @@
+{
+  "id" : "25f930b6-0528-4dde-b502-b2027302dc7f",
+  "key" : "thAprilQA02_kuber",
+  "appPrefix" : "thaprilqa02_kuber",
+  "name" : "12thAprilQA02_kuber",
+  "description" : "",
+  "module" : "COMPOSER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "990c7308-a862-4cac-8871-4de7cdc6e6a6",
+  "eventStoreId" : "bf401279-ef96-472b-98f7-8c71b32873b4",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2024-04-12T08:59:56.103Z",
+  "updatedAt" : "2024-04-12T08:59:56.103Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Composer Free Form",
+    "key" : "COMPOSER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "test_dixoncurryprod"
+}

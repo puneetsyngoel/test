@@ -1,0 +1,331 @@
+{
+  "lastUserSave" : "2024-08-27T08:30:08.000Z",
+  "id" : "497a8987-c0c6-44dd-afc9-5cb68777d843",
+  "name" : "Development",
+  "description" : null,
+  "appId" : "25f930b6-0528-4dde-b502-b2027302dc7f",
+  "canvasGraph" : {
+    "nodes" : [ {
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "BIGQUERY",
+      "left" : -576,
+      "state" : "CONFIGURED",
+      "label" : "testBQ12thApril",
+      "top" : -109,
+      "type" : "objectType",
+      "id" : "2b324b0f-4786-4131-8eed-f283a9e67cb0",
+      "nodeType" : "objectType"
+    }, {
+      "id" : "757e7037-7cbd-4921-9d0c-f74e9241b5e9",
+      "top" : -84,
+      "left" : -273,
+      "label" : "BQ Process",
+      "ports" : [ {
+        "id" : "757e7037-7cbd-4921-9d0c-f74e9241b5e9.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "757e7037-7cbd-4921-9d0c-f74e9241b5e9.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "BQ_PROCESSOR",
+      "state" : "COMPLETED"
+    }, {
+      "id" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540",
+      "top" : -84,
+      "left" : -73,
+      "label" : "thaprilqa02_kuber_Output",
+      "ports" : [ {
+        "id" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540.output",
+        "type" : "multiOutput"
+      } ],
+      "nodeType" : "objectType",
+      "objectTypeKey" : "TABLE",
+      "objectCategoryKey" : "DATASET",
+      "state" : null
+    } ],
+    "edges" : [ {
+      "source" : "2b324b0f-4786-4131-8eed-f283a9e67cb0.output",
+      "target" : "757e7037-7cbd-4921-9d0c-f74e9241b5e9.input",
+      "data" : {
+        "id" : "ece1e6a0-f98c-41d7-bf86-9b1688eff7e6",
+        "type" : "default"
+      }
+    }, {
+      "source" : "757e7037-7cbd-4921-9d0c-f74e9241b5e9.output",
+      "target" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540.input",
+      "data" : { }
+    } ],
+    "ports" : [ {
+      "id" : "2b324b0f-4786-4131-8eed-f283a9e67cb0.output"
+    }, {
+      "id" : "2b324b0f-4786-4131-8eed-f283a9e67cb0.input"
+    }, {
+      "id" : "757e7037-7cbd-4921-9d0c-f74e9241b5e9.input"
+    }, {
+      "id" : "757e7037-7cbd-4921-9d0c-f74e9241b5e9.output"
+    }, {
+      "id" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540.output"
+    }, {
+      "id" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540.input"
+    } ],
+    "groups" : [ ]
+  },
+  "environment" : "DEVELOPMENT",
+  "parentWorkflowId" : null,
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : null,
+  "parameters" : {
+    "processConfiguration" : [ {
+      "graphNodeId" : "72c6511a-d3e7-4d6c-8345-7b5bc047b8ff",
+      "name" : "BQ Process",
+      "processTypeKey" : "BQ_PROCESSOR",
+      "templateIconKey" : "BQ_PROCESSOR",
+      "defaultRuntimeId" : "bfa518ad-fac8-4a41-b523-3c0f90798840",
+      "templateIconSrc" : "assets/img/workflow/bq-process.svg",
+      "isSystemIcon" : true,
+      "availableRuntimes" : [ {
+        "id" : "bfa518ad-fac8-4a41-b523-3c0f90798840",
+        "name" : "test12thAApril",
+        "runtimeType" : "KUBERNETES_CONTAINER",
+        "status" : "RUNNING",
+        "imageType" : "SYNTASA_INTERACTIVE_QUERY_IMAGE"
+      } ]
+    } ],
+    "interactiveMode" : false
+  },
+  "createdAt" : "2024-04-12T08:59:56.389Z",
+  "updatedAt" : "2024-08-27T08:30:08.531Z",
+  "app" : {
+    "id" : "25f930b6-0528-4dde-b502-b2027302dc7f",
+    "key" : "thAprilQA02_kuber",
+    "appPrefix" : "thaprilqa02_kuber",
+    "name" : "12thAprilQA02_kuber",
+    "description" : "",
+    "module" : "COMPOSER",
+    "partitionScheme" : "DAILY",
+    "templateId" : "990c7308-a862-4cac-8871-4de7cdc6e6a6",
+    "eventStoreId" : "bf401279-ef96-472b-98f7-8c71b32873b4",
+    "iconKey" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "audienceVersion" : null,
+    "createdAt" : "2024-04-12T08:59:56.103Z",
+    "updatedAt" : "2024-04-12T08:59:56.103Z",
+    "deletedAt" : null
+  },
+  "graphNodes" : [ {
+    "id" : "72c6511a-d3e7-4d6c-8345-7b5bc047b8ff",
+    "name" : "BQ Process",
+    "appNodeId" : "757e7037-7cbd-4921-9d0c-f74e9241b5e9",
+    "workflowId" : "497a8987-c0c6-44dd-afc9-5cb68777d843",
+    "objectTypeKey" : null,
+    "processTypeKey" : "BQ_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "COMPLETED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "filters" : { },
+      "parameters" : {
+        "fileName" : "",
+        "query" : "select\nCAST(substr(date_time , 1 , 10) as DATE) session_date,\nvisitor_id,\ncountry\nfrom `qa_dev_foundation2.tb_event`\nwhere daily_Visitor > 0 and file_date = '2016-01-02' limit 10;",
+        "legacySQL" : null,
+        "bqQueryProcessType" : "OVERWRITE",
+        "codeParams" : [ {
+          "name" : "@InputConnection1",
+          "value" : "testBQ12thApril",
+          "appNodeId" : "2b324b0f-4786-4131-8eed-f283a9e67cb0",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        }, {
+          "name" : "@OutputTable1",
+          "value" : "@database.thaprilqa02_kuber_output",
+          "appNodeId" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540",
+          "type" : "OUTPUT",
+          "subType" : "DATASET"
+        } ]
+      },
+      "outputParameters" : {
+        "datasets" : [ {
+          "appNodeId" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540",
+          "displayName" : "thaprilqa02_kuber_Output",
+          "objectTypeKey" : "TABLE",
+          "partitionScheme" : "DAILY",
+          "loadToBigQuery" : false,
+          "loadToRedshift" : false,
+          "fileFormat" : "PARQUET",
+          "tableName" : "thaprilqa02_kuber_output"
+        } ]
+      }
+    },
+    "templateVersionId" : "0e32f476-970b-4d8d-88c9-6415f5f3f7b0",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-04-12T09:01:26.236Z",
+    "updatedAt" : "2024-08-13T11:28:47.238Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "BQ Process",
+      "schemaAware" : false,
+      "runtime" : "CONTAINER",
+      "icon" : {
+        "key" : "BQ_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "8dacfe98-7157-4d2a-a20c-8c6e46183c32",
+      "graphNodeId" : "72c6511a-d3e7-4d6c-8345-7b5bc047b8ff",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "d21f3e16-2876-4b58-b901-9d822b8a4a5b",
+        "fromPortId" : "8770fc17-cbf4-4012-a157-4d2480410d64",
+        "toPortId" : "8dacfe98-7157-4d2a-a20c-8c6e46183c32"
+      } ]
+    }, {
+      "id" : "b48433dd-b1b1-447c-a056-b7316e8b3e5d",
+      "graphNodeId" : "72c6511a-d3e7-4d6c-8345-7b5bc047b8ff",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "96c13a0f-1503-4387-85db-4e50389d1356",
+        "fromPortId" : "b48433dd-b1b1-447c-a056-b7316e8b3e5d",
+        "toPortId" : "53e8ba6e-64be-4591-aa28-fac0cbf20b04"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "BQ_PROCESSOR"
+    }
+  }, {
+    "id" : "ecdc1e73-d403-44a9-b953-ee7deeb14d7a",
+    "name" : "testBQ12thApril",
+    "appNodeId" : "2b324b0f-4786-4131-8eed-f283a9e67cb0",
+    "workflowId" : "497a8987-c0c6-44dd-afc9-5cb68777d843",
+    "objectTypeKey" : "BIGQUERY",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "9da2d09b-e286-4b2d-917d-c7af6e8493e1",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-04-12T09:01:26.236Z",
+    "updatedAt" : "2024-04-12T09:01:26.236Z",
+    "objectType" : {
+      "name" : "Big Query",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "bq-connection.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "c1cbe909-d3bf-452b-a1fc-634da953a287",
+      "graphNodeId" : "ecdc1e73-d403-44a9-b953-ee7deeb14d7a",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "8770fc17-cbf4-4012-a157-4d2480410d64",
+      "graphNodeId" : "ecdc1e73-d403-44a9-b953-ee7deeb14d7a",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "d21f3e16-2876-4b58-b901-9d822b8a4a5b",
+        "fromPortId" : "8770fc17-cbf4-4012-a157-4d2480410d64",
+        "toPortId" : "8dacfe98-7157-4d2a-a20c-8c6e46183c32"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  }, {
+    "id" : "dbd9f379-0f9c-49f2-b934-3d407bd8e2c4",
+    "name" : "thaprilqa02_kuber_Output",
+    "appNodeId" : "cffc1ae0-ffcd-48f1-bb0c-01aa99891540",
+    "workflowId" : "497a8987-c0c6-44dd-afc9-5cb68777d843",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "7f715477-d8be-4815-af76-9486f295f0dd",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-04-12T09:01:26.264Z",
+    "updatedAt" : "2024-04-12T09:01:26.264Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "53e8ba6e-64be-4591-aa28-fac0cbf20b04",
+      "graphNodeId" : "dbd9f379-0f9c-49f2-b934-3d407bd8e2c4",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "96c13a0f-1503-4387-85db-4e50389d1356",
+        "fromPortId" : "b48433dd-b1b1-447c-a056-b7316e8b3e5d",
+        "toPortId" : "53e8ba6e-64be-4591-aa28-fac0cbf20b04"
+      } ]
+    }, {
+      "id" : "2a8ed809-2447-48b8-a7be-ee42300a3e5a",
+      "graphNodeId" : "dbd9f379-0f9c-49f2-b934-3d407bd8e2c4",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  } ]
+}
