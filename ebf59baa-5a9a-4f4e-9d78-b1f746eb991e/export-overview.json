@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_DONT_DELETE_8_3_0_TOFILE",
+  "environment" : "DEVELOPMENT",
+  "provider" : "GOOGLE",
+  "exportDate" : "2025-08-08T09:54:23.960Z",
+  "sourceVersion" : "8.3.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}

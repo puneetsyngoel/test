@@ -1,0 +1,34 @@
+{
+  "id" : "ebf59baa-5a9a-4f4e-9d78-b1f746eb991e",
+  "key" : "QA_DONT_DELETE_8_3_0_TOFILE",
+  "appPrefix" : "qa_dont_delete_8_3_0_tofile",
+  "name" : "QA_DONT_DELETE_8_3_0_TOFILE",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "b1da2ae9-e0f1-481e-bdec-47246f34e1bf",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2025-08-07T11:12:55.949Z",
+  "updatedAt" : "2025-08-07T11:55:01.860Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DELETE_8_3_0_REG"
+}
