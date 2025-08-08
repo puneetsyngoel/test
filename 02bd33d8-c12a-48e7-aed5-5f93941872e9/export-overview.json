@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_DONT_DELETE_8_3_0_LOOKAHEAD",
+  "environment" : "DEVELOPMENT",
+  "provider" : "GOOGLE",
+  "exportDate" : "2025-08-08T10:00:33.303Z",
+  "sourceVersion" : "8.3.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}
