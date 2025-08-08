@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_DONT_DELETE_8_3_0_LOOKAHEAD",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AWS",
+  "exportDate" : "2025-08-08T09:52:20.322Z",
+  "sourceVersion" : "8.3.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}
