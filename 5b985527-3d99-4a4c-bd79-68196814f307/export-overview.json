@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_DONT_DELETE_TEST",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AWS",
+  "exportDate" : "2025-08-08T10:00:11.076Z",
+  "sourceVersion" : "8.3.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}

@@ -1,0 +1,630 @@
+{
+  "lastUserSave" : "2025-08-08T09:41:56.000Z",
+  "id" : "1105c6f9-5e55-48ea-9bb7-a89fbc438360",
+  "name" : "Development",
+  "description" : null,
+  "appId" : "5b985527-3d99-4a4c-bd79-68196814f307",
+  "canvasGraph" : {
+    "nodes" : [ {
+      "left" : -554,
+      "top" : -142,
+      "id" : "9e5d177c-bcf4-4eb1-a5d6-2cb5b07e55f5",
+      "nodeType" : "objectType",
+      "label" : "QA_DONT_DEL_REG_S3",
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "S3",
+      "type" : "objectType",
+      "state" : "CONFIGURED"
+    }, {
+      "id" : "3ec9a467-d7b6-449e-9498-c2f858491eec",
+      "top" : -113.5,
+      "left" : -374,
+      "label" : "From File",
+      "ports" : [ {
+        "id" : "3ec9a467-d7b6-449e-9498-c2f858491eec.input",
+        "type" : "singleInput"
+      }, {
+        "id" : "3ec9a467-d7b6-449e-9498-c2f858491eec.output",
+        "type" : "singleOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "EVENT_LOADER",
+      "state" : "FAILED"
+    }, {
+      "id" : "4eb6d780-7d0b-4f16-a874-deb6ed6ebe11",
+      "top" : -113.5,
+      "left" : -174,
+      "label" : "qa_dont_delete_FromFiletest_output",
+      "ports" : [ {
+        "id" : "4eb6d780-7d0b-4f16-a874-deb6ed6ebe11.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "4eb6d780-7d0b-4f16-a874-deb6ed6ebe11.output",
+        "type" : "multiOutput"
+      } ],
+      "nodeType" : "objectType",
+      "objectTypeKey" : "TABLE",
+      "objectCategoryKey" : "DATASET"
+    } ],
+    "edges" : [ {
+      "source" : "9e5d177c-bcf4-4eb1-a5d6-2cb5b07e55f5.output",
+      "target" : "3ec9a467-d7b6-449e-9498-c2f858491eec.input",
+      "data" : {
+        "id" : "b3802491-6bd3-428e-b0e0-8827d1c65cc0",
+        "type" : "default"
+      }
+    }, {
+      "source" : "3ec9a467-d7b6-449e-9498-c2f858491eec.output",
+      "target" : "4eb6d780-7d0b-4f16-a874-deb6ed6ebe11.input",
+      "data" : { }
+    } ],
+    "groups" : [ ],
+    "ports" : [ {
+      "id" : "9e5d177c-bcf4-4eb1-a5d6-2cb5b07e55f5.input"
+    }, {
+      "id" : "9e5d177c-bcf4-4eb1-a5d6-2cb5b07e55f5.output"
+    }, {
+      "id" : "3ec9a467-d7b6-449e-9498-c2f858491eec.input"
+    }, {
+      "id" : "3ec9a467-d7b6-449e-9498-c2f858491eec.output"
+    }, {
+      "id" : "4eb6d780-7d0b-4f16-a874-deb6ed6ebe11.input"
+    }, {
+      "id" : "4eb6d780-7d0b-4f16-a874-deb6ed6ebe11.output"
+    } ]
+  },
+  "environment" : "DEVELOPMENT",
+  "parentWorkflowId" : null,
+  "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "parameters" : {
+    "processConfiguration" : [ {
+      "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+      "name" : "From File",
+      "processTypeKey" : "EVENT_LOADER",
+      "defaultRuntimeId" : null,
+      "templateIconKey" : "EVENT_LOADER"
+    } ]
+  },
+  "createdAt" : "2025-08-08T09:35:48.931Z",
+  "updatedAt" : "2025-08-08T09:46:26.292Z",
+  "app" : {
+    "id" : "5b985527-3d99-4a4c-bd79-68196814f307",
+    "key" : "QA_DONT_DELETE_TEST",
+    "appPrefix" : "qa_dont_delete_test",
+    "name" : "QA_DONT_DELETE_TEST",
+    "description" : "",
+    "module" : "SYNTHESIZER",
+    "partitionScheme" : "DAILY",
+    "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+    "eventStoreId" : "2a62939a-ca8c-4299-bd2e-c5b12a9b7f0b",
+    "iconKey" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "audienceVersion" : null,
+    "createdAt" : "2025-08-08T09:35:48.865Z",
+    "updatedAt" : "2025-08-08T09:41:55.923Z",
+    "deletedAt" : null
+  },
+  "graphNodes" : [ {
+    "id" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+    "name" : "From File",
+    "appNodeId" : "3ec9a467-d7b6-449e-9498-c2f858491eec",
+    "workflowId" : "1105c6f9-5e55-48ea-9bb7-a89fbc438360",
+    "objectTypeKey" : null,
+    "processTypeKey" : "EVENT_LOADER",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "FAILED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "parameters" : {
+        "sourcePath" : "/qa/regression/regression_apps/from-file/Delimited/",
+        "sourceFilePattern" : "EventDatasetV.*.csv",
+        "fileType" : "TEXTFILE",
+        "compressionType" : "NONE",
+        "numFileThreads" : 10,
+        "datePattern" : "yyyyMMdd",
+        "dateExtractionType" : "INDEX",
+        "days" : 0,
+        "chronology" : "DAYS",
+        "dateStartIndex" : 13,
+        "dateEndIndex" : 21,
+        "incrementalLoad" : true,
+        "containsHeader" : true,
+        "fileDataFormat" : "DELIMITED",
+        "loadType" : "DAILY",
+        "fieldDelimiter" : ",",
+        "quoteCharacter" : "\\\"",
+        "escapeCharacter" : "\\\\\\\\"
+      },
+      "mapping" : {
+        "columns" : [ {
+          "id" : "dbce0b25-d20d-4d5e-967c-c01bfdadbb72",
+          "order" : 1,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "68966bd0-0729-4790-92d6-c0c7c43d38d9",
+          "name" : "visitor_id",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "3977ca53-08e0-458f-bdd6-5722d5081946",
+          "order" : 2,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "f751d29f-74dd-4491-9310-cef1dff381dc",
+          "name" : "browser",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "e035679e-26f0-4eab-91ab-eb7d5e606f2f",
+          "order" : 3,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "44b89ff6-fe0e-4ae6-b729-d8590873569d",
+          "name" : "country",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "6b5cea13-b45a-4882-bbf4-5d34d3b02793",
+          "order" : 4,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "213acde6-dc7f-4f13-987a-7579d202f2fd",
+          "name" : "city",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "eaaf2fb8-130b-4a46-b62f-392d90e2fabb",
+          "order" : 5,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "0a3c3d1d-504a-4699-8213-82be79dc1111",
+          "name" : "browser_type",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "5653791f-e67b-42f6-912c-cea02898c927",
+          "order" : 6,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "14244c12-2b3a-4ed0-82fa-e6d8617eed72",
+          "name" : "currency",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "8d2857fb-4478-4002-a584-918a4fd56c1c",
+          "order" : 7,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "36e7f383-b7d8-4c60-9bd5-ea06f01fbb91",
+          "name" : "date_time",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "a6193c04-1b4c-419c-9092-d82be0a3c3f3",
+          "order" : 8,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "f8aa7686-fb78-4f75-94f6-5b3b6270ac53",
+          "name" : "zip_code",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "c3532f85-0c23-45ce-b961-1e2ae18549e1",
+          "order" : 9,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "e4ded901-d952-4867-838c-5f3cd709b87a",
+          "name" : "last_seen",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "0c004179-3822-4112-940e-25eb079ec6d2",
+          "order" : 10,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "57520fcb-5cf9-4f5f-a0b4-d2da493dd915",
+          "name" : "pagename",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "54874c68-fa45-4307-8307-c8658d1a0ba6",
+          "order" : 11,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "83e619ab-121b-4dab-992e-1ae0c6924386",
+          "name" : "pageUrl",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "76f3d344-c058-4eb0-b066-16cc4e2dccfe",
+          "order" : 12,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "5b5630b8-8e67-4405-8442-434141a32b5a",
+          "name" : "referrer_type",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "b7709f31-566b-42ca-8dc9-abe94eff5e5d",
+          "order" : 13,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "4fa4b677-4450-4f6d-ad94-8a0165218c1a",
+          "name" : "device_used",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "081dfc0b-4b1e-4a00-ba07-524e49925626",
+          "order" : 14,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "dec5ae17-a9ba-4a57-999f-8f378d1a7b0e",
+          "name" : "channel",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "a1723de3-03dd-4323-a9ff-8e5e18172431",
+          "order" : 15,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "cbc24174-d4b4-4b6a-a488-b2e04346117c",
+          "name" : "is_checkout",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "bf9a3935-30cd-4a37-9252-4045db1bb332",
+          "order" : 16,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "e58eec13-684f-4af3-abcc-8962f9150eaf",
+          "name" : "is_test",
+          "label" : null,
+          "source" : "",
+          "datatype" : "String",
+          "isGroupBy" : null,
+          "isPartitioned" : null,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        }, {
+          "id" : "7b202a47-4261-40ad-bf6e-84dc82f880a7",
+          "order" : 17,
+          "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+          "appProcessMappingId" : "5ab554a2-9491-4f1c-8487-ceaa1760b299",
+          "name" : "file_date",
+          "label" : null,
+          "source" : "",
+          "datatype" : "string",
+          "isGroupBy" : null,
+          "isPartitioned" : true,
+          "isFeature" : null,
+          "isLabelField" : null,
+          "isIdentifier" : null,
+          "operationtype" : null,
+          "note" : null,
+          "columntype" : null,
+          "metadata" : null
+        } ]
+      },
+      "outputParameters" : {
+        "datasets" : [ {
+          "appNodeId" : "4eb6d780-7d0b-4f16-a874-deb6ed6ebe11",
+          "displayName" : "qa_dont_delete_FromFiletest_output",
+          "objectTypeKey" : "TABLE",
+          "partitionScheme" : "DAILY",
+          "loadToBigQuery" : false,
+          "loadToRedshift" : false,
+          "fileFormat" : "TEXTFILE",
+          "fieldDelimiter" : "\\t",
+          "isCompressed" : true,
+          "tableName" : "qa_dont_delete_FromFiletest_output"
+        } ]
+      }
+    },
+    "templateVersionId" : "add20702-7f3c-4ff0-b27c-8bf926b48d03",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-08-08T09:41:56.027Z",
+    "updatedAt" : "2025-08-08T09:46:26.240Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "From File",
+      "schemaAware" : true,
+      "runtime" : "SPARK",
+      "icon" : {
+        "key" : "EVENT_LOADER"
+      }
+    },
+    "graphNodePorts" : [ {
+      "id" : "f13f2de8-07b4-4f78-98ab-0a4cdf1bc5b7",
+      "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "5b5c3fc5-78fe-4ec7-bedc-b7bafcbf5c8c",
+        "fromPortId" : "caaef40a-82be-4df5-b862-8716f47c59cb",
+        "toPortId" : "f13f2de8-07b4-4f78-98ab-0a4cdf1bc5b7"
+      } ]
+    }, {
+      "id" : "d232a03e-7566-46fa-a547-1698470b19cb",
+      "graphNodeId" : "e6d2403d-7975-49f8-b4b0-791a64c2260b",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "2ccdb0ad-4770-4697-a196-e167bc5e004d",
+        "fromPortId" : "d232a03e-7566-46fa-a547-1698470b19cb",
+        "toPortId" : "42360f8f-74f1-41b2-a0cb-e58fe7648741"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "EVENT_LOADER"
+    }
+  }, {
+    "id" : "6b436e01-25db-4113-b487-b89aeb376a5a",
+    "name" : "QA_DONT_DEL_REG_S3",
+    "appNodeId" : "9e5d177c-bcf4-4eb1-a5d6-2cb5b07e55f5",
+    "workflowId" : "1105c6f9-5e55-48ea-9bb7-a89fbc438360",
+    "objectTypeKey" : "S3",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "1250ee14-5613-4146-b68f-66d65c63c7db",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-08-08T09:41:56.027Z",
+    "updatedAt" : "2025-08-08T09:41:56.027Z",
+    "objectType" : {
+      "name" : "S3",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "s3-connection.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "caaef40a-82be-4df5-b862-8716f47c59cb",
+      "graphNodeId" : "6b436e01-25db-4113-b487-b89aeb376a5a",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "5b5c3fc5-78fe-4ec7-bedc-b7bafcbf5c8c",
+        "fromPortId" : "caaef40a-82be-4df5-b862-8716f47c59cb",
+        "toPortId" : "f13f2de8-07b4-4f78-98ab-0a4cdf1bc5b7"
+      } ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "35b7f1dc-db59-46fe-a3a9-40a0a40b0a92",
+      "graphNodeId" : "6b436e01-25db-4113-b487-b89aeb376a5a",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  }, {
+    "id" : "7eea82ea-db91-4253-b990-b98816efda44",
+    "name" : "qa_dont_delete_FromFiletest_output",
+    "appNodeId" : "4eb6d780-7d0b-4f16-a874-deb6ed6ebe11",
+    "workflowId" : "1105c6f9-5e55-48ea-9bb7-a89fbc438360",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "996004a1-26f3-4703-a4d0-6b1833658579",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-08-08T09:41:56.041Z",
+    "updatedAt" : "2025-08-08T09:41:56.041Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "42360f8f-74f1-41b2-a0cb-e58fe7648741",
+      "graphNodeId" : "7eea82ea-db91-4253-b990-b98816efda44",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "2ccdb0ad-4770-4697-a196-e167bc5e004d",
+        "fromPortId" : "d232a03e-7566-46fa-a547-1698470b19cb",
+        "toPortId" : "42360f8f-74f1-41b2-a0cb-e58fe7648741"
+      } ]
+    }, {
+      "id" : "52a4846c-b8b1-4bfd-8506-a4d33f5d2902",
+      "graphNodeId" : "7eea82ea-db91-4253-b990-b98816efda44",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  } ]
+}
