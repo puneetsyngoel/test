@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_DONT_DEL_8_3_0_SPARK",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AZURE",
+  "exportDate" : "2025-08-11T11:27:40.527Z",
+  "sourceVersion" : "8.3.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}

@@ -1,0 +1,50 @@
+[ {
+  "id" : "2c595b4a-715c-4ff9-95e9-750d2e713f9e",
+  "name" : "qa_dont_del_8_3_0_spark_output",
+  "database" : "QA_DONT_DELETE_8_3_0_REG_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "8c203086-c5df-4e56-bf46-075b488c188c",
+    "datasetId" : "2c595b4a-715c-4ff9-95e9-750d2e713f9e",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "2c595b4a-715c-4ff9-95e9-750d2e713f9e"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "b7f831ff-994d-4fc5-b940-121fd836507e",
+  "eventStore" : {
+    "id" : "e38084ff-5a33-4b71-9a53-6aede26a7f51",
+    "name" : "QA_DONT_DELETE_8_3_0_REG",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DELETE_8_3_0_REG",
+    "developmentPath" : "abfss://syn-bucket@syndevsa2.dfs.core.windows.net/syn-cluster-data/eventstores/dev/QA_DONT_DELETE_8_3_0_REG_dev",
+    "productionPath" : "abfss://syn-bucket@syndevsa2.dfs.core.windows.net/syn-cluster-data/eventstores/prod/QA_DONT_DELETE_8_3_0_REG_prod",
+    "snapshotPath" : "abfss://syn-bucket@syndevsa2.dfs.core.windows.net/syn-cluster-data/eventstores/snap/QA_DONT_DELETE_8_3_0_REG_snap",
+    "snapshotDatabase" : "QA_DONT_DELETE_8_3_0_REG_snap",
+    "developmentDatabase" : "QA_DONT_DELETE_8_3_0_REG_dev",
+    "productionDatabase" : "QA_DONT_DELETE_8_3_0_REG_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "70a2c3f2-b7f4-437d-9720-103e03dc6e40",
+    "createdById" : "70a2c3f2-b7f4-437d-9720-103e03dc6e40",
+    "modifiedById" : "70a2c3f2-b7f4-437d-9720-103e03dc6e40",
+    "createdAt" : "2025-08-11T06:16:27.065Z",
+    "updatedAt" : "2025-08-11T06:16:27.065Z"
+  }
+} ]
