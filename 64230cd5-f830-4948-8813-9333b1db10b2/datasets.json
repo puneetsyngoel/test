@@ -1,0 +1,411 @@
+[ {
+  "id" : "cbef0ebd-58e7-429b-989e-d94ac36574d5",
+  "name" : "Newtest_BQ_output",
+  "database" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "4624abc2-668f-4f04-a49a-7df06b28e5be",
+  "eventStore" : {
+    "id" : "eb8f32ec-18e9-4903-9c8e-fde92f60f5b5",
+    "name" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0",
+    "type" : "EVENTSTORE",
+    "key" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0",
+    "developmentPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/dev/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+    "productionPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/prod/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_prod",
+    "snapshotPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/snap/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_snap",
+    "snapshotDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_snap",
+    "developmentDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+    "productionDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "createdById" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "modifiedById" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "createdAt" : "2025-06-18T06:21:43.342Z",
+    "updatedAt" : "2025-06-18T06:21:43.342Z"
+  }
+}, {
+  "id" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+  "name" : "from_file_output",
+  "database" : "QA_AUTO_DEL_DATASTORE_20250306065453_prod",
+  "environment" : "PRODUCTION",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "815ad552-07eb-4645-8ef1-7215a327d9f3",
+  "timeSource" : "",
+  "timeFormat" : "",
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "TEXTFILE",
+    "fieldDelimiter" : ",",
+    "isCompressed" : true,
+    "fileDataFormat" : "DELIMITED",
+    "quoteCharacter" : "\\\"",
+    "escapeCharacter" : "\\\\\\\\",
+    "containsHeader" : true
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "daccd84b-5f24-4991-a7c2-72aac2f247f5",
+    "name" : "visitor_id",
+    "processMappingId" : "8a2f4e4d-60c3-4e7e-87d2-087dc8bd37ed",
+    "datasetId" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+    "datatype" : "String",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "a09c56df-904d-4c59-bde4-7fe1d591bc25",
+    "name" : "browser",
+    "processMappingId" : "3c3a2d77-6c69-4f6b-9fa1-9bc04726f3c2",
+    "datasetId" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+    "datatype" : "String",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "de1d557a-1020-4e93-a030-ab1bc4240cf4",
+    "name" : "country",
+    "processMappingId" : "413c2e17-e21e-4f07-9443-9b30438e24f7",
+    "datasetId" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+    "datatype" : "String",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "e55d3f6b-40f7-4223-b980-f628442b14f4",
+    "name" : "currency",
+    "processMappingId" : "57856f53-0b01-407a-8904-d66df9fcae4e",
+    "datasetId" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+    "datatype" : "String",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "869e9569-5867-4d97-b0d1-a65c0fde9f73",
+    "name" : "date_time",
+    "processMappingId" : "020cf767-77c0-4b18-9e0b-9d5dfdd0b572",
+    "datasetId" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+    "datatype" : "String",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "815ad552-07eb-4645-8ef1-7215a327d9f3",
+    "name" : "file_date",
+    "processMappingId" : "cb8c706c-59d9-4ee2-ab55-3fd155c97bb7",
+    "datasetId" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "5f897fca-8241-4da3-bdbf-90fec4cd2101",
+    "datasetId" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65"
+  }, {
+    "id" : "051f1b3b-b617-493a-9654-b82fffe707e0",
+    "datasetId" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "31a9650d-947d-4fdb-9158-bd69e2f4bb65"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "15595e1e-95e1-483f-99b1-cabbd065f775",
+  "eventStore" : {
+    "id" : "1fe7c5db-a2e4-4983-9bcd-3e47960905ae",
+    "name" : "QA_AUTO_DEL_DATASTORE_20250306065453",
+    "type" : "EVENTSTORE",
+    "key" : "QA_AUTO_DEL_DATASTORE_20250306065453",
+    "developmentPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/dev/QA_AUTO_DEL_DATASTORE_20250306065453_dev",
+    "productionPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/prod/QA_AUTO_DEL_DATASTORE_20250306065453_prod",
+    "snapshotPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/snap/QA_AUTO_DEL_DATASTORE_20250306065453_snap",
+    "snapshotDatabase" : "QA_AUTO_DEL_DATASTORE_20250306065453_snap",
+    "developmentDatabase" : "QA_AUTO_DEL_DATASTORE_20250306065453_dev",
+    "productionDatabase" : "QA_AUTO_DEL_DATASTORE_20250306065453_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "c112ebae-1f5b-40d1-b974-9a9c956fa894",
+    "createdById" : "c112ebae-1f5b-40d1-b974-9a9c956fa894",
+    "modifiedById" : "c112ebae-1f5b-40d1-b974-9a9c956fa894",
+    "createdAt" : "2025-03-06T06:54:59.969Z",
+    "updatedAt" : "2025-03-06T06:54:59.969Z"
+  }
+}, {
+  "id" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+  "name" : "test_NFROMDB_output",
+  "database" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "ccaed45d-19f9-44cd-9c5c-cbf1aa608725",
+  "timeSource" : "file_date",
+  "timeFormat" : "yyyy-MM-dd",
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "61393a7a-2474-4b68-bc7d-2eae42c8e3b3",
+    "name" : "visitor_id",
+    "processMappingId" : "626ee29e-93e3-4eef-aaad-d0df5e05426e",
+    "datasetId" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "1aec0a90-4abc-4c62-b0e4-ab5a90af406c",
+    "name" : "browser",
+    "processMappingId" : "67deefbf-11db-4f18-b0fb-cf595a494783",
+    "datasetId" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "5539dc1f-c65e-4541-b82f-ae4790f0b1e3",
+    "name" : "country",
+    "processMappingId" : "6418e161-e786-497b-b458-fa79883094b7",
+    "datasetId" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "51a9a6d5-668e-44ea-81f5-c3ceef19abda",
+    "name" : "currency",
+    "processMappingId" : "db1e7d65-7ed2-4480-9aa3-0c726dd33854",
+    "datasetId" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "0a4f633a-e994-436c-a903-46bf62341f49",
+    "name" : "date_time",
+    "processMappingId" : "6a58304c-28fe-4eac-82ce-b410bf0108eb",
+    "datasetId" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "ccaed45d-19f9-44cd-9c5c-cbf1aa608725",
+    "name" : "file_date",
+    "processMappingId" : "1922604c-b9d2-4397-8f3b-6448eceeff46",
+    "datasetId" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+    "datatype" : "STRING",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "99dbe8d4-17af-4358-9458-2a20d88aa6c9",
+    "datasetId" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e"
+  }, {
+    "id" : "44cb05d3-2a5d-448a-9d9a-ed1fe366da93",
+    "datasetId" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "ae35bb8e-f00d-4451-9cab-d8bdd76fdb9e"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "f4e9454f-baf2-4807-bd96-863ff5393c5a",
+  "eventStore" : {
+    "id" : "eb8f32ec-18e9-4903-9c8e-fde92f60f5b5",
+    "name" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0",
+    "type" : "EVENTSTORE",
+    "key" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0",
+    "developmentPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/dev/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+    "productionPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/prod/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_prod",
+    "snapshotPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/snap/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_snap",
+    "snapshotDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_snap",
+    "developmentDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+    "productionDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "createdById" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "modifiedById" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "createdAt" : "2025-06-18T06:21:43.342Z",
+    "updatedAt" : "2025-06-18T06:21:43.342Z"
+  }
+}, {
+  "id" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+  "name" : "test_Nspark_output",
+  "database" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "fadffc9c-22c5-482d-b123-dfc031f280b5",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "707577e2-da9a-4cf4-8aac-b828c14ae981",
+    "name" : "visitor_id",
+    "processMappingId" : null,
+    "datasetId" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "646082f2-7554-4317-992d-1a88e425cf76",
+    "name" : "browser",
+    "processMappingId" : null,
+    "datasetId" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "cf2a94fe-23c2-49a2-95f7-cc37010649db",
+    "name" : "country",
+    "processMappingId" : null,
+    "datasetId" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "4d4c8d8c-cbe4-474c-870b-54031d4f212c",
+    "name" : "currency",
+    "processMappingId" : null,
+    "datasetId" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "9dfb82b5-0d74-4fd9-ad03-14332d2d1fac",
+    "name" : "date_time",
+    "processMappingId" : null,
+    "datasetId" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "fadffc9c-22c5-482d-b123-dfc031f280b5",
+    "name" : "file_date",
+    "processMappingId" : null,
+    "datasetId" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "63a46f42-ecad-413b-a7d2-6126966808a2",
+    "datasetId" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "a10fcb45-2836-43c7-a308-9bed51d3893c"
+  }, {
+    "id" : "278280ad-7172-478d-834b-99488aacd082",
+    "datasetId" : "a10fcb45-2836-43c7-a308-9bed51d3893c",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "a10fcb45-2836-43c7-a308-9bed51d3893c"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "970e4843-98d7-429b-babd-2290eea04820",
+  "eventStore" : {
+    "id" : "eb8f32ec-18e9-4903-9c8e-fde92f60f5b5",
+    "name" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0",
+    "type" : "EVENTSTORE",
+    "key" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0",
+    "developmentPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/dev/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+    "productionPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/prod/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_prod",
+    "snapshotPath" : "gs://synuat-bucket/syn-cluster-data/eventstores/snap/QA_Dont_Delete_ESTORE_ADHOC_8_3_0_snap",
+    "snapshotDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_snap",
+    "developmentDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_dev",
+    "productionDatabase" : "QA_Dont_Delete_ESTORE_ADHOC_8_3_0_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "createdById" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "modifiedById" : "9fce1d43-bfc2-4d4e-a932-febf3cdc7b03",
+    "createdAt" : "2025-06-18T06:21:43.342Z",
+    "updatedAt" : "2025-06-18T06:21:43.342Z"
+  }
+} ]
