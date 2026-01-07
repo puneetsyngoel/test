@@ -1,0 +1,34 @@
+{
+  "id" : "3ecb5be7-74b2-426c-b8da-ff33f9d72655",
+  "key" : "QA_DONT_DEL_ADHOC_8_3_0_NTOFILE",
+  "appPrefix" : "qa_dont_del_adhoc_8_3_0_ntofile",
+  "name" : "QA_DONT_DEL_ADHOC_8_3_0_NTOFILE",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "28a50c34-c489-46d8-8579-8353fb3ac16b",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "audienceVersion" : null,
+  "createdAt" : "2025-08-08T11:58:35.669Z",
+  "updatedAt" : "2025-08-08T12:01:02.974Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DEL_ADHOC_8_3_0"
+}
