@@ -1,0 +1,157 @@
+[ {
+  "id" : "3b306f8a-a42b-47d7-a199-07eee9b07ba3",
+  "name" : "test_sma_8135_output",
+  "database" : "New_Store_test_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "8e4e449b-6db7-4245-ab5e-0db39462977a",
+    "datasetId" : "3b306f8a-a42b-47d7-a199-07eee9b07ba3",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "3b306f8a-a42b-47d7-a199-07eee9b07ba3"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "814ffcbf-bb56-4ec9-87e6-0e22801484e0",
+  "eventStore" : {
+    "id" : "d34777d9-0fda-40dc-b1ac-e5786e8cc001",
+    "name" : "New_Store_test",
+    "type" : "EVENTSTORE",
+    "key" : "New_Store_test",
+    "developmentPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/dev/New_Store_test_dev",
+    "productionPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/prod/New_Store_test_prod",
+    "snapshotPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/snap/New_Store_test_snap",
+    "snapshotDatabase" : "New_Store_test_snap",
+    "developmentDatabase" : "New_Store_test_dev",
+    "productionDatabase" : "New_Store_test_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "GROUP",
+      "userGroupIds" : [ "159366a2-1005-40ca-8295-b893249e0272", "5222b6d4-bb94-4606-87a9-3de40654d283", "fcd969a2-ed96-4d59-a2ee-dbafc12637dd", "59b9308e-e4ee-4e6f-b402-4eaa6caebed7", "42cb9bc2-9b95-4c6f-a1b5-f05130ced1df", "22e099d1-d998-41ec-b1f1-28ed564253d7" ]
+    },
+    "ownerId" : "00000000-0000-0000-0000-000000000000",
+    "createdById" : "40f7d16e-c4e1-4fd2-b82f-4ced4b2286f4",
+    "modifiedById" : "40f7d16e-c4e1-4fd2-b82f-4ced4b2286f4",
+    "createdAt" : "2023-06-07T08:22:29.895Z",
+    "updatedAt" : "2023-06-07T08:44:54.274Z"
+  }
+}, {
+  "id" : "2847cfd3-fe61-4fed-9f86-d1d174c23501",
+  "name" : "test_sma_8135_output03",
+  "database" : "New_Store_test_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "669aa052-40c3-4902-9305-1d413cfd3787",
+    "datasetId" : "2847cfd3-fe61-4fed-9f86-d1d174c23501",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "2847cfd3-fe61-4fed-9f86-d1d174c23501"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "79712887-b813-4d82-8c98-25d840db2a9a",
+  "eventStore" : {
+    "id" : "d34777d9-0fda-40dc-b1ac-e5786e8cc001",
+    "name" : "New_Store_test",
+    "type" : "EVENTSTORE",
+    "key" : "New_Store_test",
+    "developmentPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/dev/New_Store_test_dev",
+    "productionPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/prod/New_Store_test_prod",
+    "snapshotPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/snap/New_Store_test_snap",
+    "snapshotDatabase" : "New_Store_test_snap",
+    "developmentDatabase" : "New_Store_test_dev",
+    "productionDatabase" : "New_Store_test_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "GROUP",
+      "userGroupIds" : [ "159366a2-1005-40ca-8295-b893249e0272", "5222b6d4-bb94-4606-87a9-3de40654d283", "fcd969a2-ed96-4d59-a2ee-dbafc12637dd", "59b9308e-e4ee-4e6f-b402-4eaa6caebed7", "42cb9bc2-9b95-4c6f-a1b5-f05130ced1df", "22e099d1-d998-41ec-b1f1-28ed564253d7" ]
+    },
+    "ownerId" : "00000000-0000-0000-0000-000000000000",
+    "createdById" : "40f7d16e-c4e1-4fd2-b82f-4ced4b2286f4",
+    "modifiedById" : "40f7d16e-c4e1-4fd2-b82f-4ced4b2286f4",
+    "createdAt" : "2023-06-07T08:22:29.895Z",
+    "updatedAt" : "2023-06-07T08:44:54.274Z"
+  }
+}, {
+  "id" : "99dbb551-aa51-494c-9f23-78e967f9b479",
+  "name" : "test_sma_8135_output02",
+  "database" : "New_Store_test_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "c34b96a3-171e-45df-a289-a4c4dbfcf37c",
+    "datasetId" : "99dbb551-aa51-494c-9f23-78e967f9b479",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "99dbb551-aa51-494c-9f23-78e967f9b479"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "420b44eb-4fa5-414c-852f-9d2fd06c26d3",
+  "eventStore" : {
+    "id" : "d34777d9-0fda-40dc-b1ac-e5786e8cc001",
+    "name" : "New_Store_test",
+    "type" : "EVENTSTORE",
+    "key" : "New_Store_test",
+    "developmentPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/dev/New_Store_test_dev",
+    "productionPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/prod/New_Store_test_prod",
+    "snapshotPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/snap/New_Store_test_snap",
+    "snapshotDatabase" : "New_Store_test_snap",
+    "developmentDatabase" : "New_Store_test_dev",
+    "productionDatabase" : "New_Store_test_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "GROUP",
+      "userGroupIds" : [ "159366a2-1005-40ca-8295-b893249e0272", "5222b6d4-bb94-4606-87a9-3de40654d283", "fcd969a2-ed96-4d59-a2ee-dbafc12637dd", "59b9308e-e4ee-4e6f-b402-4eaa6caebed7", "42cb9bc2-9b95-4c6f-a1b5-f05130ced1df", "22e099d1-d998-41ec-b1f1-28ed564253d7" ]
+    },
+    "ownerId" : "00000000-0000-0000-0000-000000000000",
+    "createdById" : "40f7d16e-c4e1-4fd2-b82f-4ced4b2286f4",
+    "modifiedById" : "40f7d16e-c4e1-4fd2-b82f-4ced4b2286f4",
+    "createdAt" : "2023-06-07T08:22:29.895Z",
+    "updatedAt" : "2023-06-07T08:44:54.274Z"
+  }
+} ]
