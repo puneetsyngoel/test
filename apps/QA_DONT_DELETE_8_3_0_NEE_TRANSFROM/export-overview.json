@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_DONT_DELETE_8_3_0_NEE_TRANSFROM",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AWS",
+  "exportDate" : "2026-01-07T08:19:26.310Z",
+  "sourceVersion" : "9.0.0-beta2",
+  "exportBy" : "syntasa_service_account"
+}
