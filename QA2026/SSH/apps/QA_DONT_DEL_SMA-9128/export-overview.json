@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_DONT_DEL_SMA-9128",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AWS",
+  "exportDate" : "2026-01-07T08:11:32.274Z",
+  "sourceVersion" : "9.0.0-beta2",
+  "exportBy" : "syntasa_service_account"
+}
