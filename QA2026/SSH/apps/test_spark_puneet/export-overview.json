@@ -1,0 +1,8 @@
+{
+  "appName" : "test_spark_puneet",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AWS",
+  "exportDate" : "2026-01-07T08:11:51.924Z",
+  "sourceVersion" : "9.0.0-beta2",
+  "exportBy" : "syntasa_service_account"
+}

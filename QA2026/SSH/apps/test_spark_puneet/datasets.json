@@ -1,0 +1,52 @@
+[ {
+  "id" : "e6cba5cd-db4f-43fb-bcde-78a4ae9a65c5",
+  "name" : "test_spark_puneet_output",
+  "database" : "AAAA_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "67594259-2772-4e57-a95c-ebc3a4a05065",
+    "datasetId" : "e6cba5cd-db4f-43fb-bcde-78a4ae9a65c5",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "e6cba5cd-db4f-43fb-bcde-78a4ae9a65c5"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "51bf71de-8ffc-4a1c-b38c-519c035297b4",
+  "eventStore" : {
+    "id" : "c0fe7ae4-5f36-4440-acd4-a7634ea8c2a5",
+    "name" : "AAAA",
+    "type" : "EVENTSTORE",
+    "key" : "AAAA",
+    "developmentPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/dev/AAAA_dev",
+    "productionPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/prod/AAAA_prod",
+    "snapshotPath" : "s3://syntasa-qa-01/syn-cluster-data/eventstores/snap/AAAA_snap",
+    "snapshotDatabase" : "AAAA_snap",
+    "developmentDatabase" : "AAAA_dev",
+    "productionDatabase" : "AAAA_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "GROUP"
+    },
+    "ownerId" : "e7283967-dfdc-4d61-ab2e-618cca25fcaf",
+    "createdById" : "e7283967-dfdc-4d61-ab2e-618cca25fcaf",
+    "modifiedById" : "5e3d5a56-f85c-46bd-bc08-0cd758fbbcd0",
+    "createdAt" : "2023-10-18T08:18:29.642Z",
+    "updatedAt" : "2024-05-02T03:49:31.054Z"
+  }
+} ]
