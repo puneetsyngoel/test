@@ -1,0 +1,180 @@
+[ {
+  "id" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+  "name" : "qa_dont_del_spark_sma_9758_output",
+  "database" : "QA_DONT_DEL_REG_ESTORE_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "0e0c4878-164c-464d-8f2e-9e5811c4e89a",
+    "name" : "Emp_id",
+    "processMappingId" : null,
+    "datasetId" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "93e02c99-4295-4704-a87b-8b71d22dafec",
+    "name" : "Name",
+    "processMappingId" : null,
+    "datasetId" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "9d85ee5a-aa94-4043-b046-f4ded0e276c4",
+    "name" : "Address",
+    "processMappingId" : null,
+    "datasetId" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "de9a3b9c-907e-43bf-b12d-bfe354707f0a",
+    "name" : "City",
+    "processMappingId" : null,
+    "datasetId" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "d2a55f7a-8993-4496-b502-9ad89ee4f071",
+    "name" : "District",
+    "processMappingId" : null,
+    "datasetId" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "c2bc7331-27e0-4e0d-b34e-bb962ac25c18",
+    "name" : "State",
+    "processMappingId" : null,
+    "datasetId" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  }, {
+    "id" : "a61bb469-1fae-4567-a536-117219b92491",
+    "name" : "Country",
+    "processMappingId" : null,
+    "datasetId" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 7
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "072c02a4-eb5f-4e04-aede-9b44e7ecbbb1",
+    "datasetId" : "40f3041c-eee2-4c64-82fa-7b24bd858876",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "40f3041c-eee2-4c64-82fa-7b24bd858876"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "910b8c98-9da4-4638-9008-e4f49838ef70",
+  "eventStore" : {
+    "id" : "46c55db9-2883-487b-9a9b-dfb022283f8a",
+    "name" : "QA_DONT_DEL_REG_ESTORE",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_REG_ESTORE",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_ESTORE_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DEL_REG_ESTORE_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DEL_REG_ESTORE_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_REG_ESTORE_snap",
+    "developmentDatabase" : "QA_DONT_DEL_REG_ESTORE_dev",
+    "productionDatabase" : "QA_DONT_DEL_REG_ESTORE_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-02-11T07:45:25.978Z",
+    "updatedAt" : "2025-02-11T07:45:25.978Z"
+  }
+}, {
+  "id" : "75b9c12d-594d-48a1-9251-a9881e81d33d",
+  "name" : "qa_dont_del_spark_sma_9758_output02",
+  "database" : "QA_DONT_DEL_REG_ESTORE_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "a9655b43-20cd-4fda-8e63-3c48411cb3b2",
+    "datasetId" : "75b9c12d-594d-48a1-9251-a9881e81d33d",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "75b9c12d-594d-48a1-9251-a9881e81d33d"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "bcf0edb6-aa8f-4454-97bf-18665755cdea",
+  "eventStore" : {
+    "id" : "46c55db9-2883-487b-9a9b-dfb022283f8a",
+    "name" : "QA_DONT_DEL_REG_ESTORE",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_REG_ESTORE",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_ESTORE_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DEL_REG_ESTORE_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DEL_REG_ESTORE_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_REG_ESTORE_snap",
+    "developmentDatabase" : "QA_DONT_DEL_REG_ESTORE_dev",
+    "productionDatabase" : "QA_DONT_DEL_REG_ESTORE_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-02-11T07:45:25.978Z",
+    "updatedAt" : "2025-02-11T07:45:25.978Z"
+  }
+} ]

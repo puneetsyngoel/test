@@ -1,0 +1,34 @@
+{
+  "id" : "4d1d625d-4e69-4334-bc76-dbdf8d94829e",
+  "key" : "QA_Dont_Del_Spark_SMA_9758",
+  "appPrefix" : "qa_dont_del_spark_sma_9758",
+  "name" : "QA_Dont_Del_Spark_SMA_9758",
+  "description" : "",
+  "module" : "ORCHESTRATOR",
+  "partitionScheme" : "DAILY",
+  "templateId" : "43ff8012-ad3c-4150-9a71-95e275ac3c97",
+  "eventStoreId" : "46c55db9-2883-487b-9a9b-dfb022283f8a",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PRIVATE"
+  },
+  "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "audienceVersion" : null,
+  "createdAt" : "2025-12-18T07:03:22.288Z",
+  "updatedAt" : "2025-12-18T07:50:37.498Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Orchestrator Free Form",
+    "key" : "ORCHESTRATOR_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DEL_REG_ESTORE"
+}

@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_Dont_Del_Spark_SMA_9758",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AWS",
+  "exportDate" : "2026-01-07T08:12:16.257Z",
+  "sourceVersion" : "9.0.0-beta2",
+  "exportBy" : "syntasa_service_account"
+}
