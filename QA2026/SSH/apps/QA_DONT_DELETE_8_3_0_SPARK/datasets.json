@@ -1,0 +1,169 @@
+[ {
+  "id" : "01820444-4334-46b7-9443-3a7ef825a997",
+  "name" : "qa_dont_delete_8_3_0_spark_output",
+  "database" : "QA_DONT_DELETE_8_3_0_REG_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "aa0373ea-c2a0-4f26-89dd-df864c340e64",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "9551605c-924f-455f-8e9f-6cd16eaff965",
+    "name" : "visitor_id",
+    "processMappingId" : null,
+    "datasetId" : "01820444-4334-46b7-9443-3a7ef825a997",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "df174952-bb22-400b-9aeb-b02e6625a92c",
+    "name" : "name",
+    "processMappingId" : null,
+    "datasetId" : "01820444-4334-46b7-9443-3a7ef825a997",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "4da37693-9d37-4cac-840e-db08b4d619e1",
+    "name" : "browser",
+    "processMappingId" : null,
+    "datasetId" : "01820444-4334-46b7-9443-3a7ef825a997",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "12a4d5e6-7727-4b58-9728-c235687a7749",
+    "name" : "browser_type",
+    "processMappingId" : null,
+    "datasetId" : "01820444-4334-46b7-9443-3a7ef825a997",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "1588af4b-4d07-4c8d-bf28-9a020bb39f03",
+    "name" : "date",
+    "processMappingId" : null,
+    "datasetId" : "01820444-4334-46b7-9443-3a7ef825a997",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "aa0373ea-c2a0-4f26-89dd-df864c340e64",
+    "name" : "time",
+    "processMappingId" : null,
+    "datasetId" : "01820444-4334-46b7-9443-3a7ef825a997",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "9553661d-54b4-4b31-873a-f1900062a9c4",
+    "datasetId" : "01820444-4334-46b7-9443-3a7ef825a997",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "01820444-4334-46b7-9443-3a7ef825a997"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "eb5d377b-5f68-4e62-b8a4-19cc48c81c51",
+  "eventStore" : {
+    "id" : "2a62939a-ca8c-4299-bd2e-c5b12a9b7f0b",
+    "name" : "QA_DONT_DELETE_8_3_0_REG",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DELETE_8_3_0_REG",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DELETE_8_3_0_REG_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DELETE_8_3_0_REG_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DELETE_8_3_0_REG_snap",
+    "snapshotDatabase" : "QA_DONT_DELETE_8_3_0_REG_snap",
+    "developmentDatabase" : "QA_DONT_DELETE_8_3_0_REG_dev",
+    "productionDatabase" : "QA_DONT_DELETE_8_3_0_REG_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-08-05T10:48:34.921Z",
+    "updatedAt" : "2025-08-05T10:48:34.921Z"
+  }
+}, {
+  "id" : "746b5ab8-3e20-418c-b844-f49a04dedcce",
+  "name" : "qa_dont_delete_8_3_0_new_spark_output",
+  "database" : "QA_DONT_DELETE_8_3_0_REG_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "adb210e4-d0ee-4355-b113-a47a1bca5b20",
+    "datasetId" : "746b5ab8-3e20-418c-b844-f49a04dedcce",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "746b5ab8-3e20-418c-b844-f49a04dedcce"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "33adc886-d8ac-4d4c-b65f-86d7a65553d7",
+  "eventStore" : {
+    "id" : "2a62939a-ca8c-4299-bd2e-c5b12a9b7f0b",
+    "name" : "QA_DONT_DELETE_8_3_0_REG",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DELETE_8_3_0_REG",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DELETE_8_3_0_REG_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DELETE_8_3_0_REG_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DELETE_8_3_0_REG_snap",
+    "snapshotDatabase" : "QA_DONT_DELETE_8_3_0_REG_snap",
+    "developmentDatabase" : "QA_DONT_DELETE_8_3_0_REG_dev",
+    "productionDatabase" : "QA_DONT_DELETE_8_3_0_REG_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-08-05T10:48:34.921Z",
+    "updatedAt" : "2025-08-05T10:48:34.921Z"
+  }
+} ]
