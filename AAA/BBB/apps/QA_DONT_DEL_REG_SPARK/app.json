@@ -1,0 +1,34 @@
+{
+  "id" : "9fcd5591-e12d-42cd-9238-847f2015d46b",
+  "key" : "QA_DONT_DEL_REG_SPARK",
+  "appPrefix" : "qa_dont_del_reg_spark",
+  "name" : "QA_DONT_DEL_REG_SPARK",
+  "description" : "",
+  "module" : "ORCHESTRATOR",
+  "partitionScheme" : "DAILY",
+  "templateId" : "43ff8012-ad3c-4150-9a71-95e275ac3c97",
+  "eventStoreId" : "46c55db9-2883-487b-9a9b-dfb022283f8a",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "modifiedById" : "56947568-b9d1-4510-8626-85d4a18f40cd",
+  "audienceVersion" : null,
+  "createdAt" : "2025-02-11T10:03:50.357Z",
+  "updatedAt" : "2025-12-19T12:34:13.137Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Orchestrator Free Form",
+    "key" : "ORCHESTRATOR_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DEL_REG_ESTORE"
+}
