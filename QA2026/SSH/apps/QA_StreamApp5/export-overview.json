@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_StreamApp5",
+  "environment" : "DEVELOPMENT",
+  "provider" : "AWS",
+  "exportDate" : "2026-01-07T08:16:27.274Z",
+  "sourceVersion" : "9.0.0-beta2",
+  "exportBy" : "syntasa_service_account"
+}

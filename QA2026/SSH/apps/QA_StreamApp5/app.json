@@ -1,0 +1,34 @@
+{
+  "id" : "87c23c88-3acc-4f95-87ed-44b3d732aeeb",
+  "key" : "QA_StreamApp5",
+  "appPrefix" : "qa_streamapp5",
+  "name" : "QA_StreamApp5",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "c0fe7ae4-5f36-4440-acd4-a7634ea8c2a5",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "audienceVersion" : null,
+  "createdAt" : "2025-08-25T08:50:34.711Z",
+  "updatedAt" : "2025-08-25T08:50:34.888Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "AAAA"
+}
