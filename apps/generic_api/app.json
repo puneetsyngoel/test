@@ -1,0 +1,34 @@
+{
+  "id" : "e2d20741-0022-4162-ba06-f9c45dc1d4d9",
+  "key" : "generic_api",
+  "appPrefix" : "generic_api",
+  "name" : "generic_api",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "d6d636fb-661e-4de9-b4da-c57e757c74f0",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "fc6567da-e4b2-4400-9b54-576727cbe41b",
+  "createdById" : "fc6567da-e4b2-4400-9b54-576727cbe41b",
+  "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "audienceVersion" : null,
+  "createdAt" : "2025-08-05T06:57:52.510Z",
+  "updatedAt" : "2026-01-07T08:03:53.975Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "check_fromfile"
+}
