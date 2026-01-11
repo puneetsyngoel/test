@@ -1,0 +1,113 @@
+[ {
+  "id" : "0220906a-5221-4250-9288-b012e859c6b7",
+  "name" : "spark_sma_9306_output",
+  "database" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "ece5a353-8202-4d8a-8a34-895dd9ea2d22",
+    "datasetId" : "0220906a-5221-4250-9288-b012e859c6b7",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "0220906a-5221-4250-9288-b012e859c6b7"
+  }, {
+    "id" : "fdcac5ee-9bc4-46b7-9c81-bb210bde8083",
+    "datasetId" : "0220906a-5221-4250-9288-b012e859c6b7",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "0220906a-5221-4250-9288-b012e859c6b7"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "20a8e2ed-9a9f-40b3-ac7b-819a9364886a",
+  "eventStore" : {
+    "id" : "84567c91-b61f-4e61-97ce-e67bdfad9772",
+    "name" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet",
+    "type" : "EVENTSTORE",
+    "key" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_Dont_Delete_Adhoc_8_2_1_Puneet_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_Dont_Delete_Adhoc_8_2_1_Puneet_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_Dont_Delete_Adhoc_8_2_1_Puneet_snap",
+    "snapshotDatabase" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet_snap",
+    "developmentDatabase" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet_dev",
+    "productionDatabase" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-04-23T07:14:41.531Z",
+    "updatedAt" : "2025-04-23T07:14:41.531Z"
+  }
+}, {
+  "id" : "7b832292-a6a0-4876-bcae-44434a3bb6b6",
+  "name" : "spark_sma_9306_spark_output",
+  "database" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "645409c2-5ee4-43b4-b500-e8077fc602cf",
+    "datasetId" : "7b832292-a6a0-4876-bcae-44434a3bb6b6",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "7b832292-a6a0-4876-bcae-44434a3bb6b6"
+  }, {
+    "id" : "2286e4da-f5df-487e-af52-ea6982cce837",
+    "datasetId" : "7b832292-a6a0-4876-bcae-44434a3bb6b6",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "7b832292-a6a0-4876-bcae-44434a3bb6b6"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "73c26ae0-ec94-4a44-b0af-90ae5ab6ad1a",
+  "eventStore" : {
+    "id" : "84567c91-b61f-4e61-97ce-e67bdfad9772",
+    "name" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet",
+    "type" : "EVENTSTORE",
+    "key" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_Dont_Delete_Adhoc_8_2_1_Puneet_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_Dont_Delete_Adhoc_8_2_1_Puneet_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_Dont_Delete_Adhoc_8_2_1_Puneet_snap",
+    "snapshotDatabase" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet_snap",
+    "developmentDatabase" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet_dev",
+    "productionDatabase" : "QA_Dont_Delete_Adhoc_8_2_1_Puneet_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-04-23T07:14:41.531Z",
+    "updatedAt" : "2025-04-23T07:14:41.531Z"
+  }
+} ]
