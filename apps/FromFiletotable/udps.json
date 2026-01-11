@@ -1,0 +1,753 @@
+[ {
+  "id" : "f87c0387-ae6e-48f5-89c2-a809847add6f",
+  "key" : "AdobeAnalyticsReport_exp",
+  "name" : "Adobe Analytics Report",
+  "templateType" : "PROCESS",
+  "isSystem" : false,
+  "renderMode" : "COLLAPSE",
+  "isExperimental" : true,
+  "isEnabled" : true,
+  "defaultVersionId" : "6f32093d-6491-401e-bd8a-4e863fa8e392",
+  "iconKey" : "ADOBEANALYTICSREPORT_EXP_",
+  "createdById" : null,
+  "modifiedById" : null,
+  "createdAt" : "2020-12-17T15:27:13.497Z",
+  "updatedAt" : "2026-01-10T07:41:12.546Z",
+  "icon" : {
+    "name" : "ADOBEANALYTICSREPORT_EXP__Adobe_Reporting_API.svg",
+    "fileType" : "svg",
+    "isSystem" : false,
+    "image" : {
+      "type" : "Buffer",
+      "data" : [ 60, 115, 118, 103, 32, 120, 109, 108, 110, 115, 61, 34, 104, 116, 116, 112, 58, 47, 47, 119, 119, 119, 46, 119, 51, 46, 111, 114, 103, 47, 50, 48, 48, 48, 47, 115, 118, 103, 34, 32, 118, 105, 101, 119, 66, 111, 120, 61, 34, 48, 32, 48, 32, 50, 56, 32, 50, 56, 34, 62, 60, 100, 101, 102, 115, 62, 60, 115, 116, 121, 108, 101, 62, 46, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 123, 102, 105, 108, 108, 58, 110, 111, 110, 101, 59, 115, 116, 114, 111, 107, 101, 58, 35, 48, 48, 48, 59, 115, 116, 114, 111, 107, 101, 45, 108, 105, 110, 101, 99, 97, 112, 58, 114, 111, 117, 110, 100, 59, 115, 116, 114, 111, 107, 101, 45, 108, 105, 110, 101, 106, 111, 105, 110, 58, 114, 111, 117, 110, 100, 59, 115, 116, 114, 111, 107, 101, 45, 119, 105, 100, 116, 104, 58, 49, 125, 60, 47, 115, 116, 121, 108, 101, 62, 60, 47, 100, 101, 102, 115, 62, 60, 103, 32, 105, 100, 61, 34, 65, 82, 84, 87, 79, 82, 75, 34, 62, 60, 99, 105, 114, 99, 108, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 99, 120, 61, 34, 49, 49, 46, 54, 49, 34, 32, 99, 121, 61, 34, 49, 57, 46, 50, 55, 34, 32, 114, 61, 34, 53, 46, 53, 57, 34, 47, 62, 60, 112, 111, 108, 121, 108, 105, 110, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 112, 111, 105, 110, 116, 115, 61, 34, 55, 46, 52, 53, 32, 49, 57, 46, 54, 57, 32, 56, 46, 49, 50, 32, 49, 57, 46, 53, 57, 32, 57, 46, 53, 53, 32, 49, 55, 46, 57, 53, 32, 49, 48, 46, 56, 55, 32, 49, 56, 46, 53, 56, 32, 49, 51, 46, 53, 32, 49, 54, 46, 53, 50, 32, 49, 52, 46, 57, 51, 32, 49, 55, 46, 56, 52, 32, 49, 53, 46, 51, 49, 32, 49, 55, 46, 53, 57, 34, 47, 62, 60, 108, 105, 110, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 120, 49, 61, 34, 56, 46, 49, 56, 34, 32, 121, 49, 61, 34, 50, 49, 46, 52, 50, 34, 32, 120, 50, 61, 34, 56, 46, 49, 56, 34, 32, 121, 50, 61, 34, 50, 49, 46, 50, 50, 34, 47, 62, 60, 108, 105, 110, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 120, 49, 61, 34, 57, 46, 56, 49, 34, 32, 121, 49, 61, 34, 50, 50, 46, 55, 51, 34, 32, 120, 50, 61, 34, 57, 46, 56, 49, 34, 32, 121, 50, 61, 34, 50, 48, 46, 49, 54, 34, 47, 62, 60, 108, 105, 110, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 120, 49, 61, 34, 49, 52, 46, 56, 50, 34, 32, 121, 49, 61, 34, 50, 49, 46, 54, 54, 34, 32, 120, 50, 61, 34, 49, 52, 46, 56, 50, 34, 32, 121, 50, 61, 34, 49, 57, 46, 53, 51, 34, 47, 62, 60, 108, 105, 110, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 120, 49, 61, 34, 49, 49, 46, 53, 34, 32, 121, 49, 61, 34, 50, 51, 46, 50, 49, 34, 32, 120, 50, 61, 34, 49, 49, 46, 53, 34, 32, 121, 50, 61, 34, 49, 57, 46, 57, 53, 34, 47, 62, 60, 108, 105, 110, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 120, 49, 61, 34, 49, 51, 46, 49, 51, 34, 32, 121, 49, 61, 34, 50, 50, 46, 57, 52, 34, 32, 120, 50, 61, 34, 49, 51, 46, 49, 51, 34, 32, 121, 50, 61, 34, 49, 56, 46, 56, 52, 34, 47, 62, 60, 112, 97, 116, 104, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 100, 61, 34, 77, 55, 46, 54, 53, 44, 49, 50, 46, 52, 52, 86, 54, 46, 48, 57, 97, 49, 44, 49, 44, 48, 44, 48, 44, 49, 44, 49, 45, 49, 72, 50, 48, 97, 49, 44, 49, 44, 48, 44, 48, 44, 49, 44, 49, 44, 49, 86, 49, 57, 46, 53, 55, 97, 49, 44, 49, 44, 48, 44, 48, 44, 49, 45, 49, 44, 49, 104, 45, 46, 55, 51, 34, 47, 62, 60, 108, 105, 110, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 120, 49, 61, 34, 49, 49, 46, 48, 51, 34, 32, 121, 49, 61, 34, 56, 46, 53, 55, 34, 32, 120, 50, 61, 34, 49, 56, 46, 50, 54, 34, 32, 121, 50, 61, 34, 56, 46, 53, 55, 34, 47, 62, 60, 108, 105, 110, 101, 32, 99, 108, 97, 115, 115, 61, 34, 97, 100, 111, 98, 101, 45, 114, 101, 112, 111, 114, 116, 105, 110, 103, 45, 97, 112, 105, 45, 49, 34, 32, 120, 49, 61, 34, 49, 49, 46, 48, 51, 34, 32, 121, 49, 61, 34, 49, 49, 46, 49, 50, 34, 32, 120, 50, 61, 34, 49, 56, 46, 50, 54, 34, 32, 121, 50, 61, 34, 49, 49, 46, 49, 50, 34, 47, 62, 60, 47, 103, 62, 60, 47, 115, 118, 103, 62 ]
+    }
+  },
+  "iconDetails" : {
+    "key" : "ADOBEANALYTICSREPORT_EXP_",
+    "name" : "ADOBEANALYTICSREPORT_EXP__Adobe_Reporting_API.svg",
+    "alias" : "Adobe_Reporting_API",
+    "image" : "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOCAyOCI+PGRlZnM+PHN0eWxlPi5hZG9iZS1yZXBvcnRpbmctYXBpLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MX08L3N0eWxlPjwvZGVmcz48ZyBpZD0iQVJUV09SSyI+PGNpcmNsZSBjbGFzcz0iYWRvYmUtcmVwb3J0aW5nLWFwaS0xIiBjeD0iMTEuNjEiIGN5PSIxOS4yNyIgcj0iNS41OSIvPjxwb2x5bGluZSBjbGFzcz0iYWRvYmUtcmVwb3J0aW5nLWFwaS0xIiBwb2ludHM9IjcuNDUgMTkuNjkgOC4xMiAxOS41OSA5LjU1IDE3Ljk1IDEwLjg3IDE4LjU4IDEzLjUgMTYuNTIgMTQuOTMgMTcuODQgMTUuMzEgMTcuNTkiLz48bGluZSBjbGFzcz0iYWRvYmUtcmVwb3J0aW5nLWFwaS0xIiB4MT0iOC4xOCIgeTE9IjIxLjQyIiB4Mj0iOC4xOCIgeTI9IjIxLjIyIi8+PGxpbmUgY2xhc3M9ImFkb2JlLXJlcG9ydGluZy1hcGktMSIgeDE9IjkuODEiIHkxPSIyMi43MyIgeDI9IjkuODEiIHkyPSIyMC4xNiIvPjxsaW5lIGNsYXNzPSJhZG9iZS1yZXBvcnRpbmctYXBpLTEiIHgxPSIxNC44MiIgeTE9IjIxLjY2IiB4Mj0iMTQuODIiIHkyPSIxOS41MyIvPjxsaW5lIGNsYXNzPSJhZG9iZS1yZXBvcnRpbmctYXBpLTEiIHgxPSIxMS41IiB5MT0iMjMuMjEiIHgyPSIxMS41IiB5Mj0iMTkuOTUiLz48bGluZSBjbGFzcz0iYWRvYmUtcmVwb3J0aW5nLWFwaS0xIiB4MT0iMTMuMTMiIHkxPSIyMi45NCIgeDI9IjEzLjEzIiB5Mj0iMTguODQiLz48cGF0aCBjbGFzcz0iYWRvYmUtcmVwb3J0aW5nLWFwaS0xIiBkPSJNNy42NSwxMi40NFY2LjA5YTEsMSwwLDAsMSwxLTFIMjBhMSwxLDAsMCwxLDEsMVYxOS41N2ExLDEsMCwwLDEtMSwxaC0uNzMiLz48bGluZSBjbGFzcz0iYWRvYmUtcmVwb3J0aW5nLWFwaS0xIiB4MT0iMTEuMDMiIHkxPSI4LjU3IiB4Mj0iMTguMjYiIHkyPSI4LjU3Ii8+PGxpbmUgY2xhc3M9ImFkb2JlLXJlcG9ydGluZy1hcGktMSIgeDE9IjExLjAzIiB5MT0iMTEuMTIiIHgyPSIxOC4yNiIgeTI9IjExLjEyIi8+PC9nPjwvc3ZnPg==",
+    "fileType" : "svg",
+    "isSystem" : false,
+    "createdById" : null,
+    "modifiedById" : null,
+    "createdAt" : "2021-03-08T21:43:48.402Z",
+    "updatedAt" : "2026-01-10T07:41:12.096Z",
+    "objectType.key" : null,
+    "objectType.name" : null,
+    "objectType.objectCategoryKey" : null,
+    "objectType.iconKey" : null,
+    "processType.key" : null,
+    "processType.name" : null,
+    "processType.iconKey" : null,
+    "processType.runtime" : null,
+    "processType.schemaAware" : null,
+    "processType.parameters" : null
+  },
+  "templateVersions" : [ {
+    "id" : "6f32093d-6491-401e-bd8a-4e863fa8e392",
+    "templateId" : "f87c0387-ae6e-48f5-89c2-a809847add6f",
+    "version" : "0.1",
+    "environment" : "PRODUCTION",
+    "description" : null,
+    "isExperimental" : true,
+    "canvasGraph" : {
+      "edges" : [ {
+        "data" : {
+          "id" : "5f08231f-8ff2-446d-9df4-d1fe2dd6d041",
+          "type" : "default"
+        },
+        "source" : "3a18f94c-9a87-4971-81a6-c13dc389f1f4.output",
+        "target" : "86899052-5a6f-4c9a-b243-51600880bb3d.input"
+      }, {
+        "data" : { },
+        "source" : "86899052-5a6f-4c9a-b243-51600880bb3d.output",
+        "target" : "119e4e28-fc8d-429c-bf94-9540488542c6.input"
+      }, {
+        "data" : {
+          "id" : "48c55bc3-8b3c-4070-a7f4-1e4d7e005fee",
+          "type" : "default"
+        },
+        "source" : "119e4e28-fc8d-429c-bf94-9540488542c6.output",
+        "target" : "376d73ef-e193-4ba0-a29a-e5817beb1ca4.input"
+      } ],
+      "nodes" : [ {
+        "id" : "3a18f94c-9a87-4971-81a6-c13dc389f1f4",
+        "top" : -122,
+        "left" : -471,
+        "type" : "objectType",
+        "label" : "Process Input",
+        "state" : "CONFIGURED",
+        "nodeType" : "objectType",
+        "objectTypeKey" : "PROCESS_INPUT",
+        "objectCategoryKey" : "PROCESS_IO"
+      }, {
+        "id" : "86899052-5a6f-4c9a-b243-51600880bb3d",
+        "top" : -124,
+        "left" : -292,
+        "label" : "Spark Processor",
+        "ports" : [ {
+          "id" : "86899052-5a6f-4c9a-b243-51600880bb3d.input",
+          "type" : "multiInput"
+        }, {
+          "id" : "86899052-5a6f-4c9a-b243-51600880bb3d.output",
+          "type" : "multiOutputLocked"
+        } ],
+        "state" : "CONFIGURED",
+        "nodeType" : "process",
+        "processTypeKey" : "SPARK_PROCESSOR"
+      }, {
+        "id" : "119e4e28-fc8d-429c-bf94-9540488542c6",
+        "top" : -124.1424033340276,
+        "left" : -92.13112373887384,
+        "label" : "analytics_report",
+        "ports" : [ {
+          "id" : "119e4e28-fc8d-429c-bf94-9540488542c6.input",
+          "type" : "singleInputLocked"
+        }, {
+          "id" : "119e4e28-fc8d-429c-bf94-9540488542c6.output",
+          "type" : "multiOutput"
+        } ],
+        "state" : null,
+        "nodeType" : "objectType",
+        "objectTypeKey" : "TABLE",
+        "objectCategoryKey" : "DATASET"
+      }, {
+        "id" : "376d73ef-e193-4ba0-a29a-e5817beb1ca4",
+        "top" : -124,
+        "left" : 127,
+        "type" : "objectType",
+        "label" : "Process Output",
+        "state" : "CONFIGURED",
+        "nodeType" : "objectType",
+        "objectTypeKey" : "PROCESS_OUTPUT",
+        "objectCategoryKey" : "PROCESS_IO"
+      } ],
+      "ports" : [ {
+        "id" : "3a18f94c-9a87-4971-81a6-c13dc389f1f4.output"
+      }, {
+        "id" : "3a18f94c-9a87-4971-81a6-c13dc389f1f4.input"
+      }, {
+        "id" : "86899052-5a6f-4c9a-b243-51600880bb3d.input"
+      }, {
+        "id" : "86899052-5a6f-4c9a-b243-51600880bb3d.output"
+      }, {
+        "id" : "119e4e28-fc8d-429c-bf94-9540488542c6.output"
+      }, {
+        "id" : "119e4e28-fc8d-429c-bf94-9540488542c6.input"
+      }, {
+        "id" : "376d73ef-e193-4ba0-a29a-e5817beb1ca4.output"
+      }, {
+        "id" : "376d73ef-e193-4ba0-a29a-e5817beb1ca4.input"
+      } ],
+      "groups" : [ ]
+    },
+    "parameters" : {
+      "variables" : {
+        "steps" : [ {
+          "name" : "Parameters",
+          "enabled" : true,
+          "sections" : [ {
+            "id" : "ae8bee7c-cd35-4f8a-ba5e-dd4f239cdbb3",
+            "fields" : [ {
+              "id" : "6c5d66d0-6a78-48fc-a526-014414c981ef",
+              "required" : true,
+              "fieldName" : "Report Suite ID",
+              "formField" : "input",
+              "validation" : {
+                "validationPattern" : [ ]
+              },
+              "defaultValue" : null,
+              "parameterName" : "@rsid",
+              "formFieldStyles" : {
+                "hint" : null,
+                "width" : null,
+                "startNewRow" : false
+              },
+              "formFieldParameters" : { }
+            }, {
+              "id" : "006a7e25-de86-4c48-ab3a-401d144b024e",
+              "required" : true,
+              "fieldName" : "Metrics",
+              "formField" : "input",
+              "validation" : {
+                "validationPattern" : [ ]
+              },
+              "defaultValue" : null,
+              "parameterName" : "@metrics",
+              "formFieldStyles" : {
+                "hint" : "Comma-separated list",
+                "width" : null,
+                "startNewRow" : false
+              },
+              "formFieldParameters" : { }
+            }, {
+              "id" : "fdd5f494-3dda-49be-96f5-e112f425f1f2",
+              "required" : true,
+              "fieldName" : "Dimensions",
+              "formField" : "input",
+              "validation" : {
+                "validationPattern" : [ ]
+              },
+              "defaultValue" : null,
+              "parameterName" : "@dimensions",
+              "formFieldStyles" : {
+                "hint" : "Comma-separated list",
+                "width" : null,
+                "startNewRow" : false
+              },
+              "formFieldParameters" : { }
+            }, {
+              "id" : "4c587096-6f89-4a9a-86c1-2afc2868dad5",
+              "required" : false,
+              "fieldName" : "Segments",
+              "formField" : "input",
+              "validation" : {
+                "validationPattern" : [ ]
+              },
+              "defaultValue" : null,
+              "parameterName" : "@segments",
+              "formFieldStyles" : {
+                "hint" : "Comma-separated list",
+                "width" : null,
+                "startNewRow" : false
+              },
+              "formFieldParameters" : { }
+            }, {
+              "id" : "253a4fa3-5ffe-4b67-bb43-14327e2f56b7",
+              "required" : true,
+              "fieldName" : "Granularity",
+              "formField" : "select",
+              "validation" : { },
+              "defaultValue" : null,
+              "parameterName" : "@granularity",
+              "formFieldStyles" : {
+                "hint" : null,
+                "width" : null,
+                "startNewRow" : false
+              },
+              "multipleSelections" : false,
+              "formFieldParameters" : {
+                "selectType" : "customOptions",
+                "customOptions" : [ {
+                  "label" : "Hour",
+                  "value" : "hour"
+                }, {
+                  "label" : "Day",
+                  "value" : "day"
+                }, {
+                  "label" : "Week",
+                  "value" : "week"
+                }, {
+                  "label" : "Month",
+                  "value" : "month"
+                }, {
+                  "label" : "Quarter",
+                  "value" : "quarter"
+                }, {
+                  "label" : "Year",
+                  "value" : "year"
+                } ]
+              }
+            } ],
+            "sectionName" : "section1",
+            "showSection" : false
+          } ]
+        }, {
+          "name" : "Mapping",
+          "enabled" : false,
+          "sections" : [ ]
+        } ]
+      }
+    },
+    "createdById" : null,
+    "modifiedById" : null,
+    "createdAt" : "2020-12-17T15:27:13.515Z",
+    "updatedAt" : "2026-01-10T07:41:12.201Z",
+    "graphNodes" : [ {
+      "id" : "0a6e0fae-97c6-46ab-9397-963708bc59f9",
+      "appNodeId" : "119e4e28-fc8d-429c-bf94-9540488542c6",
+      "name" : "analytics_report",
+      "templateVersionId" : "6f32093d-6491-401e-bd8a-4e863fa8e392",
+      "objectTypeKey" : "TABLE",
+      "processTypeKey" : null,
+      "displayGroup" : null,
+      "state" : null,
+      "parameters" : {
+        "system" : {
+          "isDeletable" : true
+        }
+      },
+      "schemaId" : null,
+      "createdById" : null,
+      "modifiedById" : null,
+      "createdAt" : "2020-12-17T15:27:13.536Z",
+      "updatedAt" : "2026-01-10T07:41:12.301Z",
+      "templateGraphNodePorts" : [ {
+        "id" : "0d0ca85f-6e71-43b5-9c2e-60ad75032372",
+        "templateGraphNodeId" : "0a6e0fae-97c6-46ab-9397-963708bc59f9",
+        "direction" : "OUTPUT",
+        "location" : [ "right" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ {
+          "id" : "13e8a2c4-56d2-4124-94b0-cbbafbdcebb5",
+          "fromPortId" : "0d0ca85f-6e71-43b5-9c2e-60ad75032372",
+          "toPortId" : "f990b14a-84e0-492d-8612-65fa128d5d96",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.615Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ]
+      }, {
+        "id" : "a07f81c7-b69b-45c2-8ac7-ed16b1891ffc",
+        "templateGraphNodeId" : "0a6e0fae-97c6-46ab-9397-963708bc59f9",
+        "direction" : "INPUT",
+        "location" : [ "left" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.580Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ {
+          "id" : "45fee87b-ed36-490b-b04e-99db2a7bd778",
+          "fromPortId" : "4d7e008a-d106-4911-89fe-a42b4a215138",
+          "toPortId" : "a07f81c7-b69b-45c2-8ac7-ed16b1891ffc",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.614Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "toLinks" : [ ]
+      } ],
+      "processType" : null,
+      "objectType" : {
+        "key" : "TABLE",
+        "name" : "Table",
+        "objectCategoryKey" : "DATASET",
+        "iconKey" : "TABLE",
+        "icon" : {
+          "name" : "table.svg"
+        }
+      },
+      "graphNodePorts" : [ {
+        "id" : "0d0ca85f-6e71-43b5-9c2e-60ad75032372",
+        "templateGraphNodeId" : "0a6e0fae-97c6-46ab-9397-963708bc59f9",
+        "direction" : "OUTPUT",
+        "location" : [ "right" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ {
+          "id" : "13e8a2c4-56d2-4124-94b0-cbbafbdcebb5",
+          "fromPortId" : "0d0ca85f-6e71-43b5-9c2e-60ad75032372",
+          "toPortId" : "f990b14a-84e0-492d-8612-65fa128d5d96",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.615Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "graphNodeId" : "0a6e0fae-97c6-46ab-9397-963708bc59f9"
+      }, {
+        "id" : "a07f81c7-b69b-45c2-8ac7-ed16b1891ffc",
+        "templateGraphNodeId" : "0a6e0fae-97c6-46ab-9397-963708bc59f9",
+        "direction" : "INPUT",
+        "location" : [ "left" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.580Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ {
+          "id" : "45fee87b-ed36-490b-b04e-99db2a7bd778",
+          "fromPortId" : "4d7e008a-d106-4911-89fe-a42b4a215138",
+          "toPortId" : "a07f81c7-b69b-45c2-8ac7-ed16b1891ffc",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.614Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "toLinks" : [ ],
+        "graphNodeId" : "0a6e0fae-97c6-46ab-9397-963708bc59f9"
+      } ],
+      "objectCategoryKey" : "DATASET"
+    }, {
+      "id" : "45e4d834-d7fb-44cc-be59-0ebfd14a3b0f",
+      "appNodeId" : "376d73ef-e193-4ba0-a29a-e5817beb1ca4",
+      "name" : "Process Output",
+      "templateVersionId" : "6f32093d-6491-401e-bd8a-4e863fa8e392",
+      "objectTypeKey" : "PROCESS_OUTPUT",
+      "processTypeKey" : null,
+      "displayGroup" : null,
+      "state" : "CONFIGURED",
+      "parameters" : {
+        "system" : {
+          "isDeletable" : true
+        },
+        "parameters" : {
+          "outputs" : [ {
+            "targetOutputId" : "0420e56f-8d3d-4090-9969-3bb1e2978230",
+            "source" : "119e4e28-fc8d-429c-bf94-9540488542c6",
+            "hint" : "Analytics Report",
+            "objectTypeKey" : "TABLE"
+          } ]
+        }
+      },
+      "schemaId" : null,
+      "createdById" : null,
+      "modifiedById" : null,
+      "createdAt" : "2020-12-17T15:27:13.536Z",
+      "updatedAt" : "2026-01-10T07:41:12.301Z",
+      "templateGraphNodePorts" : [ {
+        "id" : "329760ff-737f-48db-a7f3-70e1ee12fee2",
+        "templateGraphNodeId" : "45e4d834-d7fb-44cc-be59-0ebfd14a3b0f",
+        "direction" : "OUTPUT",
+        "location" : [ "right" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.580Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ ]
+      }, {
+        "id" : "f990b14a-84e0-492d-8612-65fa128d5d96",
+        "templateGraphNodeId" : "45e4d834-d7fb-44cc-be59-0ebfd14a3b0f",
+        "direction" : "INPUT",
+        "location" : [ "left" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.580Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ {
+          "id" : "13e8a2c4-56d2-4124-94b0-cbbafbdcebb5",
+          "fromPortId" : "0d0ca85f-6e71-43b5-9c2e-60ad75032372",
+          "toPortId" : "f990b14a-84e0-492d-8612-65fa128d5d96",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.615Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "toLinks" : [ ]
+      } ],
+      "processType" : null,
+      "objectType" : {
+        "key" : "PROCESS_OUTPUT",
+        "name" : "Process Output",
+        "objectCategoryKey" : "PROCESS_IO",
+        "iconKey" : "PROCESS_OUTPUT",
+        "icon" : {
+          "name" : "process_output.svg"
+        }
+      },
+      "graphNodePorts" : [ {
+        "id" : "329760ff-737f-48db-a7f3-70e1ee12fee2",
+        "templateGraphNodeId" : "45e4d834-d7fb-44cc-be59-0ebfd14a3b0f",
+        "direction" : "OUTPUT",
+        "location" : [ "right" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.580Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ ],
+        "graphNodeId" : "45e4d834-d7fb-44cc-be59-0ebfd14a3b0f"
+      }, {
+        "id" : "f990b14a-84e0-492d-8612-65fa128d5d96",
+        "templateGraphNodeId" : "45e4d834-d7fb-44cc-be59-0ebfd14a3b0f",
+        "direction" : "INPUT",
+        "location" : [ "left" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.580Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ {
+          "id" : "13e8a2c4-56d2-4124-94b0-cbbafbdcebb5",
+          "fromPortId" : "0d0ca85f-6e71-43b5-9c2e-60ad75032372",
+          "toPortId" : "f990b14a-84e0-492d-8612-65fa128d5d96",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.615Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "toLinks" : [ ],
+        "graphNodeId" : "45e4d834-d7fb-44cc-be59-0ebfd14a3b0f"
+      } ],
+      "objectCategoryKey" : "PROCESS_IO"
+    }, {
+      "id" : "fa080c44-c8bc-4643-a09f-5132e18d587f",
+      "appNodeId" : "3a18f94c-9a87-4971-81a6-c13dc389f1f4",
+      "name" : "Process Input",
+      "templateVersionId" : "6f32093d-6491-401e-bd8a-4e863fa8e392",
+      "objectTypeKey" : "PROCESS_INPUT",
+      "processTypeKey" : null,
+      "displayGroup" : null,
+      "state" : "CONFIGURED",
+      "parameters" : {
+        "system" : {
+          "isDeletable" : true
+        },
+        "parameters" : {
+          "inputs" : [ {
+            "objectCategoryKey" : "CONNECTION",
+            "objectTypes" : [ "ADOBE_API" ],
+            "label" : "Adobe Credentials",
+            "hint" : "",
+            "required" : true,
+            "targetInputId" : "f9f71d15-2c94-42d7-94e6-5c8091684707"
+          } ]
+        }
+      },
+      "schemaId" : null,
+      "createdById" : null,
+      "modifiedById" : null,
+      "createdAt" : "2020-12-17T15:27:13.534Z",
+      "updatedAt" : "2026-01-10T07:41:12.301Z",
+      "templateGraphNodePorts" : [ {
+        "id" : "c0278e36-aa43-4b89-9d75-6beebd106727",
+        "templateGraphNodeId" : "fa080c44-c8bc-4643-a09f-5132e18d587f",
+        "direction" : "OUTPUT",
+        "location" : [ "right" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ {
+          "id" : "c8a5ddb5-ebbf-4f44-8263-5ce12e600993",
+          "fromPortId" : "c0278e36-aa43-4b89-9d75-6beebd106727",
+          "toPortId" : "99d23c37-0f40-4d61-87eb-5ea8cb932571",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.614Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ]
+      }, {
+        "id" : "a829d9d0-9f9f-4579-8cbd-d646019376ba",
+        "templateGraphNodeId" : "fa080c44-c8bc-4643-a09f-5132e18d587f",
+        "direction" : "INPUT",
+        "location" : [ "left" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ ]
+      } ],
+      "processType" : null,
+      "objectType" : {
+        "key" : "PROCESS_INPUT",
+        "name" : "Process Input",
+        "objectCategoryKey" : "PROCESS_IO",
+        "iconKey" : "PROCESS_INPUT",
+        "icon" : {
+          "name" : "process_input.svg"
+        }
+      },
+      "graphNodePorts" : [ {
+        "id" : "c0278e36-aa43-4b89-9d75-6beebd106727",
+        "templateGraphNodeId" : "fa080c44-c8bc-4643-a09f-5132e18d587f",
+        "direction" : "OUTPUT",
+        "location" : [ "right" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ {
+          "id" : "c8a5ddb5-ebbf-4f44-8263-5ce12e600993",
+          "fromPortId" : "c0278e36-aa43-4b89-9d75-6beebd106727",
+          "toPortId" : "99d23c37-0f40-4d61-87eb-5ea8cb932571",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.614Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "graphNodeId" : "fa080c44-c8bc-4643-a09f-5132e18d587f"
+      }, {
+        "id" : "a829d9d0-9f9f-4579-8cbd-d646019376ba",
+        "templateGraphNodeId" : "fa080c44-c8bc-4643-a09f-5132e18d587f",
+        "direction" : "INPUT",
+        "location" : [ "left" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ ],
+        "graphNodeId" : "fa080c44-c8bc-4643-a09f-5132e18d587f"
+      } ],
+      "objectCategoryKey" : "PROCESS_IO"
+    }, {
+      "id" : "cabadd5b-47dd-4d69-87ad-f03bf1b89858",
+      "appNodeId" : "86899052-5a6f-4c9a-b243-51600880bb3d",
+      "name" : "Spark Processor",
+      "templateVersionId" : "6f32093d-6491-401e-bd8a-4e863fa8e392",
+      "objectTypeKey" : null,
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "displayGroup" : null,
+      "state" : "CONFIGURED",
+      "parameters" : {
+        "system" : {
+          "isDeletable" : true
+        },
+        "filters" : { },
+        "parameters" : {
+          "language" : "PYTHON",
+          "fileName" : null,
+          "sparkScript" : "import subprocess\nimport sys\ndef installpip():\n    subprocess.call([sys.executable, \"-m\", \"easy_install\", \"pip\"])\ndef install(package):\n    subprocess.call([sys.executable, \"-m\", \"pip\", \"install\", package])\n     \ninstallpip()\ninstall(\"git+http://github.com/SaturnFromTitan/adobe_analytics.git\")\n\nfrom adobe_analytics import Client, ReportDefinition\nimport time\nfrom datetime import datetime\n\np_word = synutils.connection().getConnectionParam(\"@InputConnection1\", \"password\")\nusername = synutils.connection().getConnectionParam(\"@InputConnection1\", \"userName\")\n\nclient = Client(username, p_word)\n\nsuites = client.suites()\n\nrsid = \"@rsid\"\nmets = \"@metrics\".split(\",\")\ndimensionList = \"@dimensions\".split(\",\")\nsegs = \"@segments\".split(\",\")\ngranularity = \"@granularity\" # [\"hour\", \"day\", \"week\", \"month\", \"quarter\", \"year\"]\n\nif segs == [\" \"]:\n\tsegs = None\n\nsuite = suites[rsid]\n\ndims = []\nfor dim in dimensionList:\n    dims.append({\"id\":dim,\"top\":50000})\nfromDate = @fromDate[0:10]\ntoDate = @toDate[0:10]\n\nreport_def = ReportDefinition(\n    dimensions = dims,\n    metrics = mets,\n\tsegments = segs,\n    date_from = fromDate,\n    date_to = toDate,\n    granularity = granularity\n)\n\ndf = suite.download(report_def)\n\nimport re\ndf.rename(columns=lambda h: re.sub(\"\\W|^[0-9]\", \"\", h.replace(\" \", \"\")), inplace=True)\n\nsparkDf = spark.createDataFrame(df.astype(str))\n\nwriteToEventStore(sparkDf, \"@OutputTable1\")",
+          "codeParams" : [ {
+            "name" : "@InputConnection1",
+            "value" : "Adobe Credentials",
+            "appNodeId" : "f9f71d15-2c94-42d7-94e6-5c8091684707",
+            "type" : "INPUT",
+            "subType" : "CONNECTION"
+          }, {
+            "name" : "@OutputTable1",
+            "value" : "@database.analytics_report",
+            "appNodeId" : "119e4e28-fc8d-429c-bf94-9540488542c6",
+            "type" : "OUTPUT",
+            "subType" : "DATASET"
+          } ]
+        },
+        "outputParameters" : {
+          "datasets" : [ {
+            "appNodeId" : "119e4e28-fc8d-429c-bf94-9540488542c6",
+            "displayName" : "analytics_report",
+            "objectTypeKey" : "TABLE",
+            "loadToBigQuery" : true,
+            "loadToRedshift" : false,
+            "fileFormat" : "PARQUET",
+            "tableName" : "analytics_report"
+          } ]
+        }
+      },
+      "schemaId" : null,
+      "createdById" : null,
+      "modifiedById" : null,
+      "createdAt" : "2020-12-17T15:27:13.536Z",
+      "updatedAt" : "2026-01-10T07:41:12.301Z",
+      "templateGraphNodePorts" : [ {
+        "id" : "4d7e008a-d106-4911-89fe-a42b4a215138",
+        "templateGraphNodeId" : "cabadd5b-47dd-4d69-87ad-f03bf1b89858",
+        "direction" : "OUTPUT",
+        "location" : [ "right" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ {
+          "id" : "45fee87b-ed36-490b-b04e-99db2a7bd778",
+          "fromPortId" : "4d7e008a-d106-4911-89fe-a42b4a215138",
+          "toPortId" : "a07f81c7-b69b-45c2-8ac7-ed16b1891ffc",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.614Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ]
+      }, {
+        "id" : "99d23c37-0f40-4d61-87eb-5ea8cb932571",
+        "templateGraphNodeId" : "cabadd5b-47dd-4d69-87ad-f03bf1b89858",
+        "direction" : "INPUT",
+        "location" : [ "left" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ {
+          "id" : "c8a5ddb5-ebbf-4f44-8263-5ce12e600993",
+          "fromPortId" : "c0278e36-aa43-4b89-9d75-6beebd106727",
+          "toPortId" : "99d23c37-0f40-4d61-87eb-5ea8cb932571",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.614Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "toLinks" : [ ]
+      } ],
+      "processType" : {
+        "key" : "SPARK_PROCESSOR",
+        "name" : "Spark Processor",
+        "iconKey" : "SPARK_PROCESSOR",
+        "runtime" : "SPARK",
+        "schemaAware" : false,
+        "parameters" : null,
+        "icon" : {
+          "key" : "SPARK_PROCESSOR",
+          "name" : "code.svg",
+          "isSystem" : true
+        }
+      },
+      "objectType" : null,
+      "templateIcon" : {
+        "key" : "SPARK_PROCESSOR",
+        "name" : "code.svg",
+        "isSystem" : true
+      },
+      "graphNodePorts" : [ {
+        "id" : "4d7e008a-d106-4911-89fe-a42b4a215138",
+        "templateGraphNodeId" : "cabadd5b-47dd-4d69-87ad-f03bf1b89858",
+        "direction" : "OUTPUT",
+        "location" : [ "right" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ ],
+        "toLinks" : [ {
+          "id" : "45fee87b-ed36-490b-b04e-99db2a7bd778",
+          "fromPortId" : "4d7e008a-d106-4911-89fe-a42b4a215138",
+          "toPortId" : "a07f81c7-b69b-45c2-8ac7-ed16b1891ffc",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.614Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "graphNodeId" : "cabadd5b-47dd-4d69-87ad-f03bf1b89858"
+      }, {
+        "id" : "99d23c37-0f40-4d61-87eb-5ea8cb932571",
+        "templateGraphNodeId" : "cabadd5b-47dd-4d69-87ad-f03bf1b89858",
+        "direction" : "INPUT",
+        "location" : [ "left" ],
+        "createdById" : null,
+        "modifiedById" : null,
+        "createdAt" : "2020-12-17T15:27:13.579Z",
+        "updatedAt" : "2026-01-10T07:41:12.455Z",
+        "fromLinks" : [ {
+          "id" : "c8a5ddb5-ebbf-4f44-8263-5ce12e600993",
+          "fromPortId" : "c0278e36-aa43-4b89-9d75-6beebd106727",
+          "toPortId" : "99d23c37-0f40-4d61-87eb-5ea8cb932571",
+          "createdById" : null,
+          "modifiedById" : null,
+          "createdAt" : "2020-12-17T15:27:13.614Z",
+          "updatedAt" : "2026-01-10T07:41:12.523Z"
+        } ],
+        "toLinks" : [ ],
+        "graphNodeId" : "cabadd5b-47dd-4d69-87ad-f03bf1b89858"
+      } ]
+    } ]
+  }, {
+    "id" : "f7b27992-6f9e-4cca-bb9b-c17b13680986",
+    "templateId" : "f87c0387-ae6e-48f5-89c2-a809847add6f",
+    "version" : "1.0",
+    "environment" : "DEVELOPMENT",
+    "description" : null,
+    "isExperimental" : false,
+    "canvasGraph" : { },
+    "parameters" : { },
+    "createdById" : null,
+    "modifiedById" : null,
+    "createdAt" : "2020-12-17T15:27:13.507Z",
+    "updatedAt" : "2020-12-17T15:27:13.507Z",
+    "graphNodes" : [ ]
+  } ],
+  "versionInfo" : [ {
+    "templateId" : "f87c0387-ae6e-48f5-89c2-a809847add6f",
+    "version" : "0.1",
+    "templateVersionId" : "6f32093d-6491-401e-bd8a-4e863fa8e392",
+    "createdAt" : "2020-12-17T15:27:13.515Z"
+  } ]
+} ]
