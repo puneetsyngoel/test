@@ -1,0 +1,8 @@
+{
+  "appName" : "QA_DONT_DEL_REG_SPARK",
+  "environment" : "DEVELOPMENT",
+  "provider" : "GOOGLE",
+  "exportDate" : "2026-01-11T09:53:28.391Z",
+  "sourceVersion" : "9.0.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}
