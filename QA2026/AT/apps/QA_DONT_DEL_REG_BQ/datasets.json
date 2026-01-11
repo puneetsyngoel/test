@@ -1,0 +1,113 @@
+[ {
+  "id" : "4471af8e-3f1c-4067-9be9-4d0460d05451",
+  "name" : "qa_dont_del_reg_bq_output",
+  "database" : "QA_DONT_DEL_REG_ESTORE_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "0ef9a8bc-b4b8-4270-947a-8894cba40c0f",
+    "name" : "date_time",
+    "processMappingId" : null,
+    "datasetId" : "4471af8e-3f1c-4067-9be9-4d0460d05451",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 0
+  }, {
+    "id" : "a82a6e3d-af9e-4c72-9f59-3998a6303b28",
+    "name" : "visitor_id",
+    "processMappingId" : null,
+    "datasetId" : "4471af8e-3f1c-4067-9be9-4d0460d05451",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "be1032cb-5da4-40f9-8f1c-cec4104499bd",
+    "name" : "browser",
+    "processMappingId" : null,
+    "datasetId" : "4471af8e-3f1c-4067-9be9-4d0460d05451",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "842810bd-34c8-4e79-8d6b-2ca971c0bc4b",
+    "name" : "country",
+    "processMappingId" : null,
+    "datasetId" : "4471af8e-3f1c-4067-9be9-4d0460d05451",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "4f8ecac6-eb7b-42ce-9b3c-d20bf45920ff",
+    "name" : "browser_type",
+    "processMappingId" : null,
+    "datasetId" : "4471af8e-3f1c-4067-9be9-4d0460d05451",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "935e780a-747c-4fe6-8824-39d25c83c7e1",
+    "name" : "currency",
+    "processMappingId" : null,
+    "datasetId" : "4471af8e-3f1c-4067-9be9-4d0460d05451",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  } ],
+  "dataWarehouses" : [ ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "9c951229-7a9c-4507-ace8-611145c6ca85",
+  "eventStore" : {
+    "id" : "32e9754c-0c03-4cc8-8af1-3f9a683e9d9c",
+    "name" : "QA_DONT_DEL_REG_ESTORE",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_REG_ESTORE",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_ESTORE_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_DONT_DEL_REG_ESTORE_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_DONT_DEL_REG_ESTORE_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_REG_ESTORE_snap",
+    "developmentDatabase" : "QA_DONT_DEL_REG_ESTORE_dev",
+    "productionDatabase" : "QA_DONT_DEL_REG_ESTORE_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-02-06T12:04:46.415Z",
+    "updatedAt" : "2025-02-06T12:04:46.415Z"
+  }
+} ]
