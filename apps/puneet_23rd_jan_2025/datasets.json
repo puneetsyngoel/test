@@ -1,0 +1,101 @@
+[ {
+  "id" : "80e3713a-b752-442f-a3c2-768bdaa2d200",
+  "name" : "puneet_23rd_jan_2025_output",
+  "database" : "puneet_23rd_jan_2025_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "d362a9ce-e869-4f2a-8e7c-40a6cc71bb4e",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "a930130b-c1db-45be-87b3-2d3f498e5545",
+    "name" : "rowId",
+    "processMappingId" : null,
+    "datasetId" : "80e3713a-b752-442f-a3c2-768bdaa2d200",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "92f4197b-8e1c-4c9f-93f5-6e9b0c6a6c64",
+    "name" : "name",
+    "processMappingId" : null,
+    "datasetId" : "80e3713a-b752-442f-a3c2-768bdaa2d200",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "2de45496-fc4e-4257-a804-ae3b4893d42d",
+    "name" : "new_id",
+    "processMappingId" : null,
+    "datasetId" : "80e3713a-b752-442f-a3c2-768bdaa2d200",
+    "datatype" : "bigint",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "d362a9ce-e869-4f2a-8e7c-40a6cc71bb4e",
+    "name" : "date",
+    "processMappingId" : null,
+    "datasetId" : "80e3713a-b752-442f-a3c2-768bdaa2d200",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "02039f92-d668-4cc5-88ae-6c5947f1f779",
+    "datasetId" : "80e3713a-b752-442f-a3c2-768bdaa2d200",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "80e3713a-b752-442f-a3c2-768bdaa2d200"
+  }, {
+    "id" : "f3a60938-5b97-4e28-8c04-849a0ea86ba2",
+    "datasetId" : "80e3713a-b752-442f-a3c2-768bdaa2d200",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "80e3713a-b752-442f-a3c2-768bdaa2d200"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "7ee587a0-6838-4f08-a121-7ca39c786abd",
+  "eventStore" : {
+    "id" : "11df9c9b-fe6a-4fc8-876d-f55170e4125e",
+    "name" : "puneet_23rd_jan_2025",
+    "type" : "EVENTSTORE",
+    "key" : "puneet_23rd_jan_2025",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/puneet_23rd_jan_2025_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/puneet_23rd_jan_2025_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/puneet_23rd_jan_2025_snap",
+    "snapshotDatabase" : "puneet_23rd_jan_2025_snap",
+    "developmentDatabase" : "puneet_23rd_jan_2025_dev",
+    "productionDatabase" : "puneet_23rd_jan_2025_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-01-23T12:48:59.959Z",
+    "updatedAt" : "2025-01-23T12:48:59.959Z"
+  }
+} ]
