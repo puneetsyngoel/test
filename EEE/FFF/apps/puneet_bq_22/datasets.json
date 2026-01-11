@@ -1,0 +1,91 @@
+[ {
+  "id" : "f5a6a406-2492-4c2b-a79d-8054628eb322",
+  "name" : "puneet_bq_22_output",
+  "database" : "test_dixoncurryprod_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "457b3314-8b8a-40b1-ad93-179f4aeb05ae",
+    "name" : "session_date",
+    "processMappingId" : null,
+    "datasetId" : "f5a6a406-2492-4c2b-a79d-8054628eb322",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "66846653-8c76-45e3-85ff-1959809e2cc4",
+    "name" : "visitor_id",
+    "processMappingId" : null,
+    "datasetId" : "f5a6a406-2492-4c2b-a79d-8054628eb322",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "b1db0ba4-43e9-4074-b69d-857d4170c138",
+    "name" : "country",
+    "processMappingId" : null,
+    "datasetId" : "f5a6a406-2492-4c2b-a79d-8054628eb322",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "072b6078-ac5c-4e86-9c40-d3daccbb7edd",
+    "name" : "browser",
+    "processMappingId" : null,
+    "datasetId" : "f5a6a406-2492-4c2b-a79d-8054628eb322",
+    "datatype" : "STRING",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  } ],
+  "dataWarehouses" : [ ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "88785cf3-1112-4b9c-90db-8b8063bea70a",
+  "eventStore" : {
+    "id" : "bf401279-ef96-472b-98f7-8c71b32873b4",
+    "name" : "test_dixoncurryprod",
+    "type" : "EVENTSTORE",
+    "key" : "test_dixoncurryprod",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/test_dixoncurryprod_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/test_dixoncurryprod_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/test_dixoncurryprod_snap",
+    "snapshotDatabase" : "test_dixoncurryprod_snap",
+    "developmentDatabase" : "test_dixoncurryprod_dev",
+    "productionDatabase" : "test_dixoncurryprod_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-04-12T07:37:40.303Z",
+    "updatedAt" : "2024-04-12T07:37:40.303Z"
+  }
+} ]
