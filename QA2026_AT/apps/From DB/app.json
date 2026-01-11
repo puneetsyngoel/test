@@ -1,0 +1,34 @@
+{
+  "id" : "c46cc075-d416-4bf5-9027-721942db321f",
+  "key" : "Puneet_test_16th_oct_FromDB",
+  "appPrefix" : "puneet_test_16th_oct_fromdb",
+  "name" : "From DB",
+  "description" : "",
+  "module" : "ORCHESTRATOR",
+  "partitionScheme" : "DAILY",
+  "templateId" : "43ff8012-ad3c-4150-9a71-95e275ac3c97",
+  "eventStoreId" : "99d7d436-df4f-4bad-9041-2ca6b607a181",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2024-10-16T06:09:29.682Z",
+  "updatedAt" : "2024-11-06T08:34:15.079Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Orchestrator Free Form",
+    "key" : "ORCHESTRATOR_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "Puneet_test_16th_oct_FromDB"
+}

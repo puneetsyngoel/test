@@ -1,0 +1,8 @@
+{
+  "appName" : "From DB",
+  "environment" : "DEVELOPMENT",
+  "provider" : "GOOGLE",
+  "exportDate" : "2026-01-11T09:42:49.302Z",
+  "sourceVersion" : "9.0.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}
