@@ -1,0 +1,8 @@
+{
+  "appName" : "test_SMA_8667_BQ",
+  "environment" : "DEVELOPMENT",
+  "provider" : "GOOGLE",
+  "exportDate" : "2026-01-11T06:27:49.082Z",
+  "sourceVersion" : "9.0.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}
