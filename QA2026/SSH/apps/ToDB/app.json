@@ -1,0 +1,34 @@
+{
+  "id" : "86dbbdc5-9cc1-4aa3-9d62-e3c96974d61a",
+  "key" : "ToDB",
+  "appPrefix" : "todb",
+  "name" : "ToDB",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "0b647943-7ee1-48f6-860c-42bf727774be",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "a4be9b25-86a3-46e4-9027-4ffc53ac3878",
+  "createdById" : "a4be9b25-86a3-46e4-9027-4ffc53ac3878",
+  "modifiedById" : "a4be9b25-86a3-46e4-9027-4ffc53ac3878",
+  "audienceVersion" : null,
+  "createdAt" : "2022-10-21T06:20:39.182Z",
+  "updatedAt" : "2022-10-21T06:20:39.182Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_Auto_EventStore_7899"
+}
