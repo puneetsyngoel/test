@@ -1,0 +1,113 @@
+[ {
+  "id" : "ec09fe29-b12f-437f-89d4-08e14ea86040",
+  "name" : "test_sma_8025_output02",
+  "database" : "test_dixoncurryprod_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "22235250-28c0-402c-8507-fd2de6d47709",
+    "datasetId" : "ec09fe29-b12f-437f-89d4-08e14ea86040",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "ec09fe29-b12f-437f-89d4-08e14ea86040"
+  }, {
+    "id" : "a3365020-0808-4d2a-b69e-806414b93b62",
+    "datasetId" : "ec09fe29-b12f-437f-89d4-08e14ea86040",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "ec09fe29-b12f-437f-89d4-08e14ea86040"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "7730d0ff-bdd5-4727-bf76-e3a5d91a7286",
+  "eventStore" : {
+    "id" : "bf401279-ef96-472b-98f7-8c71b32873b4",
+    "name" : "test_dixoncurryprod",
+    "type" : "EVENTSTORE",
+    "key" : "test_dixoncurryprod",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/test_dixoncurryprod_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/test_dixoncurryprod_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/test_dixoncurryprod_snap",
+    "snapshotDatabase" : "test_dixoncurryprod_snap",
+    "developmentDatabase" : "test_dixoncurryprod_dev",
+    "productionDatabase" : "test_dixoncurryprod_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-04-12T07:37:40.303Z",
+    "updatedAt" : "2024-04-12T07:37:40.303Z"
+  }
+}, {
+  "id" : "33b77193-23a8-4b6e-9f65-82d7d736fd8e",
+  "name" : "test_sma_8025_output123",
+  "database" : "test_dixoncurryprod_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "0f645206-a579-47a0-8fb2-506e5ba3f622",
+    "datasetId" : "33b77193-23a8-4b6e-9f65-82d7d736fd8e",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "33b77193-23a8-4b6e-9f65-82d7d736fd8e"
+  }, {
+    "id" : "59155799-112d-4595-8fba-1c23e86298d4",
+    "datasetId" : "33b77193-23a8-4b6e-9f65-82d7d736fd8e",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "33b77193-23a8-4b6e-9f65-82d7d736fd8e"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "092d20a3-be5c-4585-95c8-cb4a0de74382",
+  "eventStore" : {
+    "id" : "bf401279-ef96-472b-98f7-8c71b32873b4",
+    "name" : "test_dixoncurryprod",
+    "type" : "EVENTSTORE",
+    "key" : "test_dixoncurryprod",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/test_dixoncurryprod_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/test_dixoncurryprod_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/test_dixoncurryprod_snap",
+    "snapshotDatabase" : "test_dixoncurryprod_snap",
+    "developmentDatabase" : "test_dixoncurryprod_dev",
+    "productionDatabase" : "test_dixoncurryprod_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2024-04-12T07:37:40.303Z",
+    "updatedAt" : "2024-04-12T07:37:40.303Z"
+  }
+} ]
