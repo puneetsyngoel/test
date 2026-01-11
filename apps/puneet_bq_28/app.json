@@ -1,0 +1,34 @@
+{
+  "id" : "c5efd01b-b7f3-4242-b199-d672cca1f704",
+  "key" : "puneet_bq_28",
+  "appPrefix" : "puneet_bq_28",
+  "name" : "puneet_bq_28",
+  "description" : "",
+  "module" : "COMPOSER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "990c7308-a862-4cac-8871-4de7cdc6e6a6",
+  "eventStoreId" : "bf401279-ef96-472b-98f7-8c71b32873b4",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2024-09-19T13:35:17.734Z",
+  "updatedAt" : "2024-09-19T13:35:17.734Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Composer Free Form",
+    "key" : "COMPOSER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "test_dixoncurryprod"
+}

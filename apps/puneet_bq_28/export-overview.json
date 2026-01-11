@@ -1,0 +1,8 @@
+{
+  "appName" : "puneet_bq_28",
+  "environment" : "DEVELOPMENT",
+  "provider" : "GOOGLE",
+  "exportDate" : "2026-01-11T05:40:25.987Z",
+  "sourceVersion" : "9.0.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}
