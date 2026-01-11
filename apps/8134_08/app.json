@@ -1,0 +1,34 @@
+{
+  "id" : "37db1e6d-3523-454e-83c2-b1d0a490d3ae",
+  "key" : "_08",
+  "appPrefix" : "_08",
+  "name" : "8134_08",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "bf401279-ef96-472b-98f7-8c71b32873b4",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2024-09-02T12:20:19.552Z",
+  "updatedAt" : "2024-09-02T12:20:19.552Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "test_dixoncurryprod"
+}
