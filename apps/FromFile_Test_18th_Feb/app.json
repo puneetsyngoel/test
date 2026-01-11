@@ -1,0 +1,35 @@
+{
+  "id" : "65b1d461-d42d-476a-a6cd-61e6f8cc420c",
+  "key" : "FromFile_Test_18th_Feb",
+  "appPrefix" : "fromfile_test_18th_feb",
+  "name" : "FromFile_Test_18th_Feb",
+  "description" : "",
+  "module" : "COMPOSER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "990c7308-a862-4cac-8871-4de7cdc6e6a6",
+  "eventStoreId" : "277468a4-79e1-417f-bbc1-200e392c7886",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "GROUP",
+    "userGroupIds" : [ "ad8ffbea-1fb5-4df6-80d6-e5465543f8ea" ]
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "af626b96-abcf-4a66-91c7-f9e937844e30",
+  "audienceVersion" : null,
+  "createdAt" : "2025-02-18T12:45:12.046Z",
+  "updatedAt" : "2025-02-20T08:49:59.837Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Composer Free Form",
+    "key" : "COMPOSER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "AMR_D1"
+}
