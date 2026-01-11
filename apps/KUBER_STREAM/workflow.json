@@ -1,0 +1,1001 @@
+{
+  "lastUserSave" : "2025-08-25T08:10:27.000Z",
+  "id" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+  "name" : "Development",
+  "description" : null,
+  "appId" : "abd5c9c7-c578-445a-bb06-caa1240d44d5",
+  "canvasGraph" : {
+    "nodes" : [ {
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "SOCKET",
+      "left" : -443.79340544525957,
+      "state" : "CONFIGURED",
+      "label" : "QA_Socket",
+      "top" : -221.64213138513733,
+      "type" : "objectType",
+      "id" : "f063ceb5-7ea6-41b8-acf6-859cd4845379",
+      "nodeType" : "objectType"
+    }, {
+      "id" : "07c9e3dc-b069-4d87-8c47-bea8bd8cd1ac",
+      "top" : -229.0824502900603,
+      "left" : -262.74564542546705,
+      "label" : "Spark Stream Processor",
+      "ports" : [ {
+        "id" : "07c9e3dc-b069-4d87-8c47-bea8bd8cd1ac.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "07c9e3dc-b069-4d87-8c47-bea8bd8cd1ac.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "SPARK_STREAM_PROCESSOR",
+      "state" : "CONFIGURED"
+    }, {
+      "objectCategoryKey" : "STREAM",
+      "objectTypeKey" : "KAFKA_TOPIC",
+      "left" : -62.745645425467046,
+      "state" : null,
+      "ports" : [ {
+        "id" : "ee808050-04fd-402f-86f3-b8cc6412d91c.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "ee808050-04fd-402f-86f3-b8cc6412d91c.output",
+        "type" : "multiOutput"
+      } ],
+      "label" : "QA_StreamApp5_Output1",
+      "top" : -229.0824502900603,
+      "processTypeKey" : null,
+      "id" : "ee808050-04fd-402f-86f3-b8cc6412d91c",
+      "nodeType" : "objectType"
+    }, {
+      "id" : "5d4b8979-d931-4771-9289-dd252614b045",
+      "top" : -52.40292152338836,
+      "left" : -233.1195387395594,
+      "label" : "Spark Stream Processor-2",
+      "ports" : [ {
+        "id" : "5d4b8979-d931-4771-9289-dd252614b045.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "5d4b8979-d931-4771-9289-dd252614b045.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "SPARK_STREAM_PROCESSOR",
+      "state" : "CONFIGURED"
+    }, {
+      "objectCategoryKey" : "STREAM",
+      "objectTypeKey" : "KAFKA_TOPIC",
+      "left" : -33.1195387395594,
+      "state" : null,
+      "ports" : [ {
+        "id" : "e498e661-89d8-41fe-a2cd-4dc5453a4317.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "e498e661-89d8-41fe-a2cd-4dc5453a4317.output",
+        "type" : "multiOutput"
+      } ],
+      "label" : "qa_streamapp5_Output2",
+      "top" : -52.40292152338836,
+      "processTypeKey" : null,
+      "id" : "e498e661-89d8-41fe-a2cd-4dc5453a4317",
+      "nodeType" : "objectType"
+    }, {
+      "objectCategoryKey" : "DATASET",
+      "objectTypeKey" : "TABLE",
+      "left" : -534,
+      "state" : "CONFIGURED",
+      "label" : "QA_Auto_EventStore_foundation2.tb_event",
+      "top" : 123,
+      "type" : "objectType",
+      "id" : "cd2f2e6f-a94c-4711-8f66-c153c73ab370",
+      "nodeType" : "objectType"
+    }, {
+      "id" : "fd018df6-318e-41e9-8e95-575c0c202c84",
+      "top" : 163.1974781664643,
+      "left" : -344.88010758155724,
+      "label" : "Spark Processor",
+      "ports" : [ {
+        "id" : "fd018df6-318e-41e9-8e95-575c0c202c84.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "fd018df6-318e-41e9-8e95-575c0c202c84.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "state" : "CONFIGURED"
+    }, {
+      "objectCategoryKey" : "DATASET",
+      "objectTypeKey" : "TABLE",
+      "left" : -144.88010758155724,
+      "state" : null,
+      "ports" : [ {
+        "id" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4.output",
+        "type" : "multiOutput"
+      } ],
+      "label" : "kuber_stream_Output",
+      "top" : 163.1974781664643,
+      "id" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4",
+      "nodeType" : "objectType"
+    }, {
+      "id" : "ebd8e4f5-94fc-4308-bae3-7d48880a3532",
+      "top" : -495.87133796968646,
+      "left" : -292.45360369293127,
+      "label" : "Spark Stream Sample Rate Source",
+      "ports" : [ {
+        "id" : "ebd8e4f5-94fc-4308-bae3-7d48880a3532.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "ebd8e4f5-94fc-4308-bae3-7d48880a3532.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "SPARK_STREAM_PROCESSOR",
+      "state" : "COMPLETED"
+    }, {
+      "objectCategoryKey" : "STREAM",
+      "objectTypeKey" : "KAFKA_TOPIC",
+      "left" : -92.45360369293127,
+      "ports" : [ {
+        "id" : "6066b494-698d-46ab-8fa0-4150ae311b8b.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "6066b494-698d-46ab-8fa0-4150ae311b8b.output",
+        "type" : "multiOutput"
+      } ],
+      "label" : "qa_streamapp5_Output",
+      "top" : -495.87133796968646,
+      "processTypeKey" : null,
+      "id" : "6066b494-698d-46ab-8fa0-4150ae311b8b",
+      "nodeType" : "objectType",
+      "state" : null
+    } ],
+    "edges" : [ {
+      "source" : "f063ceb5-7ea6-41b8-acf6-859cd4845379.output",
+      "target" : "07c9e3dc-b069-4d87-8c47-bea8bd8cd1ac.input",
+      "data" : {
+        "id" : "aab78785-0ac8-430c-a5b2-83f84876a4b7",
+        "type" : "default"
+      }
+    }, {
+      "source" : "f063ceb5-7ea6-41b8-acf6-859cd4845379.output",
+      "target" : "5d4b8979-d931-4771-9289-dd252614b045.input",
+      "data" : {
+        "id" : "6763bbfb-29e9-4c97-98c1-b6ce9e3a0905",
+        "type" : "default"
+      }
+    }, {
+      "source" : "f063ceb5-7ea6-41b8-acf6-859cd4845379.output",
+      "target" : "ebd8e4f5-94fc-4308-bae3-7d48880a3532.input",
+      "data" : {
+        "id" : "65293509-c647-42ad-bdcd-755a14de60ba",
+        "type" : "default"
+      }
+    }, {
+      "source" : "07c9e3dc-b069-4d87-8c47-bea8bd8cd1ac.output",
+      "target" : "ee808050-04fd-402f-86f3-b8cc6412d91c.input",
+      "data" : { }
+    }, {
+      "source" : "5d4b8979-d931-4771-9289-dd252614b045.output",
+      "target" : "e498e661-89d8-41fe-a2cd-4dc5453a4317.input",
+      "data" : { }
+    }, {
+      "source" : "cd2f2e6f-a94c-4711-8f66-c153c73ab370.output",
+      "target" : "fd018df6-318e-41e9-8e95-575c0c202c84.input",
+      "data" : {
+        "id" : "0fe8429b-d088-4e5f-a22f-f76ccbb725a0",
+        "type" : "default"
+      }
+    }, {
+      "source" : "fd018df6-318e-41e9-8e95-575c0c202c84.output",
+      "target" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4.input",
+      "data" : { }
+    }, {
+      "source" : "ebd8e4f5-94fc-4308-bae3-7d48880a3532.output",
+      "target" : "6066b494-698d-46ab-8fa0-4150ae311b8b.input",
+      "data" : { }
+    } ],
+    "ports" : [ {
+      "id" : "f063ceb5-7ea6-41b8-acf6-859cd4845379.output"
+    }, {
+      "id" : "f063ceb5-7ea6-41b8-acf6-859cd4845379.input"
+    }, {
+      "id" : "07c9e3dc-b069-4d87-8c47-bea8bd8cd1ac.input"
+    }, {
+      "id" : "07c9e3dc-b069-4d87-8c47-bea8bd8cd1ac.output"
+    }, {
+      "id" : "ee808050-04fd-402f-86f3-b8cc6412d91c.output"
+    }, {
+      "id" : "ee808050-04fd-402f-86f3-b8cc6412d91c.input"
+    }, {
+      "id" : "5d4b8979-d931-4771-9289-dd252614b045.input"
+    }, {
+      "id" : "5d4b8979-d931-4771-9289-dd252614b045.output"
+    }, {
+      "id" : "e498e661-89d8-41fe-a2cd-4dc5453a4317.output"
+    }, {
+      "id" : "e498e661-89d8-41fe-a2cd-4dc5453a4317.input"
+    }, {
+      "id" : "cd2f2e6f-a94c-4711-8f66-c153c73ab370.output"
+    }, {
+      "id" : "cd2f2e6f-a94c-4711-8f66-c153c73ab370.input"
+    }, {
+      "id" : "fd018df6-318e-41e9-8e95-575c0c202c84.input"
+    }, {
+      "id" : "fd018df6-318e-41e9-8e95-575c0c202c84.output"
+    }, {
+      "id" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4.output"
+    }, {
+      "id" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4.input"
+    }, {
+      "id" : "ebd8e4f5-94fc-4308-bae3-7d48880a3532.input"
+    }, {
+      "id" : "ebd8e4f5-94fc-4308-bae3-7d48880a3532.output"
+    }, {
+      "id" : "6066b494-698d-46ab-8fa0-4150ae311b8b.output"
+    }, {
+      "id" : "6066b494-698d-46ab-8fa0-4150ae311b8b.input"
+    } ],
+    "groups" : [ ]
+  },
+  "environment" : "DEVELOPMENT",
+  "parentWorkflowId" : null,
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "parameters" : null,
+  "createdAt" : "2025-08-25T08:10:27.474Z",
+  "updatedAt" : "2025-12-30T11:52:58.953Z",
+  "app" : {
+    "id" : "abd5c9c7-c578-445a-bb06-caa1240d44d5",
+    "key" : "KUBER_STREAM",
+    "appPrefix" : "kuber_stream",
+    "name" : "KUBER_STREAM",
+    "description" : "",
+    "module" : "SYNTHESIZER",
+    "partitionScheme" : "DAILY",
+    "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+    "eventStoreId" : "72c041bc-48f1-4db3-b219-7a6a93609456",
+    "iconKey" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "audienceVersion" : null,
+    "createdAt" : "2025-08-25T08:10:27.078Z",
+    "updatedAt" : "2025-08-25T08:10:27.078Z",
+    "deletedAt" : null
+  },
+  "graphNodes" : [ {
+    "id" : "bfdfe583-c30a-43d5-8336-4653fda55e85",
+    "name" : "QA_Auto_EventStore_foundation2.tb_event",
+    "appNodeId" : "cd2f2e6f-a94c-4711-8f66-c153c73ab370",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "b1821ccf-0274-45df-b5d5-037dcce91ce4",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true,
+        "isExternal" : true,
+        "dataStoreType" : "EVENTSTORE"
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "c8dbe2c0-0ceb-4353-a36f-a7d4680c66f2",
+      "graphNodeId" : "bfdfe583-c30a-43d5-8336-4653fda55e85",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "8f564754-b17a-4ef0-8f89-39b7c971c487",
+        "fromPortId" : "c8dbe2c0-0ceb-4353-a36f-a7d4680c66f2",
+        "toPortId" : "18f9df0b-99ed-4fbc-a1da-fde12891fd33"
+      } ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "55680633-bb28-4e3e-8f7c-2272616e2a20",
+      "graphNodeId" : "bfdfe583-c30a-43d5-8336-4653fda55e85",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  }, {
+    "id" : "d8eda9e9-bda0-4c18-9ae3-e5fc1dc27ef3",
+    "name" : "QA_Socket",
+    "appNodeId" : "f063ceb5-7ea6-41b8-acf6-859cd4845379",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : "SOCKET",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "94dd13df-41ca-486b-a1d6-f2486ff0f6db",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : {
+      "name" : "Socket",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "socket.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "10f8fdc6-a2f4-4f8c-87b4-597033537e47",
+      "graphNodeId" : "d8eda9e9-bda0-4c18-9ae3-e5fc1dc27ef3",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "62d16f15-e74c-424f-9c4c-40437a14cff6",
+      "graphNodeId" : "d8eda9e9-bda0-4c18-9ae3-e5fc1dc27ef3",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "4fdf94f6-bebd-4af8-8217-7e15e3b7a98c",
+        "fromPortId" : "62d16f15-e74c-424f-9c4c-40437a14cff6",
+        "toPortId" : "895ed7ad-3fa2-44b9-9f4f-098cca5d48dc"
+      }, {
+        "id" : "9e9cd20e-5434-482d-b766-546a2d534775",
+        "fromPortId" : "62d16f15-e74c-424f-9c4c-40437a14cff6",
+        "toPortId" : "dfdae2cc-25c3-400e-8261-e84211c01c15"
+      }, {
+        "id" : "92e61a31-1eb3-4661-aa1f-5ee9e94b9903",
+        "fromPortId" : "62d16f15-e74c-424f-9c4c-40437a14cff6",
+        "toPortId" : "603070ea-7d3f-4998-ba16-2c417337577c"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  }, {
+    "id" : "a0fdc36f-d385-4cc2-8458-0250b6c1c9ec",
+    "name" : "QA_StreamApp5_Output1",
+    "appNodeId" : "ee808050-04fd-402f-86f3-b8cc6412d91c",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : "KAFKA_TOPIC",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : "c3ef74f3-2b77-4c23-9ce2-efcba2010c60",
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : {
+      "name" : "Kafka Topic",
+      "objectCategoryKey" : "STREAM",
+      "icon" : {
+        "name" : "kafka-topic.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "773cd29f-603d-4d17-a388-824043a1d4ba",
+      "graphNodeId" : "a0fdc36f-d385-4cc2-8458-0250b6c1c9ec",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "4df8be36-8e5c-4fa9-b552-cee91b8c638c",
+        "fromPortId" : "94c467e2-0bc7-45e3-a3ad-cc2d8d645347",
+        "toPortId" : "773cd29f-603d-4d17-a388-824043a1d4ba"
+      } ]
+    }, {
+      "id" : "52c78eb9-cae9-4717-820a-48d295dd23e2",
+      "graphNodeId" : "a0fdc36f-d385-4cc2-8458-0250b6c1c9ec",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "STREAM"
+  }, {
+    "id" : "9668dbba-522f-4a5c-beb5-d5cbb806c27b",
+    "name" : "Spark Processor",
+    "appNodeId" : "fd018df6-318e-41e9-8e95-575c0c202c84",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : null,
+    "processTypeKey" : "SPARK_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "filters" : { },
+      "parameters" : {
+        "language" : "SCALA",
+        "fileName" : "SparkScript.scala",
+        "sparkScript" : "// demo data - 08/28/2018\r\n\r\nval dataset =spark.createDataFrame(Seq((0, \"Cricket\"), (1, \"Volleyball\"))).toDF(\"id\", \"sport\")\r\n\r\nval upper: String => String = _.toUpperCase\r\n\r\nval upperUDF = udf(upper)\r\n\r\nval newDataSet = dataset.\r\nwithColumn(\r\n\"capSport\",\r\nupperUDF(dataset(\"sport\")\r\n)\r\n)\r\nnewDataSet.show()\r\nsql(\"select date_sub(current_timestamp(), 1)\").show()\r\n\r\nspark.sql(\"create table if not exists @OutputTable1 (id String, value double) stored as parquet location @location\")\r\nsql(s\"insert into @OutputTable1 values('test_id',2.0)\")",
+        "codeParams" : [ {
+          "name" : "@InputTable1",
+          "value" : "QA_Auto_EventStore_foundation2.tb_event",
+          "appNodeId" : "cd2f2e6f-a94c-4711-8f66-c153c73ab370",
+          "type" : "INPUT",
+          "subType" : "DATASET"
+        }, {
+          "name" : "@OutputTable1",
+          "value" : "@database.kuber_stream_output",
+          "appNodeId" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4",
+          "type" : "OUTPUT",
+          "subType" : "DATASET"
+        } ]
+      },
+      "outputParameters" : {
+        "datasets" : [ {
+          "appNodeId" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4",
+          "displayName" : "kuber_stream_Output",
+          "objectTypeKey" : "TABLE",
+          "partitionScheme" : "DAILY",
+          "loadToBigQuery" : true,
+          "loadToRedshift" : false,
+          "fileFormat" : "PARQUET",
+          "tableName" : "kuber_stream_output"
+        } ]
+      }
+    },
+    "templateVersionId" : "45768e69-f4d7-45bb-8957-e3aa460ed3a1",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "Spark Processor",
+      "schemaAware" : false,
+      "runtime" : "SPARK",
+      "icon" : {
+        "key" : "SPARK_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "18f9df0b-99ed-4fbc-a1da-fde12891fd33",
+      "graphNodeId" : "9668dbba-522f-4a5c-beb5-d5cbb806c27b",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "8f564754-b17a-4ef0-8f89-39b7c971c487",
+        "fromPortId" : "c8dbe2c0-0ceb-4353-a36f-a7d4680c66f2",
+        "toPortId" : "18f9df0b-99ed-4fbc-a1da-fde12891fd33"
+      } ]
+    }, {
+      "id" : "783049df-63d4-47fc-a52d-bf50f4c798a8",
+      "graphNodeId" : "9668dbba-522f-4a5c-beb5-d5cbb806c27b",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "37004f4c-c072-4671-a0ab-84f4d04a41b4",
+        "fromPortId" : "783049df-63d4-47fc-a52d-bf50f4c798a8",
+        "toPortId" : "1d7e711b-cfd2-43fd-a1f0-0250ff7b1667"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "SPARK_PROCESSOR"
+    }
+  }, {
+    "id" : "a777880d-fc19-4f26-83b1-e01d10187784",
+    "name" : "Spark Stream Processor",
+    "appNodeId" : "07c9e3dc-b069-4d87-8c47-bea8bd8cd1ac",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : null,
+    "processTypeKey" : "SPARK_STREAM_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "filters" : { },
+      "parameters" : {
+        "language" : "SCALA",
+        "fileName" : null,
+        "sparkScript" : "import com.syntasa.utils.SystemUtils\nimport com.syntasa.streams.source.socket.SocketStructuredDataSourceConfig\nimport com.syntasa.streams.processor._\nimport com.syntasa.streams.sink._\nimport com.syntasa.streams.postprocess.preview.KafkaPreviewStreamPostProcessConfig\nimport com.syntasa.streams.postprocess.state.{KafkaStateStreamPostProcess, KafkaStateStreamPostProcessConfig}\nimport com.syntasa.lib.constants.ExecuteProcessMode\nimport com.syntasa.streams.transform.{AdobeLiveStreamTransformConfig, CustomTransformConfig}\nimport java.util.UUID\nimport com.syntasa.streams.transform.{AdobeLiveStreamTransform,SyntasaTransform, SyntasaTransformConfig}\nimport com.syntasa.streams.SystemConfiguration\nimport com.syntasa.streams.postprocess.preview.PreviewStreamPostProcessConfig\nimport com.syntasa.streams.postprocess.state.StateStreamPostProcessConfig\nimport com.syntasa.streams.sink.{Sink, SyntasaSink, SyntasaSinkConfig}\nimport com.syntasa.streams.source.{Source, SyntasaSource, SyntasaSourceConfig}\nimport com.syntasa.streams.transform.{SyntasaTransform, SyntasaTransformConfig, Transform}\nimport com.syntasa.stream.management.client.StreamManagementClientHelperUtils\nimport com.syntasa.stream.management.client.model.stream.StreamStatus\nimport com.syntasa.streams._\nimport com.syntasa.streams.postprocess.preview.{Preview, PreviewStreamPostProcessConfig}\nimport com.syntasa.streams.postprocess.state.{State, StateStreamPostProcessConfig}\nimport com.syntasa.streams.sink.{SyntasaSink, SyntasaSinkConfig}\nimport com.syntasa.streams.source.{SyntasaSource, SyntasaSourceConfig}\nimport com.syntasa.streams.transform.{AdobeLiveStreamTransform, AdobeLiveStreamTransformConfig, SyntasaTransform, SyntasaTransformConfig}\nimport org.apache.spark.sql.streaming.StreamingQuery\n\nval reportSuiteTimeZone = \"EST\"\ndef customTransform(df: DataFrame): DataFrame = {\n  val adobeLivestreamDeserializerTransform = AdobeLiveStreamTransformConfig()\n  val tx: SyntasaTransform =  Transform.get(Transform.ADOBE_LIVE_STREAM_TRANSFORM)\n  val df2 = tx.transform(adobeLivestreamDeserializerTransform, df)\n//     val tx = AdobeLiveStreamTransform()\n//     val adobeLivestreamDeserializerTransform = AdobeLiveStreamTransformConfig()\n//     val df2 = tx.transform(adobeLivestreamDeserializerTransform, df)\n  df2.selectExpr(\"browser\", \"browserHeight\", s\"substring(from_utc_timestamp(from_unixtime(timeGMT), '${reportSuiteTimeZone}'), 0, 10) as event_partition\", s\"substring(from_utc_timestamp(from_unixtime(timeGMT), '${reportSuiteTimeZone}'), 0, 10) as an_stream_output2\")\n}\n\nstart(customTransform)",
+        "libraryConfigs" : [ ],
+        "version" : "",
+        "codeParams" : [ {
+          "name" : "@InputConnection1",
+          "value" : "QA_Socket",
+          "appNodeId" : "f063ceb5-7ea6-41b8-acf6-859cd4845379",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        }, {
+          "name" : "@OutputTopic1",
+          "value" : "@env.qa_streamapp05.kafka_topic",
+          "appNodeId" : "ee808050-04fd-402f-86f3-b8cc6412d91c",
+          "type" : "OUTPUT",
+          "subType" : "STREAM"
+        } ]
+      },
+      "outputParameters" : {
+        "streams" : [ {
+          "appNodeId" : "ee808050-04fd-402f-86f3-b8cc6412d91c",
+          "displayName" : "QA_StreamApp5_Output1",
+          "topicName" : "kuber_stream.kafka_topic",
+          "prependEnvironment" : true,
+          "noPartitions" : 0,
+          "partitionColumn" : "",
+          "eventStoreId" : "72c041bc-48f1-4db3-b219-7a6a93609456",
+          "objectTypeKey" : "KAFKA_TOPIC"
+        } ],
+        "datasets" : [ ]
+      }
+    },
+    "templateVersionId" : "e249b581-9cee-4a68-9680-4aa210001fdc",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "Spark Stream Processor",
+      "schemaAware" : false,
+      "runtime" : "undefined",
+      "icon" : {
+        "key" : "SPARK_STREAM_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "895ed7ad-3fa2-44b9-9f4f-098cca5d48dc",
+      "graphNodeId" : "a777880d-fc19-4f26-83b1-e01d10187784",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "4fdf94f6-bebd-4af8-8217-7e15e3b7a98c",
+        "fromPortId" : "62d16f15-e74c-424f-9c4c-40437a14cff6",
+        "toPortId" : "895ed7ad-3fa2-44b9-9f4f-098cca5d48dc"
+      } ]
+    }, {
+      "id" : "94c467e2-0bc7-45e3-a3ad-cc2d8d645347",
+      "graphNodeId" : "a777880d-fc19-4f26-83b1-e01d10187784",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "4df8be36-8e5c-4fa9-b552-cee91b8c638c",
+        "fromPortId" : "94c467e2-0bc7-45e3-a3ad-cc2d8d645347",
+        "toPortId" : "773cd29f-603d-4d17-a388-824043a1d4ba"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "SPARK_STREAM_PROCESSOR"
+    }
+  }, {
+    "id" : "962e78a6-339a-4dcf-9505-bf8fdf7493ee",
+    "name" : "Spark Stream Processor-2",
+    "appNodeId" : "5d4b8979-d931-4771-9289-dd252614b045",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : null,
+    "processTypeKey" : "SPARK_STREAM_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "filters" : { },
+      "parameters" : {
+        "language" : "SCALA",
+        "fileName" : null,
+        "sparkScript" : "import com.syntasa.utils.SystemUtils\nimport com.syntasa.streams.source.socket.SocketStructuredDataSourceConfig\nimport com.syntasa.streams.processor._\nimport com.syntasa.streams.sink._\nimport com.syntasa.streams.postprocess.preview.KafkaPreviewStreamPostProcessConfig\nimport com.syntasa.streams.postprocess.state.{KafkaStateStreamPostProcess, KafkaStateStreamPostProcessConfig}\nimport com.syntasa.lib.constants.ExecuteProcessMode\nimport com.syntasa.streams.transform.{AdobeLiveStreamTransformConfig, CustomTransformConfig}\nimport java.util.UUID\nimport com.syntasa.streams.transform.{AdobeLiveStreamTransform,SyntasaTransform, SyntasaTransformConfig}\nimport com.syntasa.streams.SystemConfiguration\nimport com.syntasa.streams.postprocess.preview.PreviewStreamPostProcessConfig\nimport com.syntasa.streams.postprocess.state.StateStreamPostProcessConfig\nimport com.syntasa.streams.sink.{Sink, SyntasaSink, SyntasaSinkConfig}\nimport com.syntasa.streams.source.{Source, SyntasaSource, SyntasaSourceConfig}\nimport com.syntasa.streams.transform.{SyntasaTransform, SyntasaTransformConfig, Transform}\nimport com.syntasa.stream.management.client.StreamManagementClientHelperUtils\nimport com.syntasa.stream.management.client.model.stream.StreamStatus\nimport com.syntasa.streams._\nimport com.syntasa.streams.postprocess.preview.{Preview, PreviewStreamPostProcessConfig}\nimport com.syntasa.streams.postprocess.state.{State, StateStreamPostProcessConfig}\nimport com.syntasa.streams.sink.{SyntasaSink, SyntasaSinkConfig}\nimport com.syntasa.streams.source.{SyntasaSource, SyntasaSourceConfig}\nimport com.syntasa.streams.transform.{AdobeLiveStreamTransform, AdobeLiveStreamTransformConfig, SyntasaTransform, SyntasaTransformConfig}\nimport org.apache.spark.sql.streaming.StreamingQuery\n\nval reportSuiteTimeZone = \"EST\"\ndef customTransform(df: DataFrame): DataFrame = {\n  val adobeLivestreamDeserializerTransform = AdobeLiveStreamTransformConfig()\n  val tx: SyntasaTransform =  Transform.get(Transform.ADOBE_LIVE_STREAM_TRANSFORM)\n  val df2 = tx.transform(adobeLivestreamDeserializerTransform, df)\n//     val tx = AdobeLiveStreamTransform()\n//     val adobeLivestreamDeserializerTransform = AdobeLiveStreamTransformConfig()\n//     val df2 = tx.transform(adobeLivestreamDeserializerTransform, df)\n  df2.selectExpr(\"browser\", \"browserHeight\", s\"substring(from_utc_timestamp(from_unixtime(timeGMT), '${reportSuiteTimeZone}'), 0, 10) as event_partition\", s\"substring(from_utc_timestamp(from_unixtime(timeGMT), '${reportSuiteTimeZone}'), 0, 10) as an_stream_output2\")\n}\n\nstart(customTransform)",
+        "libraryConfigs" : [ ],
+        "version" : "",
+        "codeParams" : [ {
+          "name" : "@InputConnection1",
+          "value" : "QA_Socket",
+          "appNodeId" : "f063ceb5-7ea6-41b8-acf6-859cd4845379",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        }, {
+          "name" : "@OutputTopic1",
+          "value" : "@env.qa_streamapp005.kafka_topic",
+          "appNodeId" : "e498e661-89d8-41fe-a2cd-4dc5453a4317",
+          "type" : "OUTPUT",
+          "subType" : "STREAM"
+        } ]
+      },
+      "outputParameters" : {
+        "streams" : [ {
+          "appNodeId" : "e498e661-89d8-41fe-a2cd-4dc5453a4317",
+          "displayName" : "qa_streamapp5_Output2",
+          "topicName" : "kuber_stream.kafka_topic",
+          "prependEnvironment" : true,
+          "noPartitions" : 0,
+          "partitionColumn" : "",
+          "eventStoreId" : "72c041bc-48f1-4db3-b219-7a6a93609456",
+          "objectTypeKey" : "KAFKA_TOPIC"
+        } ],
+        "datasets" : [ ]
+      }
+    },
+    "templateVersionId" : "e249b581-9cee-4a68-9680-4aa210001fdc",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "Spark Stream Processor",
+      "schemaAware" : false,
+      "runtime" : "undefined",
+      "icon" : {
+        "key" : "SPARK_STREAM_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "dfdae2cc-25c3-400e-8261-e84211c01c15",
+      "graphNodeId" : "962e78a6-339a-4dcf-9505-bf8fdf7493ee",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "9e9cd20e-5434-482d-b766-546a2d534775",
+        "fromPortId" : "62d16f15-e74c-424f-9c4c-40437a14cff6",
+        "toPortId" : "dfdae2cc-25c3-400e-8261-e84211c01c15"
+      } ]
+    }, {
+      "id" : "a8af550d-0ba1-480f-8498-9c7b0860b7ae",
+      "graphNodeId" : "962e78a6-339a-4dcf-9505-bf8fdf7493ee",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "8362424b-54f8-46af-a8c6-757565af9ced",
+        "fromPortId" : "a8af550d-0ba1-480f-8498-9c7b0860b7ae",
+        "toPortId" : "2ca92e21-6992-493d-8955-11f87942dd95"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "SPARK_STREAM_PROCESSOR"
+    }
+  }, {
+    "id" : "75f47457-a471-4ade-b00f-b008ce8a299f",
+    "name" : "Spark Stream Sample Rate Source",
+    "appNodeId" : "ebd8e4f5-94fc-4308-bae3-7d48880a3532",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : null,
+    "processTypeKey" : "SPARK_STREAM_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "COMPLETED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "filters" : { },
+      "parameters" : {
+        "language" : "SCALA",
+        "fileName" : null,
+        "sparkScript" : "import org.apache.spark.sql.functions._\n\n// Create a DataFrame from the rate stream\n// `rowsPerSecond` specifies the rate at which data is generated\nval rateStreamDF = spark.readStream\n  .format(\"rate\")\n  .option(\"rowsPerSecond\", 5)  // Generate 5 rows per second\n  .option(\"rampUpTime\", 1)     // Time to ramp up to the full rate\n  .load()\n\n// Add some processing: for example, calculate the modulus of the value\nval processedDF = rateStreamDF.withColumn(\"mod_value\", $\"value\" % 10)\n\n// Start the stream and output the results to the console\nval query = processedDF.writeStream\n  .outputMode(\"append\")\n  .format(\"console\")\n  .start()\n\n// Await termination with a timeout of 5 minutes (300,000 milliseconds)\nquery.awaitTermination(5 * 60 * 1000)  // 5 minutes in milliseconds\n\n// Once the timeout expires, stop the query\nquery.stop()\nprintln(\"Streaming query stopped after 5 minutes.\")\n\n",
+        "libraryConfigs" : [ ],
+        "version" : "",
+        "codeParams" : [ {
+          "name" : "@InputConnection1",
+          "value" : "QA_Socket",
+          "appNodeId" : "f063ceb5-7ea6-41b8-acf6-859cd4845379",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        }, {
+          "name" : "@OutputTopic1",
+          "value" : "@env.qa_streamapp5.kafka_topic",
+          "appNodeId" : "6066b494-698d-46ab-8fa0-4150ae311b8b",
+          "type" : "OUTPUT",
+          "subType" : "STREAM"
+        } ]
+      },
+      "outputParameters" : {
+        "streams" : [ {
+          "appNodeId" : "6066b494-698d-46ab-8fa0-4150ae311b8b",
+          "displayName" : "qa_streamapp5_Output",
+          "topicName" : "kuber_stream.kafka_topic",
+          "prependEnvironment" : true,
+          "noPartitions" : 0,
+          "partitionColumn" : "",
+          "eventStoreId" : "72c041bc-48f1-4db3-b219-7a6a93609456",
+          "objectTypeKey" : "KAFKA_TOPIC"
+        } ],
+        "datasets" : [ ]
+      }
+    },
+    "templateVersionId" : "e249b581-9cee-4a68-9680-4aa210001fdc",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-12-30T11:52:58.862Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "Spark Stream Processor",
+      "schemaAware" : false,
+      "runtime" : "undefined",
+      "icon" : {
+        "key" : "SPARK_STREAM_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "603070ea-7d3f-4998-ba16-2c417337577c",
+      "graphNodeId" : "75f47457-a471-4ade-b00f-b008ce8a299f",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "92e61a31-1eb3-4661-aa1f-5ee9e94b9903",
+        "fromPortId" : "62d16f15-e74c-424f-9c4c-40437a14cff6",
+        "toPortId" : "603070ea-7d3f-4998-ba16-2c417337577c"
+      } ]
+    }, {
+      "id" : "2eae84db-6b9b-4173-9967-048166cbff20",
+      "graphNodeId" : "75f47457-a471-4ade-b00f-b008ce8a299f",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "e580a056-99c1-458e-a9ad-eed6fac001dd",
+        "fromPortId" : "2eae84db-6b9b-4173-9967-048166cbff20",
+        "toPortId" : "6d38bde8-4495-483c-96ed-c23c728ab8a1"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "SPARK_STREAM_PROCESSOR"
+    }
+  }, {
+    "id" : "f1132b94-2ce8-4c84-85ee-86dad1d5e6b9",
+    "name" : "kuber_stream_Output",
+    "appNodeId" : "e897fb60-a9f9-4d94-83b8-240a3bcbb9b4",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "9c79ab68-45fe-4de4-ab80-d9e2ea13b7a1",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "1d7e711b-cfd2-43fd-a1f0-0250ff7b1667",
+      "graphNodeId" : "f1132b94-2ce8-4c84-85ee-86dad1d5e6b9",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "37004f4c-c072-4671-a0ab-84f4d04a41b4",
+        "fromPortId" : "783049df-63d4-47fc-a52d-bf50f4c798a8",
+        "toPortId" : "1d7e711b-cfd2-43fd-a1f0-0250ff7b1667"
+      } ]
+    }, {
+      "id" : "f069ff79-5a73-4452-8ee0-03d05f5d91c9",
+      "graphNodeId" : "f1132b94-2ce8-4c84-85ee-86dad1d5e6b9",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  }, {
+    "id" : "dcc9f0e3-a94c-4bfe-8c45-a015cdddbbf8",
+    "name" : "qa_streamapp5_Output",
+    "appNodeId" : "6066b494-698d-46ab-8fa0-4150ae311b8b",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : "KAFKA_TOPIC",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : "d7db7d40-52c0-4530-888e-41255c1ff500",
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : {
+      "name" : "Kafka Topic",
+      "objectCategoryKey" : "STREAM",
+      "icon" : {
+        "name" : "kafka-topic.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "6d38bde8-4495-483c-96ed-c23c728ab8a1",
+      "graphNodeId" : "dcc9f0e3-a94c-4bfe-8c45-a015cdddbbf8",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "e580a056-99c1-458e-a9ad-eed6fac001dd",
+        "fromPortId" : "2eae84db-6b9b-4173-9967-048166cbff20",
+        "toPortId" : "6d38bde8-4495-483c-96ed-c23c728ab8a1"
+      } ]
+    }, {
+      "id" : "f3df92d2-b849-4e1a-95c1-4d39b1ea677a",
+      "graphNodeId" : "dcc9f0e3-a94c-4bfe-8c45-a015cdddbbf8",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "STREAM"
+  }, {
+    "id" : "8b6fa080-303a-4beb-a9b3-df2195687cb8",
+    "name" : "qa_streamapp5_Output2",
+    "appNodeId" : "e498e661-89d8-41fe-a2cd-4dc5453a4317",
+    "workflowId" : "cd3df99d-6389-4f29-a8b6-53061e416b4b",
+    "objectTypeKey" : "KAFKA_TOPIC",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : "a2eeeff6-b90e-4fb1-ab79-7d23664fe16d",
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-25T08:10:27.549Z",
+    "updatedAt" : "2025-08-25T08:10:27.549Z",
+    "objectType" : {
+      "name" : "Kafka Topic",
+      "objectCategoryKey" : "STREAM",
+      "icon" : {
+        "name" : "kafka-topic.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "2ca92e21-6992-493d-8955-11f87942dd95",
+      "graphNodeId" : "8b6fa080-303a-4beb-a9b3-df2195687cb8",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "8362424b-54f8-46af-a8c6-757565af9ced",
+        "fromPortId" : "a8af550d-0ba1-480f-8498-9c7b0860b7ae",
+        "toPortId" : "2ca92e21-6992-493d-8955-11f87942dd95"
+      } ]
+    }, {
+      "id" : "673d82f2-4ce5-4cd9-acd5-5e19979769a5",
+      "graphNodeId" : "8b6fa080-303a-4beb-a9b3-df2195687cb8",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "STREAM"
+  } ]
+}
