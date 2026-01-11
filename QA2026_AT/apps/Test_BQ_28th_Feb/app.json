@@ -1,0 +1,34 @@
+{
+  "id" : "16227162-8984-4f5b-bfd3-60703f98216f",
+  "key" : "Test_BQ_28th_Feb",
+  "appPrefix" : "test_bq_28th_feb",
+  "name" : "Test_BQ_28th_Feb",
+  "description" : "",
+  "module" : "COMPOSER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "990c7308-a862-4cac-8871-4de7cdc6e6a6",
+  "eventStoreId" : "6956a3a8-d2b5-4550-80fe-2369367a41fe",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2025-02-28T07:40:45.624Z",
+  "updatedAt" : "2025-02-28T07:40:45.624Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Composer Free Form",
+    "key" : "COMPOSER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "Puneet_FromBQ_Test"
+}
