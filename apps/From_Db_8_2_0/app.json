@@ -1,0 +1,34 @@
+{
+  "id" : "7beac62d-fd01-427a-8b6a-72d797c17d90",
+  "key" : "From_Db_8_2_0",
+  "appPrefix" : "from_db_8_2_0",
+  "name" : "From_Db_8_2_0",
+  "description" : "",
+  "module" : "ORCHESTRATOR",
+  "partitionScheme" : "DAILY",
+  "templateId" : "43ff8012-ad3c-4150-9a71-95e275ac3c97",
+  "eventStoreId" : "b470e678-a068-4f64-8aa6-cdaadb1a5c95",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2025-01-21T07:58:02.081Z",
+  "updatedAt" : "2025-01-21T07:58:02.081Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Orchestrator Free Form",
+    "key" : "ORCHESTRATOR_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "donot_delete_to_db"
+}
