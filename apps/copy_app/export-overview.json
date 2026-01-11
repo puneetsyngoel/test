@@ -1,0 +1,8 @@
+{
+  "appName" : "copy_app",
+  "environment" : "DEVELOPMENT",
+  "provider" : "GOOGLE",
+  "exportDate" : "2026-01-11T10:46:36.415Z",
+  "sourceVersion" : "9.0.0-beta3",
+  "exportBy" : "syntasa_service_account"
+}
