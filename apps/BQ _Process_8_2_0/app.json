@@ -1,0 +1,34 @@
+{
+  "id" : "2500ffa2-5991-400a-b168-ba616f105d8c",
+  "key" : "BQ_Process_8_2_0",
+  "appPrefix" : "bq_process_8_2_0",
+  "name" : "BQ _Process_8_2_0",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "d5890e18-e805-4bf2-95ab-fdb8dbf7debd",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2025-01-21T05:55:40.010Z",
+  "updatedAt" : "2025-01-21T05:55:40.010Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "Donot_Delete_BQ_Process"
+}

@@ -1,0 +1,106 @@
+{
+  "lastUserSave" : "2025-01-24T09:07:06.000Z",
+  "id" : "04b6846c-25e6-4106-9e9a-d122f7a8697a",
+  "name" : "Development",
+  "description" : null,
+  "appId" : "2500ffa2-5991-400a-b168-ba616f105d8c",
+  "canvasGraph" : {
+    "nodes" : [ {
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "BIGQUERY",
+      "left" : -452,
+      "state" : "CONFIGURED",
+      "label" : "testBQ12thApril",
+      "top" : -87,
+      "type" : "objectType",
+      "id" : "d5a01137-dd1b-4e59-b1e5-0dd6cbb5924c",
+      "nodeType" : "objectType"
+    } ],
+    "edges" : [ ],
+    "groups" : [ ]
+  },
+  "environment" : "DEVELOPMENT",
+  "parentWorkflowId" : null,
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : null,
+  "parameters" : {
+    "processConfiguration" : [ ]
+  },
+  "createdAt" : "2025-01-21T05:55:40.249Z",
+  "updatedAt" : "2025-01-24T09:07:06.129Z",
+  "app" : {
+    "id" : "2500ffa2-5991-400a-b168-ba616f105d8c",
+    "key" : "BQ_Process_8_2_0",
+    "appPrefix" : "bq_process_8_2_0",
+    "name" : "BQ _Process_8_2_0",
+    "description" : "",
+    "module" : "SYNTHESIZER",
+    "partitionScheme" : "DAILY",
+    "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+    "eventStoreId" : "d5890e18-e805-4bf2-95ab-fdb8dbf7debd",
+    "iconKey" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "audienceVersion" : null,
+    "createdAt" : "2025-01-21T05:55:40.010Z",
+    "updatedAt" : "2025-01-21T05:55:40.010Z",
+    "deletedAt" : null
+  },
+  "graphNodes" : [ {
+    "id" : "83241dc0-ec9a-4644-ae5a-0b0916a23445",
+    "name" : "testBQ12thApril",
+    "appNodeId" : "d5a01137-dd1b-4e59-b1e5-0dd6cbb5924c",
+    "workflowId" : "04b6846c-25e6-4106-9e9a-d122f7a8697a",
+    "objectTypeKey" : "BIGQUERY",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "9da2d09b-e286-4b2d-917d-c7af6e8493e1",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-01-21T05:59:10.134Z",
+    "updatedAt" : "2025-01-21T05:59:10.134Z",
+    "objectType" : {
+      "name" : "Big Query",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "bq-connection.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "588fe209-df95-49db-a119-1b5d87bb5a27",
+      "graphNodeId" : "83241dc0-ec9a-4644-ae5a-0b0916a23445",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "26828b73-9e22-4ca4-9094-f661806425ec",
+      "graphNodeId" : "83241dc0-ec9a-4644-ae5a-0b0916a23445",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  } ]
+}
