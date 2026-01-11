@@ -1,0 +1,384 @@
+{
+  "lastUserSave" : "2025-12-24T06:55:47.000Z",
+  "id" : "423f05ce-22e2-4ab8-a8aa-9c15baf8f087",
+  "name" : "Development",
+  "description" : null,
+  "appId" : "4e576ce5-e69d-4a24-a48f-a7fbb0c6bd7d",
+  "canvasGraph" : {
+    "nodes" : [ {
+      "left" : -676,
+      "top" : -125,
+      "id" : "6985d3c4-3327-4fbe-87c5-31d278015c2e",
+      "nodeType" : "objectType",
+      "label" : "QA_dont_delete_Git_conn",
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "MATOMO_API",
+      "type" : "objectType",
+      "state" : "CONFIGURED"
+    }, {
+      "id" : "6de27d08-0f18-4efd-8859-c3417025775b",
+      "label" : "App_Git_Sync",
+      "top" : -104.5,
+      "left" : -318,
+      "ports" : [ {
+        "id" : "6de27d08-0f18-4efd-8859-c3417025775b.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "6de27d08-0f18-4efd-8859-c3417025775b.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "UDP",
+      "state" : "CONFIGURED"
+    }, {
+      "id" : "2e625754-897e-4e38-8648-a4bbb0886273",
+      "label" : "qa_dont_del_old_git_fun_Output",
+      "top" : -104.5,
+      "left" : -118,
+      "ports" : [ {
+        "id" : "2e625754-897e-4e38-8648-a4bbb0886273.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "2e625754-897e-4e38-8648-a4bbb0886273.output",
+        "type" : "multiOutput"
+      } ],
+      "nodeType" : "objectType",
+      "objectTypeKey" : "TABLE",
+      "objectCategoryKey" : "DATASET"
+    } ],
+    "edges" : [ {
+      "source" : "6985d3c4-3327-4fbe-87c5-31d278015c2e.output",
+      "target" : "6de27d08-0f18-4efd-8859-c3417025775b.input",
+      "data" : {
+        "id" : "e7bbbd32-6c7b-43aa-953f-e17222eb5649",
+        "type" : "default"
+      }
+    }, {
+      "source" : "6de27d08-0f18-4efd-8859-c3417025775b.output",
+      "target" : "2e625754-897e-4e38-8648-a4bbb0886273.input",
+      "data" : { }
+    } ],
+    "groups" : [ ],
+    "ports" : [ {
+      "id" : "6985d3c4-3327-4fbe-87c5-31d278015c2e.input"
+    }, {
+      "id" : "6985d3c4-3327-4fbe-87c5-31d278015c2e.output"
+    }, {
+      "id" : "6de27d08-0f18-4efd-8859-c3417025775b.input"
+    }, {
+      "id" : "6de27d08-0f18-4efd-8859-c3417025775b.output"
+    }, {
+      "id" : "2e625754-897e-4e38-8648-a4bbb0886273.input"
+    }, {
+      "id" : "2e625754-897e-4e38-8648-a4bbb0886273.output"
+    } ]
+  },
+  "environment" : "DEVELOPMENT",
+  "parentWorkflowId" : null,
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "parameters" : {
+    "processConfiguration" : [ {
+      "graphNodeId" : "6c8aad7c-906e-460c-8a38-fec7c0f52ef2",
+      "name" : "App_Git_Sync",
+      "processTypeKey" : "UDP",
+      "defaultRuntimeId" : null,
+      "templateIconKey" : "UDP"
+    } ]
+  },
+  "createdAt" : "2025-12-24T06:54:57.103Z",
+  "updatedAt" : "2025-12-24T06:55:46.938Z",
+  "app" : {
+    "id" : "4e576ce5-e69d-4a24-a48f-a7fbb0c6bd7d",
+    "key" : "QA_DONT_DEL_OLD_GIT_FUN",
+    "appPrefix" : "qa_dont_del_old_git_fun",
+    "name" : "QA_DONT_DEL_OLD_GIT_FUN",
+    "description" : "",
+    "module" : "SYNTHESIZER",
+    "partitionScheme" : "DAILY",
+    "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+    "eventStoreId" : "58a4170a-7b1d-4667-8ad7-b10ccc95b271",
+    "iconKey" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "ca28cf82-01dd-4b43-b711-93759c1f69cb",
+    "audienceVersion" : null,
+    "createdAt" : "2025-12-24T06:54:56.717Z",
+    "updatedAt" : "2025-12-30T12:12:08.816Z",
+    "deletedAt" : null
+  },
+  "graphNodes" : [ {
+    "id" : "6c8aad7c-906e-460c-8a38-fec7c0f52ef2",
+    "name" : "App_Git_Sync",
+    "appNodeId" : "6de27d08-0f18-4efd-8859-c3417025775b",
+    "workflowId" : "423f05ce-22e2-4ab8-a8aa-9c15baf8f087",
+    "objectTypeKey" : null,
+    "processTypeKey" : "UDP",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "join" : {
+        "joins" : [ ]
+      },
+      "filters" : { },
+      "parameters" : {
+        "inputs" : [ {
+          "objectCategoryKey" : "CONNECTION",
+          "targetInputId" : "97aa9fb5-c717-4c96-9661-afd0330035eb",
+          "label" : "Git Connection",
+          "sourceAppNodeId" : "6985d3c4-3327-4fbe-87c5-31d278015c2e"
+        } ],
+        "outputs" : [ {
+          "targetOutputId" : "663584cd-fb74-4978-bd8a-59fe6b7617a9",
+          "sourceAppNodeId" : "2e625754-897e-4e38-8648-a4bbb0886273"
+        } ],
+        "parameters" : {
+          "globalParams" : {
+            "steps" : [ {
+              "name" : "Parameters",
+              "enabled" : true,
+              "sections" : [ {
+                "id" : "edb865f1-6336-438d-a99b-e0ae233b2102",
+                "fields" : [ {
+                  "formFieldParameters" : { },
+                  "fieldName" : "Branch",
+                  "defaultValue" : null,
+                  "parameterName" : "@branch",
+                  "formField" : "input",
+                  "formFieldStyles" : {
+                    "hint" : null,
+                    "width" : null,
+                    "startNewRow" : false
+                  },
+                  "validation" : {
+                    "validationPattern" : [ ]
+                  },
+                  "id" : "5278a2a7-f6ba-4235-babd-b5c90d6f4138",
+                  "required" : true
+                } ],
+                "sectionName" : "Git",
+                "showSection" : true
+              }, {
+                "id" : "7fa01c24-8f91-4594-94cd-e23b5a436b0f",
+                "fields" : [ {
+                  "formFieldParameters" : { },
+                  "fieldName" : "IncludeNotes",
+                  "defaultValue" : true,
+                  "parameterName" : "@includeNotes",
+                  "formField" : "checkbox",
+                  "formFieldStyles" : {
+                    "hint" : null,
+                    "width" : null,
+                    "startNewRow" : false
+                  },
+                  "validation" : { },
+                  "id" : "daeca7b1-d85e-4422-ad5d-fbf03b1d30ec",
+                  "required" : false
+                } ],
+                "sectionName" : "App Export",
+                "showSection" : true
+              } ]
+            }, {
+              "name" : "Mapping",
+              "enabled" : false,
+              "sections" : [ ]
+            } ]
+          },
+          "paramsModel" : {
+            "edb865f1-6336-438d-a99b-e0ae233b2102" : {
+              "5278a2a7-f6ba-4235-babd-b5c90d6f4138" : null
+            },
+            "7fa01c24-8f91-4594-94cd-e23b5a436b0f" : {
+              "daeca7b1-d85e-4422-ad5d-fbf03b1d30ec" : true
+            }
+          },
+          "mappingModel" : { }
+        }
+      },
+      "outputParameters" : {
+        "datasets" : [ {
+          "appNodeId" : "2e625754-897e-4e38-8648-a4bbb0886273",
+          "displayName" : "qa_dont_del_old_git_fun_Output",
+          "objectTypeKey" : "TABLE",
+          "partitionScheme" : "DAILY",
+          "loadToBigQuery" : true,
+          "loadToRedshift" : false,
+          "fileFormat" : "PARQUET",
+          "tableName" : "qa_dont_del_old_git_fun_output",
+          "hint" : "Output",
+          "targetOutputId" : "663584cd-fb74-4978-bd8a-59fe6b7617a9"
+        } ]
+      }
+    },
+    "templateVersionId" : "f5453ff6-c5b2-4eb6-946c-87086b4ddc48",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-12-24T06:55:47.020Z",
+    "updatedAt" : "2025-12-24T06:55:47.020Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "User Defined Process",
+      "schemaAware" : false,
+      "runtime" : "SPARK",
+      "icon" : {
+        "key" : "UDP"
+      },
+      "templateProcessTypeKey" : "SPARK_PROCESSOR"
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "2b691eb4-cf53-432a-b121-d58fb9eea474",
+      "graphNodeId" : "6c8aad7c-906e-460c-8a38-fec7c0f52ef2",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "3cc49212-c2e6-4d6c-b682-89a3cd3def5d",
+        "fromPortId" : "446b9ebc-d9b7-41ce-9fc5-ddd34137f809",
+        "toPortId" : "2b691eb4-cf53-432a-b121-d58fb9eea474"
+      } ]
+    }, {
+      "id" : "bacab419-bd00-4f23-a0a8-c940a17b7363",
+      "graphNodeId" : "6c8aad7c-906e-460c-8a38-fec7c0f52ef2",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "a104312f-4d65-40ec-a2ce-c6880a9cfe0c",
+        "fromPortId" : "bacab419-bd00-4f23-a0a8-c940a17b7363",
+        "toPortId" : "746b8f00-a253-454d-8493-f684d10feefa"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "version" : "24th_April_2025_02",
+    "templateId" : "e213a8de-0e88-47b9-86a4-ba8c8c06a0ae",
+    "templateIcon" : {
+      "key" : "UDP"
+    }
+  }, {
+    "id" : "2974b90a-49eb-43ee-98dc-6ee0efc9e451",
+    "name" : "QA_dont_delete_Git_conn",
+    "appNodeId" : "6985d3c4-3327-4fbe-87c5-31d278015c2e",
+    "workflowId" : "423f05ce-22e2-4ab8-a8aa-9c15baf8f087",
+    "objectTypeKey" : "MATOMO_API",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "628dc3ba-1f78-4b83-bb0a-94e472b759f8",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-12-24T06:55:47.020Z",
+    "updatedAt" : "2025-12-24T06:55:47.020Z",
+    "objectType" : {
+      "name" : "Matomo API",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "matomo-api.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "446b9ebc-d9b7-41ce-9fc5-ddd34137f809",
+      "graphNodeId" : "2974b90a-49eb-43ee-98dc-6ee0efc9e451",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "3cc49212-c2e6-4d6c-b682-89a3cd3def5d",
+        "fromPortId" : "446b9ebc-d9b7-41ce-9fc5-ddd34137f809",
+        "toPortId" : "2b691eb4-cf53-432a-b121-d58fb9eea474"
+      } ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "9ad7f4a3-76de-4030-8eed-875c87f83074",
+      "graphNodeId" : "2974b90a-49eb-43ee-98dc-6ee0efc9e451",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  }, {
+    "id" : "7c82c216-3748-40ee-85b9-2d5d5dd26121",
+    "name" : "qa_dont_del_old_git_fun_Output",
+    "appNodeId" : "2e625754-897e-4e38-8648-a4bbb0886273",
+    "workflowId" : "423f05ce-22e2-4ab8-a8aa-9c15baf8f087",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "77db0c1f-ff10-449e-83e1-3632b75bd9ab",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true,
+        "isExternal" : false
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-12-24T06:55:47.041Z",
+    "updatedAt" : "2025-12-24T06:55:47.041Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "746b8f00-a253-454d-8493-f684d10feefa",
+      "graphNodeId" : "7c82c216-3748-40ee-85b9-2d5d5dd26121",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "a104312f-4d65-40ec-a2ce-c6880a9cfe0c",
+        "fromPortId" : "bacab419-bd00-4f23-a0a8-c940a17b7363",
+        "toPortId" : "746b8f00-a253-454d-8493-f684d10feefa"
+      } ]
+    }, {
+      "id" : "4d9ea2bc-243d-4383-b169-d5c82b4a8229",
+      "graphNodeId" : "7c82c216-3748-40ee-85b9-2d5d5dd26121",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  } ]
+}

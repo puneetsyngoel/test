@@ -1,0 +1,34 @@
+{
+  "id" : "4e576ce5-e69d-4a24-a48f-a7fbb0c6bd7d",
+  "key" : "QA_DONT_DEL_OLD_GIT_FUN",
+  "appPrefix" : "qa_dont_del_old_git_fun",
+  "name" : "QA_DONT_DEL_OLD_GIT_FUN",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "58a4170a-7b1d-4667-8ad7-b10ccc95b271",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "ca28cf82-01dd-4b43-b711-93759c1f69cb",
+  "audienceVersion" : null,
+  "createdAt" : "2025-12-24T06:54:56.717Z",
+  "updatedAt" : "2025-12-30T12:12:08.816Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DEL_ADHOC_9_0"
+}
