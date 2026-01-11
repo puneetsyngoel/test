@@ -1,0 +1,134 @@
+[ {
+  "id" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+  "name" : "qa_dont_del_reg_8_2_1_spark_output",
+  "database" : "QA_DONT_DEL_REG_8_2_1_ES_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "DELTA"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "eb40776f-e831-4717-82c2-0dc253e4a73a",
+    "name" : "Emp_id",
+    "processMappingId" : null,
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "0bd8ca8c-8478-4a7c-a0a1-42a58b71e0c2",
+    "name" : "Name",
+    "processMappingId" : null,
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "79e5fab4-bb64-4b3c-a809-874aa7b699c5",
+    "name" : "Address",
+    "processMappingId" : null,
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "9ed70f9d-390b-472d-baba-ca3ab54bcd66",
+    "name" : "City",
+    "processMappingId" : null,
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "cd8e9224-9732-4f77-9fde-2ec4a325e93f",
+    "name" : "District",
+    "processMappingId" : null,
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "d8a97417-411a-4aad-a3ea-dacc4c3f96d0",
+    "name" : "State",
+    "processMappingId" : null,
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  }, {
+    "id" : "16643916-e6ce-4262-8303-e1c2b97aab4f",
+    "name" : "Country",
+    "processMappingId" : null,
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 7
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "94f70498-92bf-47fe-85be-6fa870df05bb",
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366"
+  }, {
+    "id" : "43589278-9ccf-4bb3-b436-66c192842012",
+    "datasetId" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "ca431c7a-e027-4996-8b6c-c8b5d5d58366"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "ed902308-9c98-460c-a2ce-a1bfa355aa12",
+  "eventStore" : {
+    "id" : "f35f3827-f3f9-49c2-8673-d8011684635e",
+    "name" : "QA_DONT_DEL_REG_8_2_1_ES",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_REG_8_2_1_ES",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_8_2_1_ES_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_DONT_DEL_REG_8_2_1_ES_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_DONT_DEL_REG_8_2_1_ES_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_REG_8_2_1_ES_snap",
+    "developmentDatabase" : "QA_DONT_DEL_REG_8_2_1_ES_dev",
+    "productionDatabase" : "QA_DONT_DEL_REG_8_2_1_ES_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-04-28T05:03:50.664Z",
+    "updatedAt" : "2025-04-28T05:03:50.664Z"
+  }
+} ]
