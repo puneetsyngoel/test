@@ -1,0 +1,34 @@
+{
+  "id" : "1e21c534-96bd-49dc-afc4-d1f590b8bfff",
+  "key" : "spark_8_2_0",
+  "appPrefix" : "spark_8_2_0",
+  "name" : "spark_8_2_0",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "6f00f010-296d-4ee5-91b4-c07fd135cd2f",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2025-01-21T13:32:10.576Z",
+  "updatedAt" : "2025-01-21T13:32:10.576Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "Donot_Delete_Spark"
+}

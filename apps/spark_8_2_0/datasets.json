@@ -1,0 +1,112 @@
+[ {
+  "id" : "2c6889ba-9120-4f22-a754-2d341175278b",
+  "name" : "spark_8_2_0_output",
+  "database" : "Donot_Delete_Spark_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "4cdcec04-b80c-404a-b4df-4f1b79419cf0",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "7ffd0029-194d-41e0-848e-16a2809d0df9",
+    "name" : "rowId",
+    "processMappingId" : null,
+    "datasetId" : "2c6889ba-9120-4f22-a754-2d341175278b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "80090235-2c8b-4b66-a852-680e6afcb969",
+    "name" : "name",
+    "processMappingId" : null,
+    "datasetId" : "2c6889ba-9120-4f22-a754-2d341175278b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "775b5450-908c-4a63-b215-5e1edb2ae1b7",
+    "name" : "new_id",
+    "processMappingId" : null,
+    "datasetId" : "2c6889ba-9120-4f22-a754-2d341175278b",
+    "datatype" : "bigint",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "4cdcec04-b80c-404a-b4df-4f1b79419cf0",
+    "name" : "date",
+    "processMappingId" : null,
+    "datasetId" : "2c6889ba-9120-4f22-a754-2d341175278b",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "09c955ed-42c0-4947-a3a2-d0c853553a3e",
+    "name" : "Surname",
+    "processMappingId" : null,
+    "datasetId" : "2c6889ba-9120-4f22-a754-2d341175278b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "0dfa4033-c8e6-4665-acf9-ee31499127ee",
+    "datasetId" : "2c6889ba-9120-4f22-a754-2d341175278b",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "2c6889ba-9120-4f22-a754-2d341175278b"
+  }, {
+    "id" : "68cc6789-048e-4be5-bad3-e23d381b4c0d",
+    "datasetId" : "2c6889ba-9120-4f22-a754-2d341175278b",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "2c6889ba-9120-4f22-a754-2d341175278b"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "ff3a0980-32c8-4ae9-92ff-877a20faa086",
+  "eventStore" : {
+    "id" : "6f00f010-296d-4ee5-91b4-c07fd135cd2f",
+    "name" : "Donot_Delete_Spark",
+    "type" : "EVENTSTORE",
+    "key" : "Donot_Delete_Spark",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/Donot_Delete_Spark_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/Donot_Delete_Spark_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/Donot_Delete_Spark_snap",
+    "snapshotDatabase" : "Donot_Delete_Spark_snap",
+    "developmentDatabase" : "Donot_Delete_Spark_dev",
+    "productionDatabase" : "Donot_Delete_Spark_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-01-21T11:46:16.252Z",
+    "updatedAt" : "2025-01-21T11:46:16.252Z"
+  }
+} ]
