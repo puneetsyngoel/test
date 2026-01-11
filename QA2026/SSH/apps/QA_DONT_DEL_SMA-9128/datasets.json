@@ -1,0 +1,223 @@
+[ {
+  "id" : "98f1da9b-a361-40af-b13d-bfe42730012a",
+  "name" : "qa_dont_del_reg_lookback_output",
+  "database" : "QA_DONT_DEL_REG_ESTORE_prod",
+  "environment" : "PRODUCTION",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "cbaa2a92-5212-49b5-8749-2f8b2bf8ac12",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "1ec67573-4f83-4c27-b6e6-452d9d8e28ed",
+    "name" : "visitor_id",
+    "processMappingId" : "632109da-ded7-4558-ab4f-df1dbde3955f",
+    "datasetId" : "98f1da9b-a361-40af-b13d-bfe42730012a",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : true,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "b5a1e2b3-69b8-47bd-b4a0-65a17551aa75",
+    "name" : "pagename",
+    "processMappingId" : "f78fc2ee-8c7c-4d99-93fe-169d91760955",
+    "datasetId" : "98f1da9b-a361-40af-b13d-bfe42730012a",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "57394c33-5d21-40cb-bddb-b5ea16599bb4",
+    "name" : "amount",
+    "processMappingId" : "e339af1c-47c7-40a2-a702-ac55d7787054",
+    "datasetId" : "98f1da9b-a361-40af-b13d-bfe42730012a",
+    "datatype" : "double",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "ece21a55-96ac-4896-875e-52724576fbf3",
+    "name" : "geocountry",
+    "processMappingId" : "b91b9141-0122-4cad-a2ee-662967e4adaa",
+    "datasetId" : "98f1da9b-a361-40af-b13d-bfe42730012a",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "cbaa2a92-5212-49b5-8749-2f8b2bf8ac12",
+    "name" : "event_partition",
+    "processMappingId" : "eb5d9e2b-1417-43c7-9620-c18d443da259",
+    "datasetId" : "98f1da9b-a361-40af-b13d-bfe42730012a",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : true,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "cbf4b1df-b8ab-4203-8f0d-bcbd4e3a98b4",
+    "datasetId" : "98f1da9b-a361-40af-b13d-bfe42730012a",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "98f1da9b-a361-40af-b13d-bfe42730012a"
+  }, {
+    "id" : "8759fc97-5056-41f9-ad33-9db310b0b28d",
+    "datasetId" : "98f1da9b-a361-40af-b13d-bfe42730012a",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "98f1da9b-a361-40af-b13d-bfe42730012a"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "342fde2d-f229-4b2e-a8a7-e9df98b44acb",
+  "eventStore" : {
+    "id" : "32e9754c-0c03-4cc8-8af1-3f9a683e9d9c",
+    "name" : "QA_DONT_DEL_REG_ESTORE",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_REG_ESTORE",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_ESTORE_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_DONT_DEL_REG_ESTORE_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_DONT_DEL_REG_ESTORE_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_REG_ESTORE_snap",
+    "developmentDatabase" : "QA_DONT_DEL_REG_ESTORE_dev",
+    "productionDatabase" : "QA_DONT_DEL_REG_ESTORE_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-02-06T12:04:46.415Z",
+    "updatedAt" : "2025-02-06T12:04:46.415Z"
+  }
+}, {
+  "id" : "c702c7b7-29c4-454d-99f7-7f644aab99d1",
+  "name" : "qa_dont_del_sma_9128_output",
+  "database" : "QA_DONT_DEL_ADHOC_9_0_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "7e63f00b-f018-4f92-9f9d-efb75e4f3670",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DEL_ADHOC_9_0_dev/QA_DONT_DEL_ADHOC_9_0/qa_dont_del_sma_9128_output",
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "6ce8f2dd-91d1-4dcf-9b09-bfcb7a8ac0b4",
+    "name" : "visitor_id",
+    "processMappingId" : null,
+    "datasetId" : "c702c7b7-29c4-454d-99f7-7f644aab99d1",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "5e9cc470-4861-4c15-9dd5-9cc1f372fee6",
+    "name" : "pagename",
+    "processMappingId" : null,
+    "datasetId" : "c702c7b7-29c4-454d-99f7-7f644aab99d1",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "96e3fd12-c061-4bc7-907c-81576d175226",
+    "name" : "amount",
+    "processMappingId" : null,
+    "datasetId" : "c702c7b7-29c4-454d-99f7-7f644aab99d1",
+    "datatype" : "double",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "777863ed-d093-4b5a-832b-8b7f3b924582",
+    "name" : "geocountry",
+    "processMappingId" : null,
+    "datasetId" : "c702c7b7-29c4-454d-99f7-7f644aab99d1",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "7e63f00b-f018-4f92-9f9d-efb75e4f3670",
+    "name" : "event_partition",
+    "processMappingId" : null,
+    "datasetId" : "c702c7b7-29c4-454d-99f7-7f644aab99d1",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "b8ad77d1-5579-4a8f-a510-947fa987a353",
+    "datasetId" : "c702c7b7-29c4-454d-99f7-7f644aab99d1",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "c702c7b7-29c4-454d-99f7-7f644aab99d1"
+  }, {
+    "id" : "54c1e92f-20b7-424d-9c9d-0b65556c8dd6",
+    "datasetId" : "c702c7b7-29c4-454d-99f7-7f644aab99d1",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "c702c7b7-29c4-454d-99f7-7f644aab99d1"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "62df057f-9557-4c16-9aae-a523262b76cb",
+  "eventStore" : {
+    "id" : "58a4170a-7b1d-4667-8ad7-b10ccc95b271",
+    "name" : "QA_DONT_DEL_ADHOC_9_0",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_ADHOC_9_0",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DEL_ADHOC_9_0_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_DONT_DEL_ADHOC_9_0_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_DONT_DEL_ADHOC_9_0_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_ADHOC_9_0_snap",
+    "developmentDatabase" : "QA_DONT_DEL_ADHOC_9_0_dev",
+    "productionDatabase" : "QA_DONT_DEL_ADHOC_9_0_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PRIVATE"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-12-18T12:52:25.283Z",
+    "updatedAt" : "2025-12-18T12:52:25.283Z"
+  }
+} ]
