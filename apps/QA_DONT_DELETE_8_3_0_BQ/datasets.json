@@ -1,0 +1,47 @@
+[ {
+  "id" : "e37b0a4c-acd9-41cd-ad8b-99e57053fdc0",
+  "name" : "qa_dont_delete_8_3_0_bq_output",
+  "database" : "QA_DONT_DELETE_8_3_0_REG_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : null,
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "ec85e9f5-360e-4c09-a1cc-a646e56cb7c8",
+  "eventStore" : {
+    "id" : "b1da2ae9-e0f1-481e-bdec-47246f34e1bf",
+    "name" : "QA_DONT_DELETE_8_3_0_REG",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DELETE_8_3_0_REG",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DELETE_8_3_0_REG_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_DONT_DELETE_8_3_0_REG_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_DONT_DELETE_8_3_0_REG_snap",
+    "snapshotDatabase" : "QA_DONT_DELETE_8_3_0_REG_snap",
+    "developmentDatabase" : "QA_DONT_DELETE_8_3_0_REG_dev",
+    "productionDatabase" : "QA_DONT_DELETE_8_3_0_REG_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2025-08-05T10:30:09.722Z",
+    "updatedAt" : "2025-08-05T10:30:09.722Z"
+  }
+} ]
