@@ -1,0 +1,64 @@
+[ {
+  "id" : "65d5d5fa-f513-411a-ab07-6825015ab907",
+  "name" : "qa_dont_del_reg_spark_output8",
+  "database" : "QA_DONT_DEL_REG_ESTORE_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_ESTORE_dev/QA_DONT_DEL_REG_SPARK/qa_dont_del_reg_spark_output8",
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "4bcd468b-ba78-4fbc-8462-1d3a57e7a5e1",
+    "datasetId" : "65d5d5fa-f513-411a-ab07-6825015ab907",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "65d5d5fa-f513-411a-ab07-6825015ab907"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "1bb5b6cf-8718-4d77-a3a2-a6fc8e651f7f",
+  "eventStore" : {
+    "id" : "46c55db9-2883-487b-9a9b-dfb022283f8a",
+    "name" : "QA_DONT_DEL_REG_ESTORE",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_REG_ESTORE",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_ESTORE_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DEL_REG_ESTORE_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DEL_REG_ESTORE_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_REG_ESTORE_snap",
+    "developmentDatabase" : "QA_DONT_DEL_REG_ESTORE_dev",
+    "productionDatabase" : "QA_DONT_DEL_REG_ESTORE_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PUBLIC",
+      "grants" : [ {
+        "groupId" : "11111111-1111-1111-1111-111111111111",
+        "permission" : 10
+      } ]
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-02-11T07:45:25.978Z",
+    "updatedAt" : "2025-02-11T07:45:25.978Z",
+    "grants" : {
+      "canUse" : false,
+      "canView" : true,
+      "canExecute" : false,
+      "canEdit" : true,
+      "canDeploy" : false,
+      "canManage" : true
+    }
+  }
+} ]
