@@ -1,0 +1,42 @@
+{
+  "id" : "5dc5d036-0b32-4ccc-a0fd-ec4350fa05a5",
+  "key" : "QA_DONT_DEL_CODEM_TEST_01",
+  "appPrefix" : "qa_dont_del_codem_test_01",
+  "name" : "QA-DONT_DEL_CODEM_TEST_01",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "846b33d0-b101-4c4e-a916-9a780f69c464",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PRIVATE"
+  },
+  "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "audienceVersion" : null,
+  "createdAt" : "2026-05-21T09:59:45.490Z",
+  "updatedAt" : "2026-05-21T10:36:08.364Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "grants" : {
+    "canUse" : false,
+    "canView" : true,
+    "canExecute" : true,
+    "canEdit" : true,
+    "canDeploy" : true,
+    "canManage" : true
+  },
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DEL_ADHOC_9_0"
+}
