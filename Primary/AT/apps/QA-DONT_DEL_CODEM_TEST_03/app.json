@@ -1,0 +1,42 @@
+{
+  "id" : "296e91d7-41d8-4a32-9bf5-807a5610399e",
+  "key" : "QA_DONT_DEL_CODEM_TEST_03",
+  "appPrefix" : "qa_dont_del_codem_test_03",
+  "name" : "QA-DONT_DEL_CODEM_TEST_03",
+  "description" : "",
+  "module" : "ORCHESTRATOR",
+  "partitionScheme" : "DAILY",
+  "templateId" : "43ff8012-ad3c-4150-9a71-95e275ac3c97",
+  "eventStoreId" : "846b33d0-b101-4c4e-a916-9a780f69c464",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PRIVATE"
+  },
+  "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "audienceVersion" : null,
+  "createdAt" : "2026-05-21T11:36:50.048Z",
+  "updatedAt" : "2026-05-25T10:00:14.982Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Orchestrator Free Form",
+    "key" : "ORCHESTRATOR_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "grants" : {
+    "canUse" : false,
+    "canView" : true,
+    "canExecute" : true,
+    "canEdit" : true,
+    "canDeploy" : true,
+    "canManage" : true
+  },
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DEL_ADHOC_9_0"
+}
