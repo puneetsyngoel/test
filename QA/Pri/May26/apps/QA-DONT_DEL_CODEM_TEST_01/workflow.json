@@ -1,0 +1,341 @@
+{
+  "lastUserSave" : "2026-05-21T10:36:08.000Z",
+  "id" : "663138a6-6acf-4a99-b159-3f247f8d1e7f",
+  "name" : "Development",
+  "description" : null,
+  "appId" : "5dc5d036-0b32-4ccc-a0fd-ec4350fa05a5",
+  "canvasGraph" : {
+    "nodes" : [ {
+      "objectCategoryKey" : "CONNECTION",
+      "objectTypeKey" : "S3",
+      "left" : -408,
+      "state" : "CONFIGURED",
+      "label" : "QA_DONT_DEL_REG_S3",
+      "top" : 46,
+      "type" : "objectType",
+      "id" : "a5f709c0-b78f-43f4-9623-a7c50ba40655",
+      "nodeType" : "objectType"
+    }, {
+      "id" : "18ea7e97-773b-46d1-b7d5-e40d0a970a31",
+      "top" : 47.09255937701181,
+      "left" : -177.3759463934075,
+      "label" : "Spark Processor",
+      "ports" : [ {
+        "id" : "18ea7e97-773b-46d1-b7d5-e40d0a970a31.input",
+        "type" : "multiInput"
+      }, {
+        "id" : "18ea7e97-773b-46d1-b7d5-e40d0a970a31.output",
+        "type" : "multiOutputLocked"
+      } ],
+      "nodeType" : "process",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "state" : "COMPLETED"
+    }, {
+      "objectCategoryKey" : "DATASET",
+      "objectTypeKey" : "TABLE",
+      "left" : 22.624053606592497,
+      "state" : null,
+      "ports" : [ {
+        "id" : "88086fae-d27a-4336-843c-b96f08863be1.input",
+        "type" : "singleInputLocked"
+      }, {
+        "id" : "88086fae-d27a-4336-843c-b96f08863be1.output",
+        "type" : "multiOutput"
+      } ],
+      "label" : "qa_dont_del_codem_test_01_Output",
+      "top" : 47.09255937701181,
+      "id" : "88086fae-d27a-4336-843c-b96f08863be1",
+      "nodeType" : "objectType"
+    } ],
+    "edges" : [ {
+      "source" : "a5f709c0-b78f-43f4-9623-a7c50ba40655.output",
+      "target" : "18ea7e97-773b-46d1-b7d5-e40d0a970a31.input",
+      "data" : {
+        "id" : "46275588-b2cb-444b-a972-8a6eab8ad188",
+        "type" : "default"
+      }
+    }, {
+      "source" : "18ea7e97-773b-46d1-b7d5-e40d0a970a31.output",
+      "target" : "88086fae-d27a-4336-843c-b96f08863be1.input",
+      "data" : { }
+    } ],
+    "groups" : [ ],
+    "ports" : [ {
+      "id" : "a5f709c0-b78f-43f4-9623-a7c50ba40655.input"
+    }, {
+      "id" : "a5f709c0-b78f-43f4-9623-a7c50ba40655.output"
+    }, {
+      "id" : "18ea7e97-773b-46d1-b7d5-e40d0a970a31.input"
+    }, {
+      "id" : "18ea7e97-773b-46d1-b7d5-e40d0a970a31.output"
+    }, {
+      "id" : "88086fae-d27a-4336-843c-b96f08863be1.input"
+    }, {
+      "id" : "88086fae-d27a-4336-843c-b96f08863be1.output"
+    } ]
+  },
+  "environment" : "DEVELOPMENT",
+  "parentWorkflowId" : null,
+  "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+  "parameters" : {
+    "processConfiguration" : [ {
+      "graphNodeId" : "d84ba271-7335-4dba-bb32-a627c3baf9e8",
+      "name" : "Spark Processor",
+      "processTypeKey" : "SPARK_PROCESSOR",
+      "defaultRuntimeId" : null,
+      "templateIconKey" : "SPARK_PROCESSOR"
+    } ]
+  },
+  "createdAt" : "2026-05-21T09:59:45.575Z",
+  "updatedAt" : "2026-05-21T10:45:51.636Z",
+  "app" : {
+    "id" : "5dc5d036-0b32-4ccc-a0fd-ec4350fa05a5",
+    "key" : "QA_DONT_DEL_CODEM_TEST_01",
+    "appPrefix" : "qa_dont_del_codem_test_01",
+    "name" : "QA-DONT_DEL_CODEM_TEST_01",
+    "description" : "",
+    "module" : "SYNTHESIZER",
+    "partitionScheme" : "DAILY",
+    "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+    "eventStoreId" : "846b33d0-b101-4c4e-a916-9a780f69c464",
+    "iconKey" : null,
+    "sharing" : {
+      "shareType" : "PRIVATE"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "audienceVersion" : null,
+    "createdAt" : "2026-05-21T09:59:45.490Z",
+    "updatedAt" : "2026-05-21T10:36:08.364Z",
+    "deletedAt" : null,
+    "template" : {
+      "name" : "Synthesizer Free Form",
+      "key" : "SYNTHESIZER_FREE_FORM"
+    },
+    "grants" : {
+      "canUse" : false,
+      "canView" : true,
+      "canExecute" : true,
+      "canEdit" : true,
+      "canDeploy" : true,
+      "canManage" : true
+    }
+  },
+  "graphNodes" : [ {
+    "id" : "6a715a8d-5ee9-458b-9f70-9b22e126d081",
+    "name" : "QA_DONT_DEL_REG_S3",
+    "appNodeId" : "a5f709c0-b78f-43f4-9623-a7c50ba40655",
+    "workflowId" : "663138a6-6acf-4a99-b159-3f247f8d1e7f",
+    "objectTypeKey" : "S3",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : "1250ee14-5613-4146-b68f-66d65c63c7db",
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "CONFIGURED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2026-05-21T10:01:47.246Z",
+    "updatedAt" : "2026-05-21T10:01:47.246Z",
+    "objectType" : {
+      "name" : "S3",
+      "objectCategoryKey" : "CONNECTION",
+      "icon" : {
+        "name" : "s3-connection.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "038a9878-36d9-4e08-a6d7-254c757854f9",
+      "graphNodeId" : "6a715a8d-5ee9-458b-9f70-9b22e126d081",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "1ac78f83-2db3-415d-aa5a-655eee08e9a3",
+        "fromPortId" : "038a9878-36d9-4e08-a6d7-254c757854f9",
+        "toPortId" : "82c4a0b8-7001-4506-8117-549b80115479"
+      } ],
+      "fromLinks" : [ ]
+    }, {
+      "id" : "cad49390-da79-4c51-bbd4-0715b1ca0c37",
+      "graphNodeId" : "6a715a8d-5ee9-458b-9f70-9b22e126d081",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "CONNECTION"
+  }, {
+    "id" : "d84ba271-7335-4dba-bb32-a627c3baf9e8",
+    "name" : "Spark Processor",
+    "appNodeId" : "18ea7e97-773b-46d1-b7d5-e40d0a970a31",
+    "workflowId" : "663138a6-6acf-4a99-b159-3f247f8d1e7f",
+    "objectTypeKey" : null,
+    "processTypeKey" : "SPARK_PROCESSOR",
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : null,
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : "COMPLETED",
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true
+      },
+      "filters" : { },
+      "parameters" : {
+        "language" : "PYTHON",
+        "fileName" : null,
+        "sparkScript" : "from pyspark.sql import SparkSession\nfrom pyspark.sql.functions import col, to_date, date_format\n\n# -------------------------\n# Parameters (from pipeline)\n# -------------------------\nfrom_date = @fromDate\nend_date = @toDate\ndates = [@datesToProcess]\n\nprint(f\"CODE_MANAGED from_date={from_date}, end_date={end_date}, dates={dates}\")\n\n# -------------------------\n# Helper function\n# -------------------------\ndef strip_epoch(d):\n    return d.split(\"_\")[0] if \"_\" in d else d\n\n# Take first 3 dates (same as your logic)\ndates_to_process = sorted(dates)[:3]\nclean_dates = [strip_epoch(d) for d in dates_to_process]\n\nprint(f\"Processing only first 3 dates: {clean_dates}\")\n\n# -------------------------\n# Initialize Spark\n# -------------------------\nspark = SparkSession.builder.appName(\"ReadCSVFile\").getOrCreate()\n\n# -------------------------\n# Read CSV from GCS\n# -------------------------\nfile_path = \"s3://syntasa-qa/qa/adhoc/puneet/File (2).csv\"\n\ndf = spark.read \\\n    .option(\"header\", True) \\\n    .option(\"inferSchema\", True) \\\n    .option(\"delimiter\", \",\") \\\n    .csv(file_path)\n\n# Convert DD-MM-YYYY → YYYY-MM-DD\ndf = df.withColumn(\"file_date\", date_format(to_date(col(\"file_date\"), \"dd-MM-yyyy\"), \"yyyy-MM-dd\"))\n\nprint(\"Input Data:\")\ndf.show()\n\n# -------------------------\n# Filter based on dates\n# (Assuming CSV has 'file_date' column)\n# -------------------------\n#df_filtered = df.filter(col(\"file_date\").isin(clean_dates))\n\n#print(\"Filtered Data:\")\n#df_filtered.show()\n\n# -------------------------\n# Write to Event Store\n# -------------------------\nwriteToEventStore(df, \"@OutputTable1\", 1, \"file_date\")\n\nprint(\"Write complete\")",
+        "libraryConfigs" : [ {
+          "name" : "",
+          "version" : ""
+        } ],
+        "version" : "3.9",
+        "customCondaScript" : null,
+        "codeParams" : [ {
+          "name" : "@InputConnection1",
+          "value" : "QA_DONT_DEL_REG_S3",
+          "appNodeId" : "a5f709c0-b78f-43f4-9623-a7c50ba40655",
+          "type" : "INPUT",
+          "subType" : "CONNECTION"
+        }, {
+          "name" : "@OutputTable1",
+          "value" : "@database.qa_dont_del_codem_test_01_output",
+          "appNodeId" : "88086fae-d27a-4336-843c-b96f08863be1",
+          "type" : "OUTPUT",
+          "subType" : "DATASET"
+        } ]
+      },
+      "outputParameters" : {
+        "datasets" : [ {
+          "appNodeId" : "88086fae-d27a-4336-843c-b96f08863be1",
+          "displayName" : "qa_dont_del_codem_test_01_Output",
+          "isExternal" : false,
+          "objectTypeKey" : "TABLE",
+          "partitionScheme" : "DAILY",
+          "loadToBigQuery" : false,
+          "loadToRedshift" : false,
+          "fileFormat" : "PARQUET",
+          "tableName" : "qa_dont_del_codem_test_01_output",
+          "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_ADHOC_9_0_dev/QA_DONT_DEL_CODEM_TEST_01/qa_dont_del_codem_test_01_output"
+        } ]
+      }
+    },
+    "templateVersionId" : "45768e69-f4d7-45bb-8957-e3aa460ed3a1",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2026-05-21T10:01:47.246Z",
+    "updatedAt" : "2026-05-21T10:45:51.591Z",
+    "objectType" : null,
+    "processType" : {
+      "name" : "Spark Processor",
+      "schemaAware" : false,
+      "runtime" : "SPARK",
+      "icon" : {
+        "key" : "SPARK_PROCESSOR"
+      }
+    },
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "82c4a0b8-7001-4506-8117-549b80115479",
+      "graphNodeId" : "d84ba271-7335-4dba-bb32-a627c3baf9e8",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "1ac78f83-2db3-415d-aa5a-655eee08e9a3",
+        "fromPortId" : "038a9878-36d9-4e08-a6d7-254c757854f9",
+        "toPortId" : "82c4a0b8-7001-4506-8117-549b80115479"
+      } ]
+    }, {
+      "id" : "90c46db0-2aa4-4fc2-9027-26be71c396a2",
+      "graphNodeId" : "d84ba271-7335-4dba-bb32-a627c3baf9e8",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ {
+        "id" : "b0363671-8545-465d-a59c-aefd9e4cc500",
+        "fromPortId" : "90c46db0-2aa4-4fc2-9027-26be71c396a2",
+        "toPortId" : "0b5ff992-95dc-4e90-ad1c-7000db7017e2"
+      } ],
+      "fromLinks" : [ ]
+    } ],
+    "templateIcon" : {
+      "key" : "SPARK_PROCESSOR"
+    }
+  }, {
+    "id" : "b1ff3704-9679-44a1-b6bc-a40322b940c9",
+    "name" : "qa_dont_del_codem_test_01_Output",
+    "appNodeId" : "88086fae-d27a-4336-843c-b96f08863be1",
+    "workflowId" : "663138a6-6acf-4a99-b159-3f247f8d1e7f",
+    "objectTypeKey" : "TABLE",
+    "processTypeKey" : null,
+    "displayGroup" : null,
+    "connectionId" : null,
+    "externalDatasetId" : null,
+    "externalSchemaId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "streamId" : null,
+    "intelligenceHubId" : null,
+    "displayGroupKey" : null,
+    "state" : null,
+    "parameters" : {
+      "system" : {
+        "isDeletable" : true,
+        "isExternal" : false
+      }
+    },
+    "templateVersionId" : null,
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2026-05-21T10:01:47.254Z",
+    "updatedAt" : "2026-05-21T10:36:08.449Z",
+    "objectType" : {
+      "name" : "Table",
+      "objectCategoryKey" : "DATASET",
+      "icon" : {
+        "name" : "table.svg",
+        "isSystem" : true
+      }
+    },
+    "processType" : null,
+    "processMapping" : [ ],
+    "graphNodePorts" : [ {
+      "id" : "0b5ff992-95dc-4e90-ad1c-7000db7017e2",
+      "graphNodeId" : "b1ff3704-9679-44a1-b6bc-a40322b940c9",
+      "direction" : "INPUT",
+      "location" : [ "left" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ {
+        "id" : "b0363671-8545-465d-a59c-aefd9e4cc500",
+        "fromPortId" : "90c46db0-2aa4-4fc2-9027-26be71c396a2",
+        "toPortId" : "0b5ff992-95dc-4e90-ad1c-7000db7017e2"
+      } ]
+    }, {
+      "id" : "db60afaf-6805-4424-ba07-5d42dbbdd153",
+      "graphNodeId" : "b1ff3704-9679-44a1-b6bc-a40322b940c9",
+      "direction" : "OUTPUT",
+      "location" : [ "right" ],
+      "toLinks" : [ ],
+      "fromLinks" : [ ]
+    } ],
+    "objectCategoryKey" : "DATASET"
+  } ]
+}

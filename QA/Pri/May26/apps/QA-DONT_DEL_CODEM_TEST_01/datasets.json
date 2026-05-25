@@ -1,0 +1,149 @@
+[ {
+  "id" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+  "name" : "qa_dont_del_codem_test_01_output",
+  "database" : "QA_DONT_DEL_ADHOC_9_0_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "f92f26e9-22da-42bc-a616-d1e43fb3fc97",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "creationSource" : "APP",
+  "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_ADHOC_9_0_dev/QA_DONT_DEL_CODEM_TEST_01/qa_dont_del_codem_test_01_output",
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "40ee3fce-ebb3-4e03-87b1-068e1bd04d54",
+    "name" : "visitor_id",
+    "processMappingId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "datatype" : "int",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "c55c9c6f-c3ab-47e3-8813-5e861b4ddf9e",
+    "name" : "browser",
+    "processMappingId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "885c2fe1-a7dc-440e-b4a0-3c268a7dd660",
+    "name" : "country",
+    "processMappingId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "67b6710f-9d6f-4c2f-a348-b6b825f4dec5",
+    "name" : "city",
+    "processMappingId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "1bbb34a1-610a-47b2-aa54-054ef8dedb2e",
+    "name" : "browser_type",
+    "processMappingId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "a8b367ab-7240-405f-92b5-974415145fc9",
+    "name" : "currency",
+    "processMappingId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  }, {
+    "id" : "3d1c91d4-0c30-46ac-a792-a4dc939803bb",
+    "name" : "date_time",
+    "processMappingId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 7
+  }, {
+    "id" : "f92f26e9-22da-42bc-a616-d1e43fb3fc97",
+    "name" : "file_date",
+    "processMappingId" : null,
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 8
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "75a4aa16-2c0e-4560-a592-ff2813740c2b",
+    "datasetId" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "79188c9c-1b4e-429d-9ef1-cc1b5a5f908b"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "88086fae-d27a-4336-843c-b96f08863be1",
+  "eventStore" : {
+    "id" : "846b33d0-b101-4c4e-a916-9a780f69c464",
+    "name" : "QA_DONT_DEL_ADHOC_9_0",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_ADHOC_9_0",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_ADHOC_9_0_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DEL_ADHOC_9_0_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DEL_ADHOC_9_0_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_ADHOC_9_0_snap",
+    "developmentDatabase" : "QA_DONT_DEL_ADHOC_9_0_dev",
+    "productionDatabase" : "QA_DONT_DEL_ADHOC_9_0_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PRIVATE"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2025-12-22T12:08:56.041Z",
+    "updatedAt" : "2025-12-22T12:08:56.041Z",
+    "grants" : {
+      "canUse" : false,
+      "canView" : true,
+      "canExecute" : false,
+      "canEdit" : true,
+      "canDeploy" : false,
+      "canManage" : true
+    }
+  }
+} ]
