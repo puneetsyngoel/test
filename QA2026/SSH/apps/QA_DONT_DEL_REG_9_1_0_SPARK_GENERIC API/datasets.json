@@ -1,0 +1,66 @@
+[ {
+  "id" : "0ef11009-c978-47d9-a366-a965860a7e07",
+  "name" : "qa_dont_del_reg_9_1_0_spark_genericapi_output",
+  "database" : "QA_DONT_DEL_REG_9_1_0_ES_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : null,
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "creationSource" : "APP",
+  "location" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_9_1_0_ES_dev/QA_DONT_DEL_REG_9_1_0_SPARK_GENERICAPI/qa_dont_del_reg_9_1_0_spark_genericapi_output",
+  "parameters" : {
+    "fileFormat" : "PARQUET"
+  },
+  "deletedAt" : null,
+  "columns" : [ ],
+  "dataWarehouses" : [ {
+    "id" : "8bf3506b-99d9-4e29-ac3e-bd800db5844b",
+    "datasetId" : "0ef11009-c978-47d9-a366-a965860a7e07",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "0ef11009-c978-47d9-a366-a965860a7e07"
+  }, {
+    "id" : "34c40b26-9831-4b5c-883b-9bc2980ff1c2",
+    "datasetId" : "0ef11009-c978-47d9-a366-a965860a7e07",
+    "warehouseType" : "BIG_QUERY",
+    "dataset_id" : "0ef11009-c978-47d9-a366-a965860a7e07"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "fedcb853-7c0a-4f26-b35d-762bf960039e",
+  "eventStore" : {
+    "id" : "d833b871-dc95-4c78-bf66-f9151ba8ea63",
+    "name" : "QA_DONT_DEL_REG_9_1_0_ES",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_REG_9_1_0_ES",
+    "developmentPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/dev/QA_DONT_DEL_REG_9_1_0_ES_dev",
+    "productionPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/prod/QA_DONT_DEL_REG_9_1_0_ES_prod",
+    "snapshotPath" : "gs://syn400-qa-kubernetes/syn-cluster-data/eventstores/snap/QA_DONT_DEL_REG_9_1_0_ES_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_REG_9_1_0_ES_snap",
+    "developmentDatabase" : "QA_DONT_DEL_REG_9_1_0_ES_dev",
+    "productionDatabase" : "QA_DONT_DEL_REG_9_1_0_ES_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PRIVATE"
+    },
+    "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+    "createdAt" : "2026-07-08T06:20:24.142Z",
+    "updatedAt" : "2026-07-08T06:20:24.142Z",
+    "grants" : {
+      "canUse" : false,
+      "canView" : true,
+      "canExecute" : false,
+      "canEdit" : true,
+      "canDeploy" : false,
+      "canManage" : true
+    }
+  }
+} ]

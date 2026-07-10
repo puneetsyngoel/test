@@ -1,0 +1,46 @@
+{
+  "id" : "d2ae0dbb-117a-4ed3-9ce4-9b6e49fd7b46",
+  "key" : "QA_DONT_DEL_REG_9_1_0_SPARK_GENERICAPI",
+  "appPrefix" : "qa_dont_del_reg_9_1_0_spark_genericapi",
+  "name" : "QA_DONT_DEL_REG_9_1_0_SPARK_GENERIC API",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "d833b871-dc95-4c78-bf66-f9151ba8ea63",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PUBLIC",
+    "grants" : [ {
+      "groupId" : "11111111-1111-1111-1111-111111111111",
+      "permission" : 2
+    } ]
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2026-07-09T08:29:41.832Z",
+  "updatedAt" : "2026-07-09T08:30:46.762Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "grants" : {
+    "canUse" : false,
+    "canView" : true,
+    "canExecute" : true,
+    "canEdit" : true,
+    "canDeploy" : true,
+    "canManage" : true
+  },
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DEL_REG_9_1_0_ES"
+}
