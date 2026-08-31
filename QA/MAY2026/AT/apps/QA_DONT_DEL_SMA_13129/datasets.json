@@ -1,0 +1,253 @@
+[ {
+  "id" : "26712865-7efc-4a16-927e-01a0e9cce557",
+  "name" : "tsma_13129_output",
+  "database" : "QA_DONT_DEL_9_1_0_REG_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "e221e9d5-d31b-49e6-963f-5dac083879c4",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "creationSource" : "APP",
+  "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_9_1_0_REG_dev/QA_DONT_DEL_9_1_0_REG/tsma_13129_output",
+  "parameters" : {
+    "fileFormat" : "DELTA"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "bfca6845-1a43-4d52-9cda-a54d78cc6b0c",
+    "name" : "visitor_id",
+    "processMappingId" : null,
+    "datasetId" : "26712865-7efc-4a16-927e-01a0e9cce557",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "fbfeabe1-ac9d-4dca-89dc-6c73acae4a95",
+    "name" : "name",
+    "processMappingId" : null,
+    "datasetId" : "26712865-7efc-4a16-927e-01a0e9cce557",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "c11c9334-ac9f-4a59-85bc-7226d1e38e77",
+    "name" : "browser",
+    "processMappingId" : null,
+    "datasetId" : "26712865-7efc-4a16-927e-01a0e9cce557",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "aea4940c-0152-49f8-9a27-bd7c53a97f2c",
+    "name" : "browser_type",
+    "processMappingId" : null,
+    "datasetId" : "26712865-7efc-4a16-927e-01a0e9cce557",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "756982d2-3e0d-45e0-9446-05fd3a04cb8b",
+    "name" : "date",
+    "processMappingId" : null,
+    "datasetId" : "26712865-7efc-4a16-927e-01a0e9cce557",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "e221e9d5-d31b-49e6-963f-5dac083879c4",
+    "name" : "time",
+    "processMappingId" : null,
+    "datasetId" : "26712865-7efc-4a16-927e-01a0e9cce557",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "5c1a524c-75d5-417d-98f3-ab395b7ebeab",
+    "datasetId" : "26712865-7efc-4a16-927e-01a0e9cce557",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "26712865-7efc-4a16-927e-01a0e9cce557"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "48c67fe2-03fe-4b4a-88a9-f846c3b993a9",
+  "eventStore" : {
+    "id" : "973f2fe3-2cd7-47ac-bf5e-ac13ac775dfc",
+    "name" : "QA_DONT_DEL_9_1_0_REG",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_9_1_0_REG",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_9_1_0_REG_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DEL_9_1_0_REG_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DEL_9_1_0_REG_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_9_1_0_REG_snap",
+    "developmentDatabase" : "QA_DONT_DEL_9_1_0_REG_dev",
+    "productionDatabase" : "QA_DONT_DEL_9_1_0_REG_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PRIVATE"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2026-05-20T06:41:44.470Z",
+    "updatedAt" : "2026-05-20T06:41:44.470Z",
+    "grants" : {
+      "canUse" : false,
+      "canView" : true,
+      "canExecute" : false,
+      "canEdit" : true,
+      "canDeploy" : false,
+      "canManage" : true
+    }
+  }
+}, {
+  "id" : "6e07065a-7895-4e4f-81cd-47646b65653a",
+  "name" : "Nsma_13129_output",
+  "database" : "QA_DONT_DEL_9_1_0_REG_dev",
+  "environment" : "DEVELOPMENT",
+  "accessability" : "PUBLIC",
+  "partitionScheme" : "DAILY",
+  "partitionedDateColumnId" : "e508801e-5e13-4018-acb3-6a04c3b257c7",
+  "timeSource" : null,
+  "timeFormat" : null,
+  "localIdentitySource" : null,
+  "inputSourceColumnId" : null,
+  "isExternal" : false,
+  "creationSource" : "APP",
+  "location" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_9_1_0_REG_dev/QA_DONT_DEL_9_1_0_REG/Nsma_13129_output",
+  "parameters" : {
+    "fileFormat" : "DELTA"
+  },
+  "deletedAt" : null,
+  "columns" : [ {
+    "id" : "27f28762-4fa2-4206-8a40-b489bfd70c4b",
+    "name" : "visitor_id",
+    "processMappingId" : null,
+    "datasetId" : "6e07065a-7895-4e4f-81cd-47646b65653a",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 1
+  }, {
+    "id" : "105c14e6-bf04-43c6-ad4f-4c380223b1f7",
+    "name" : "name",
+    "processMappingId" : null,
+    "datasetId" : "6e07065a-7895-4e4f-81cd-47646b65653a",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 2
+  }, {
+    "id" : "abff4229-898f-4305-8171-db98af485a79",
+    "name" : "browser",
+    "processMappingId" : null,
+    "datasetId" : "6e07065a-7895-4e4f-81cd-47646b65653a",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 3
+  }, {
+    "id" : "6692e443-cd12-44d1-9d80-0fc7165ab2a1",
+    "name" : "browser_type",
+    "processMappingId" : null,
+    "datasetId" : "6e07065a-7895-4e4f-81cd-47646b65653a",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 4
+  }, {
+    "id" : "6e7f9b69-07bd-41b6-9e91-536111153e3f",
+    "name" : "date",
+    "processMappingId" : null,
+    "datasetId" : "6e07065a-7895-4e4f-81cd-47646b65653a",
+    "datatype" : "string",
+    "isPartitioned" : false,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 5
+  }, {
+    "id" : "e508801e-5e13-4018-acb3-6a04c3b257c7",
+    "name" : "time",
+    "processMappingId" : null,
+    "datasetId" : "6e07065a-7895-4e4f-81cd-47646b65653a",
+    "datatype" : "string",
+    "isPartitioned" : true,
+    "isIdentifier" : false,
+    "isGroupBy" : false,
+    "isEncrypted" : false,
+    "order" : 6
+  } ],
+  "dataWarehouses" : [ {
+    "id" : "be350f1a-1603-47f3-bc21-7979bdfa108e",
+    "datasetId" : "6e07065a-7895-4e4f-81cd-47646b65653a",
+    "warehouseType" : "SYNTASA_EVENT_STORE",
+    "dataset_id" : "6e07065a-7895-4e4f-81cd-47646b65653a"
+  } ],
+  "objectTypeKey" : "TABLE",
+  "appNodeId" : "4715b4fe-717b-4485-ae80-578b5ac1b6c4",
+  "eventStore" : {
+    "id" : "973f2fe3-2cd7-47ac-bf5e-ac13ac775dfc",
+    "name" : "QA_DONT_DEL_9_1_0_REG",
+    "type" : "EVENTSTORE",
+    "key" : "QA_DONT_DEL_9_1_0_REG",
+    "developmentPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/dev/QA_DONT_DEL_9_1_0_REG_dev",
+    "productionPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/prod/QA_DONT_DEL_9_1_0_REG_prod",
+    "snapshotPath" : "s3://syntasa-qa-kube/syn-cluster-data/eventstores/snap/QA_DONT_DEL_9_1_0_REG_snap",
+    "snapshotDatabase" : "QA_DONT_DEL_9_1_0_REG_snap",
+    "developmentDatabase" : "QA_DONT_DEL_9_1_0_REG_dev",
+    "productionDatabase" : "QA_DONT_DEL_9_1_0_REG_prod",
+    "developmentParameters" : null,
+    "productionParameters" : null,
+    "snapshotParameters" : null,
+    "parameters" : null,
+    "sharing" : {
+      "shareType" : "PRIVATE"
+    },
+    "ownerId" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "modifiedById" : "118e71a0-16de-44a4-8e6b-f95c6504009c",
+    "createdAt" : "2026-05-20T06:41:44.470Z",
+    "updatedAt" : "2026-05-20T06:41:44.470Z",
+    "grants" : {
+      "canUse" : false,
+      "canView" : true,
+      "canExecute" : false,
+      "canEdit" : true,
+      "canDeploy" : false,
+      "canManage" : true
+    }
+  }
+} ]
