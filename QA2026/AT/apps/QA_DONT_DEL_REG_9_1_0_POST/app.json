@@ -1,0 +1,42 @@
+{
+  "id" : "b41c0b6c-3673-41fa-bfe2-09affea6a597",
+  "key" : "QA_DONT_DEL_REG_9_1_0_POST",
+  "appPrefix" : "qa_dont_del_reg_9_1_0_post",
+  "name" : "QA_DONT_DEL_REG_9_1_0_POST",
+  "description" : "",
+  "module" : "SYNTHESIZER",
+  "partitionScheme" : "DAILY",
+  "templateId" : "7c2ec6cd-5aaf-4435-bc46-0a66c6b13d08",
+  "eventStoreId" : "d833b871-dc95-4c78-bf66-f9151ba8ea63",
+  "iconKey" : null,
+  "sharing" : {
+    "shareType" : "PRIVATE"
+  },
+  "ownerId" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "createdById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "modifiedById" : "1d1ad1ae-e259-46c4-b55d-03473eb3a613",
+  "audienceVersion" : null,
+  "createdAt" : "2026-07-08T11:35:36.434Z",
+  "updatedAt" : "2026-07-08T11:57:46.632Z",
+  "deletedAt" : null,
+  "template" : {
+    "name" : "Synthesizer Free Form",
+    "key" : "SYNTHESIZER_FREE_FORM",
+    "icon" : {
+      "name" : "unified_schema.png",
+      "isSystem" : true,
+      "image" : null
+    }
+  },
+  "icon" : null,
+  "grants" : {
+    "canUse" : false,
+    "canView" : true,
+    "canExecute" : true,
+    "canEdit" : true,
+    "canDeploy" : true,
+    "canManage" : true
+  },
+  "eventStoreType" : "EVENTSTORE",
+  "eventStoreName" : "QA_DONT_DEL_REG_9_1_0_ES"
+}
